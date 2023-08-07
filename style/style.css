@@ -111,6 +111,11 @@ h1{
     transition: all 0.5s;
 }
 
+.check__list{
+    /* list-style-image: url(../img/icons/check.svg); */
+    width: 25px;
+}
+
 .offer:hover{
     box-shadow: 0px 0px 15px 5px rgba(34, 80, 46, 0.2);
 }
