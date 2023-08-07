@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Страница не найдена</title>
+</head>
+    <script src="./script/wrapper.js"></script>
+
+<body>
+    <div w3-include-html="./pages/wrapper/header.html"></div>
+   
+    <main id="main" class="main fourzerofour">
+
+        <section class="error__page">
+
+            <div class="notfound__description">
+
+                <br>
+                <br>
+                <br>
+                <div class="line"></div>
+                <br>
+                <article class="error__description">
+                    Кажется, мы забрели куда-то не туда! 
+                </article>
+                <br>
+                <article class="error__description">
+                   Давайте попробуем сначала
+                </article>
+                <br>
+                <div class="line"></div>
+                <br>
+                <br>
+                <br>
+                <a href="./index.html" class="btn">Вернуться на главную</a>
+            </div>
+
+            <img id="not__found" alt="" class="error-img">
+            <!-- <article class="error">
+                404
+            </article> -->
+            
+        </section>
+
+    </main>
+
+    <div w3-include-html="./pages/wrapper/footer.html"></div>
+    <script src="./script/theme.js"></script>
+
+    <script>
+        includeHTML();
+    </script>
+
+    
+    <script>
+        let imgs = ['img/error/error_0.png', 'img/error/error_1.png', 'img/error/error_2.png', 'img/error/error_3.png', 'img/error/error_4.png', 'img/error/error_5.png']; //   Добавьте свои картинки через запятую
+        let i = Math.floor(Math.random() * imgs.length);
+        let not__found = document.getElementById("not__found");
+        imgsrc('img/error'); // Первоначальное заполнение картинки
+        not__found.window.onload = imgsrc;
+        function imgsrc() {
+            not__found.src = imgs[i]; // Увеличить индекс лучше потом
+            if (++i === imgs.length) i = 0;
+        }
+    </script>
+        <script src="./script/snow.js"></script>
+</body>
+</html>

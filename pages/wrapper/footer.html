@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/wrapper.css">
+    <link rel="stylesheet" href="../../style/mobile.css">
+    <link rel="stylesheet" href="../../style/light.css" id="theme-link">
+    <title>footer</title>
+</head>
+
+<?php function rdate($param, $time=0) {
+	if(intval($time)==0)$time=time();
+	$MonthNames=array("Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря");
+	if(strpos($param,'M')===false) return date($param, $time);
+		else return date(str_replace('M',$MonthNames[date('n',$time)-1],$param), $time);
+}?>
+
+<body>
+
+
+
+    <footer class="footer" id="footer">
+
+    <section class="useful__lists">
+
+        <section class="useful__links">
+
+                <h3 class="links__name">Полезные ссылки:</h3>
+
+                <ul class="useful__list">
+
+                    <li class="list__item food__link">
+                        <img src="../../img/icons/pencil-white-footer.svg" class="svg__icon" alt="">
+                        <a href="../../pages/frames/pensioners.php" class="useful__link">Запись на консультацию</a>
+                    </li>
+
+                    <li class="list__item food__link">
+                        <img src="../../img/icons/test-whit-footer.svg" class="svg__icon" alt="">
+                        <a href="../../pages/tests.html" class="useful__link">Тесты и опросники</a>
+                    </li>
+
+                    <li class="list__item food__link">
+                        <img src="../../img/icons/user-white-footer.svg" class="svg__icon" alt="">
+                        <a href="../../pages/clients/clients.html" class="useful__link">Клиент психолога</a>
+                    </li>
+
+                    
+                </ul>
+        </section>
+
+        <section class="useful__links bottom">
+
+                <!-- <h3 class="links__name">                 </h3> -->
+
+                <ul class="useful__list">
+
+                    <li class="list__item money__link">
+                        <img src="../../img/icons/how-it-work-white-footer.svg" class="svg__icon" alt="">
+                        <a href="../../pages/howitworks.html" class="useful__link">Как это работает</a>
+                    </li>
+
+                    <li class="list__item weather__link">
+                        <img src="../../img/icons/about-white-footer.svg" class="svg__icon" alt="">
+                        <a href="../../pages/aboutme.html" class="useful__link">Обо мне</a>
+                    </li>
+
+                    <li class="list__item blog__link">
+                        <img src="../../img/icons/like-white-finger.svg" class="svg__icon" alt="">
+                        <a href="../../reviews.html" class="useful__link ">Отзывы</a>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="useful__links">
+
+            <h3 class="links__name">Контакты:</h3>
+
+            <ul class="useful__list">
+
+                <li class="list__item phone__link">
+                    <img src="../../img/phone.svg" alt="">
+                    <a href="tel:+375296525073" class="footer__link">+375 (29) 652-50-73</a>
+                </li>
+
+                <li class="list__item mail__link">
+                    <img src="../../img/mail.svg" alt="">
+                    <a href="mailto:snezhanna88@gmail.com" class="footer__link" target="_blank">snezhanna88@gmail.com</a>
+                </li>
+
+                    <li class="list__item adress__link">
+                    <img src="../../img/location.svg" alt="">
+                    <a href="https://yandex.by/maps/-/C2aDnvT" class="footer__link">246020, г. Гомель, ул. Сосновая,18 каб. 6.2</a> 
+                </li>
+            </ul>
+        </section>
+
+        <section class="useful__links bottom">
+
+            <!-- <h3 class="links__name">Мессенджеры:</h3> -->
+
+            <ul class="useful__list">
+                <li class="list__item phone__link">
+                    <img src="../../img/icons/whatsapp-white-footer.svg" class="svg__icon" alt="">
+                    <a href="https://wa.me/375296525073" class="footer__link">Whatsapp</a>
+                </li>
+
+                <li class="list__item phone__link">
+                    <img src="../../img/icons/telegram-white-footer.svg" class="svg__icon" alt="">
+                    <a href="https://t.me/Hannet_M" class="footer__link">Telegram</a>
+                </li>
+
+                <li class="list__item phone__link">
+                    <img src="../../img/icons/viber-white-footer.svg" class="svg__icon" alt="">
+                    <a href="https://viber.click/375296525073" class="footer__link">Viber</a>
+                </li>
+
+                
+            </ul>
+        </section>
+
+    </section>
+
+        <section class="copyright">
+            Анна Манько, Психолог рядом с Вами, <?php echo rdate("Y") ?>
+            <img src="../../img/only_icon.svg" alt="" class="logo"></a>
+        </section>
+
+
+    </footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш психолог</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/wrapper.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="./pages/wrapper/header.html"></div>
+
+    <main class="main" id="main">
+
+        <article class="Hanna">
+            <img src="./img/main.PNG" class="personal" alt="Анна Манько логотип">
+
+            <section class="personal__info">
+                <!-- <h1>Психолог рядом с Вами</h1> -->
+                <h1 id="your__psycho">Ваш Психолог рядом с Вами</h1>
+
+                <section class="btns">
+                    <button type="button" id="consultation" class="btn">Получить консультацию</button>
+                    <button type="button" id="more__information" class="btn">Узнать больше</button>
+                </section>
+
+                <section class="numbers">
+                    <a href="./pages/howitworks.html" class="experience">
+                        <h3>5+</h3>
+                        <span>Лет опыта работы</span>
+                    </a>
+
+                    <a class="experience">
+                        <h3>10+</h3>
+                        <span>Сертификатов и дипломов по специальности</span>
+                    </ф>
+
+                    <a href="./pages/clients/clients.html" class="experience">
+                        <h3>100+</h3>
+                        <span>Пациентов, которым оказана помощь</span>
+                    </a>
+         
+                </section>
+            </section>
+        </article>
+        
+
+        <article class="howicanhelp">
+            <h2>Чем я могу вам помочь</h2>
+            <span>Я провожу консультации по следующим вопросам:</span>
+
+            <div class="offers">
+
+            <section class="offer" >
+                <img src="./img/feelings.png" alt="" class="offer_img">
+                <h4>Отношения</h4>
+                <span class="offer__description">Терапия, которая помогает создать более глубокую основу для здоровых отношений.</span>
+            </section>
+
+            <section class="offer" >
+                <img src="./img/depression.png" alt=""  class="offer_img">
+                <h4>Депрессия</h4>
+                <span class="offer__description">Если ваша депрессия мешает вам жить своей жизнью, не стесняйтесь обращаться за помощью.</span>
+            </section>
+
+            <section class="offer" >
+                <img src="./img/relaxation.png" alt=""  class="offer_img">
+                <h4>Чувства</h4>
+                <span class="offer__description">Достигните лучшего уровня своего благополучия и способности управлять чувствами.</span>
+            </section>
+
+            <section class="offer" >
+                <img src="./img/conflicting.png" alt=""  class="offer_img">
+                <h4>Конфликты</h4>
+                <span class="offer__description">Бесценное понимание того, как уменьшить конфликт в отношениях.</span>
+            </section>
+
+            <section class="offer" >
+                <img src="./img/meditation.png" alt=""  class="offer_img">
+                <h4>Сказкотерапия</h4>
+                <span class="offer__description">Умение понять себя и прийти к решению своих проблем через творчество.</span>
+            </section>
+        </div>
+        </article>
+
+        <article>
+            <form action="" id="contact__form">
+                <fieldset class="fieldset" id="fieldset">
+                    <!-- <legend id="legend" class="legend">Запрос на консультацию</legend> -->
+                    <div class="for__lil__text">
+                <section class="input__contact">
+                    <label for="">Ваше Имя:</label>
+                    <input type="text" class="text" placeholder="Как к вам обращаться">
+                </section>
+    
+                <section class="input__contact">
+                    <label for="" >Телефон для связи:</label>
+                    <input type="tel" class="text" placeholder="Укажите номер телефона" required>
+                </section>
+    
+               
+    
+                <section class="input__contact">
+                    <label for="">Психологический запрос :</label>
+                    <input type="text" class="text" placeholder="Ваш вопрос (тема/проблема)">
+                </section>
+    
+            </div>
+                <div class="for__big__text">
+                    <section class="input__contact">
+                        <label for="">Желаемое время и формат:</label>
+                        <textarea class="text" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" name="" id="" cols="30" rows="10"></textarea>
+                    </section>
+                    <button type="button" id="consultation" class="btn">Отправить запрос</button>
+                </div>
+               
+            </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <div w3-include-html="./pages/wrapper/footer.html"></div>
+
+    <script >
+        includeHTML();
+    </script>
+        <script src="./script/snow.js"></script>
+</body>
+
+</html>
