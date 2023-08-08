@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Pacifico&family=Raleway:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Pacifico&family=Raleway:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
 
 
 
@@ -6,7 +7,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
+    /* font-weight: 600; */
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 16px;
     color: #383838;
 }
@@ -311,7 +314,7 @@ ul.breadcrumb li {
 ul.breadcrumb li+li:before {
     padding: 5px;
     color: #e96b42;
-    content: "/\00a0";
+    content: " » ";
 }
 
 /* Add a color to all links inside the list */
@@ -528,9 +531,41 @@ legend{
 }
 
 .map-widget-app{
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 .svg__contact{
     width: 30px;
+}
+
+.check__item{
+    list-style-image: url('../img/icons/check.svg');
+}
+
+.button-1 {
+    color: #232323;
+    background: transparent;
+    border: 1px solid #232323;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .3em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.button-1:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: #32D4E2;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+.button-1:hover:before {
+    transform: translate(4px, 4px);
 }
