@@ -60,20 +60,21 @@ body{
 }
 h1{
     color: #029F8C;
-    font-family: 'Pacifico', cursive;
+    font-family: cursive;
+    /* font-family: 'Pacifico', cursive; */
     /* font-weight: 600; */
     font-size: 50px;
     /* width: 450px; */
 }
 
-#your__psycho{
+/* #your__psycho{
     width: 450px;
-}
+} */
 
 .personal__info{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding: 20px 0;
     padding-top: 150px;
     /* background-color: #fff; */
@@ -93,7 +94,7 @@ h1{
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
     border-radius: 5px;
     justify-content: space-around;
-    gap: 90px;
+    gap: 50px;
     padding: 20px 30px;
     background-image: url(../img/bg-copy-2-5.png);
 }
@@ -210,7 +211,8 @@ h4{
 h3{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     color: #e96b42;
-    font-size: 75px;
+    font-weight: 600;
+    font-size: 80px;
 }
 
 span{
@@ -555,12 +557,16 @@ legend{
 }
 
 .check__item{
-    list-style-type: none;
-    /* list-style-image: url('../img/icons/check.svg'); */
+    /* list-style-type: none; */
+    list-style-image: url('../img/icons/check.svg');
     display: flex;
     gap: 10px;
     align-items: center;
 }
+
+/* .check__item:before{
+    content: url('../img/icons/check.svg');
+} */
 
 .button-1 {
     color: #232323;
@@ -661,9 +667,9 @@ ol{
     border: 1px solid #CCC;
     border-radius: 15px;
     background: #eee;
-  }
-  
-  .carousel img {
+}
+
+.carousel img {
     width: 130px;
     height: 130px;
     /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */

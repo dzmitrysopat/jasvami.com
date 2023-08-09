@@ -60,7 +60,7 @@ nav{
     justify-content: center;
     /* background-color: #fff; */
     font-family: Arial, Helvetica, sans-serif;
-    gap: 30px;
+    gap: 10px;
     z-index: 1;
 }
 
@@ -69,6 +69,29 @@ nav{
     text-transform: uppercase;
     font-weight: 600;
 }
+
+.nav__link:after{
+    display: block;
+	/* position: absolute; */
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #e96b42; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.nav__link:hover:after,
+.nav__link:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.nav__link:nth-child(3):hover:after,
+.nav__link:nth-child(4):hover:after,
+.nav__link:nth-child(5):hover:after{
+    background-color: #029F8C;
+}
+
 
 .navbar a{
     font-size: 16px;
