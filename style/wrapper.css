@@ -20,16 +20,17 @@ body{
 
 /* Header style */
 header{
+    position: relative;
     margin: 0 auto;
     width: 100%;
     /* max-width: 1200px; */
-    height: 53px;
+    height: 60px;
     /* background: #029F8C; */
     background: linear-gradient(135deg,#029F8C 80%,  #e96b42 70%);
     display: flex;
     flex-direction: row;
     /* align-items: flex-start; */
-    justify-content:center;
+    /* justify-content:; */
     box-shadow: 0px 10px 10px 0px rgba(5, 5, 5, 0.2);
     /* z-index: 2; */
     /* position: relative; */
@@ -53,21 +54,21 @@ header{
 
 /* menu style */
 nav{
+    padding: 20px 0;
+    margin: 0 30%;
+    position: absolute;
     align-items: center;
-    /* z-index: 1; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
-    /* background-color: #fff; */
     font-family: Arial, Helvetica, sans-serif;
-    gap: 10px;
-    z-index: 1;
+    gap: 30px;
 }
 
 .nav__link{
-    font-size: 17px;
+    font-size: 18px;
     text-transform: uppercase;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .nav__link:after{
@@ -76,7 +77,7 @@ nav{
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 2px; /*задаём ширину линии*/
-	background-color: #e96b42; /*задаём цвет линии*/
+	background-color: #f7ab1e; /*задаём цвет линии*/
 	content: "";
 	transition: width .5s ease-out;
 }
@@ -86,11 +87,11 @@ nav{
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
-.nav__link:nth-child(3):hover:after,
+/* .nav__link:nth-child(3):hover:after,
 .nav__link:nth-child(4):hover:after,
 .nav__link:nth-child(5):hover:after{
     background-color: #029F8C;
-}
+} */
 
 
 .navbar a{
@@ -249,7 +250,7 @@ nav{
 .footer{
     height: auto;
     padding: 20px 50px;
-    background: linear-gradient(135deg, #e96b42 29%, #029F8C 15%);
+    background: linear-gradient(135deg, #e96b42 19.5%, #029F8C 15%);
     /* background: #029F8C; */
 
     display: flex;
@@ -288,7 +289,6 @@ nav{
     justify-content: center;
     gap: 10px; 
     align-self: flex-end;
-
 }
 
 
