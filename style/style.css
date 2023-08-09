@@ -41,6 +41,7 @@ body{
     flex-direction: column;
     gap: 100px;
     align-items: center; 
+    position: relative;
 }
 
 .personal{
@@ -166,6 +167,7 @@ h1{
 }
 
 h4{
+    
     text-transform: uppercase;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all .9s;
@@ -229,7 +231,7 @@ h2{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     color: #f7ab1e;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 span{
@@ -672,50 +674,6 @@ ol{
     margin: 0 10px 0 0;
     padding: 5px 10px;
     border-radius: 50%;
-  }
-
-.certificate__photo,
-.cert__img{
-    width: 395px;
-    height: 245px;
-    list-style-type: none;
-}
-
-.carousel {
-    position: relative;
-    width: 1000px;
-    padding: 10px 40px;
-    border: 1px solid #CCC;
-    border-radius: 15px;
-    background: #eee;
-}
-
-.carousel img {
-    width: 130px;
-    height: 130px;
-    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
-    display: block;
-}
-.arrow {
-    position: absolute;
-    top: 60px;
-    padding: 0;
-    background: #ddd;
-    border-radius: 15px;
-    border: 1px solid gray;
-    font-size: 24px;
-    line-height: 24px;
-    color: #444;
-    display: block;
-}
-
-.arrow:focus {
-    outline: none;
-}
-
-.arrow:hover {
-    background: #ccc;
-    cursor: pointer;
 }
 
 .howicanhelp{
@@ -745,4 +703,61 @@ ol{
 .lil-description{
     padding-top: 10px;
     border-top: 3px solid #f7ab1e;
+}
+
+.courses{
+    
+    /* display: flex; */
+    /* flex-direction: column;
+    gap: 30px; */
+    position: relative;
+    /* text-align: center; */
+}
+
+.carousel{
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.carousel img{
+    margin-left: 15px;
+    width: calc(100% / 3);
+    height: 295px;
+    object-fit: cover;
+}
+
+.carousel img:first-child{
+    margin-left: 0;
+}
+
+.courses i{
+    
+    font-size: 30px;
+    text-align: center;
+    background-color: #f7ab1e;
+    color: #fff;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .4s;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.courses i:hover{
+    /* color: #f7ab1e; */
+    display: block;
+    background-color: #029F8C;
+}
+
+.courses i:first-child{
+    left: -23px;
+}
+
+.courses i:last-child{
+    right: -23px;
 }
