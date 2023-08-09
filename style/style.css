@@ -705,7 +705,7 @@ ol{
     border-top: 3px solid #f7ab1e;
 }
 
-.courses{
+.courses, .second_courses{
     /* padding: 0 23px; */
     display: flex;
     flex-direction: column;
@@ -714,24 +714,28 @@ ol{
     text-align: center;
 }
 
-.carousel{
+.carousel,
+.second_carousel{
     overflow: hidden;
     white-space: nowrap;
     cursor: pointer;
 }
 
-.carousel img{
+.carousel img,
+.second_carousel img{
     margin-left: 15px;
     width: calc(100% / 3);
     height: 295px;
     object-fit: cover;
 }
 
-/* .carousel img:first-child{
-    margin-left: 0;
-} */
+.carousel img:first-child,
+.seccond_carousel img:first-child{
+    margin-left: 15px;
+}
 
-.courses i{
+.courses i,
+.second_courses i{
     
     font-size: 30px;
     text-align: center;
@@ -745,34 +749,60 @@ ol{
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transition: all 0.3s linear;
     /* transform: translateY(-70%); */
 }
 
-.courses i:hover{
+.courses .carousel,
+.second_courses .second_carousel{
+    scroll-behavior: smooth;
+}
+
+.courses i:active,
+.second_courses i:active{
+    transform: scale(0.7);
+}
+
+.carousel.dragging,
+.second_carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+
+.courses i:hover,
+.second_courses i:hover{
     /* color: #f7ab1e; */
     display: block;
     background-color: #029F8C;
 }
 
-.courses i:first-child{
+.courses i:first-child,
+.second_courses i:first-child{
     left: -23px;
 }
 
-.courses i:last-child{
+.courses i:last-child,
+.second_courses i:last-child{
     right: -23px;
 }
 
 @media screen and (max-width: 900px) {
-    .carousel img{
+    .carousel img,
+    .second_carousel img{
         width: calc(100% / 2);
     }
 }
 
 @media screen and (max-width: 550px) {
-    .carousel img{
+    .carousel img,
+    .second_carousel img{
         width: 90%;
     }
 
+    .courses i,
     .courses i{
         top: 60%;
     }
