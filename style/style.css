@@ -63,7 +63,7 @@ body{
 }
 h1{
     color: #029F8C;
-    font-family: cursive;
+    /* font-family: cursive; */
     /* font-family: 'Pacifico', cursive; */
     /* font-weight: 600; */
     font-size: 50px;
@@ -140,6 +140,7 @@ h1{
 
 .offer:hover{
     box-shadow: 0px 0px 15px 5px rgba(34, 80, 46, 0.2);
+    /* background-color: #f4fcfa67; */
 }
 
 .offer_img{
@@ -184,7 +185,7 @@ h4{
     width: 300px;
     height: 30px;
     border: 1px solid #f7ab1e;
-    border-radius: 50px;
+    border-radius: 5px;
     font-size: 17.5px;
     display: flex;
     align-items: center;
@@ -718,9 +719,13 @@ ol{
 }
 
 .howicanhelp{
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
+    background-color: #f4fcfa;
+    width: 100vw;
 }
 
 .icanhelp{
