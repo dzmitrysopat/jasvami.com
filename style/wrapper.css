@@ -78,7 +78,7 @@ nav{
 	height: 2px; /*задаём ширину линии*/
 	background-color: #e96b42; /*задаём цвет линии*/
 	content: "";
-	transition: width 0.3s ease-out;
+	transition: width .5s ease-out;
 }
 
 .nav__link:hover:after,

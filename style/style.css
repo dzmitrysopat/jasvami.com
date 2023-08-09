@@ -56,6 +56,8 @@ body{
 .Hanna{
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
     gap: 100px;
 }
 h1{
@@ -120,7 +122,7 @@ h1{
 .checked{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 90px;
 }
 
 .check__list{
@@ -680,7 +682,6 @@ ol{
     /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
     display: block;
   }
-  
   .arrow {
     position: absolute;
     top: 60px;
@@ -702,4 +703,3 @@ ol{
     background: #ccc;
     cursor: pointer;
   }
-  
