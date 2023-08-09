@@ -294,7 +294,11 @@ textarea{
     flex-direction: row;
     gap: 10px;
     align-self: flex-start;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+}
+
+.green__name{
+    color: #029F8C;
 }
 
 .about__client{
@@ -303,7 +307,7 @@ textarea{
     justify-content:space-evenly;
     /* gap: 20px; */
     padding: 10px;
-    width: 292px;
+    width: 280px;
     /* border: 1px solid #e96b42; */
     transition: all 0.7s;
     border-radius: 5px;
@@ -737,18 +741,19 @@ ol{
 
 .courses i,
 .second_courses i{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     background-color: #f7ab1e;
     color: #fff;
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     transition: all .4s;
     cursor: pointer;
     position: absolute;
     top: 50%;
+    opacity: 0.7;
     transition: all 0.3s linear;
     /* transform: translateY(-70%); */
 }
@@ -778,6 +783,7 @@ ol{
     /* color: #f7ab1e; */
     display: block;
     background-color: #029F8C;
+    opacity: 1;
 }
 
 .courses i:first-child,

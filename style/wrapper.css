@@ -250,7 +250,7 @@ nav{
 .footer{
     height: auto;
     padding: 20px 50px;
-    background: linear-gradient(135deg, #e96b42 19.5%, #029F8C 15%);
+    background: linear-gradient(135deg, #f7ab1e 19.5%, #029F8C 15%);
     /* background: #029F8C; */
 
     display: flex;
@@ -267,7 +267,7 @@ nav{
     font-weight: 100;
     text-decoration: underline;
     color: #f2f2f2;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 
@@ -300,13 +300,13 @@ nav{
     gap: 10px;
     text-align: left;
     color: #fff;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transition: all 0.7s;
     
 }
 
 .list__item:hover{
-    opacity: 0.9;
+    /* opacity: 0.9; */
     /* color: #fdbb2d;  */
 }
 
@@ -326,8 +326,8 @@ a{
 }
 
 a:hover{
-    /* color: #fdbb2d; */
-    opacity: 0.9;
+    /* color: #029F8C; */
+    /* opacity: 0.9; */
 }
 
 /* .line{
