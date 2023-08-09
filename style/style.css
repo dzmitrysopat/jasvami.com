@@ -294,7 +294,7 @@ textarea{
     flex-direction: row;
     gap: 10px;
     align-self: flex-start;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .about__client{
@@ -719,6 +719,7 @@ ol{
     overflow: hidden;
     white-space: nowrap;
     cursor: pointer;
+    margin:  0 20px;
 }
 
 .carousel img,
@@ -736,7 +737,6 @@ ol{
 
 .courses i,
 .second_courses i{
-    
     font-size: 30px;
     text-align: center;
     background-color: #f7ab1e;
@@ -767,10 +767,11 @@ ol{
 .second_carousel.dragging{
     cursor: grab;
     scroll-behavior: auto;
-  }
-  .carousel.dragging img{
+}
+
+.carousel.dragging img{
     pointer-events: none;
-  }
+}
 
 .courses i:hover,
 .second_courses i:hover{
@@ -781,12 +782,12 @@ ol{
 
 .courses i:first-child,
 .second_courses i:first-child{
-    left: -23px;
+    left: -5px;
 }
 
 .courses i:last-child,
 .second_courses i:last-child{
-    right: -23px;
+    right: -5px;
 }
 
 @media screen and (max-width: 900px) {
