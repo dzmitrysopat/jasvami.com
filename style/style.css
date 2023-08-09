@@ -39,7 +39,7 @@ body{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    gap: 100px;
+    gap: 90px;
     align-items: center; 
     position: relative;
 }
@@ -88,9 +88,9 @@ h1{
     transition: all 0.5s;
 }
 
-.experience:hover{
+/* .experience:hover{
     scale: 1.05;
-}
+} */
 
 .numbers{
     display: flex;
@@ -163,7 +163,7 @@ h1{
 }
 
 .offer:hover > h4{
-    color: #e96b42;
+    color: #f7ab1e;
 }
 
 h4{
@@ -709,7 +709,7 @@ ol{
     border-top: 3px solid #f7ab1e;
 }
 
-.courses, .second_courses{
+.courses, .slider{
     /* padding: 0 23px; */
     display: flex;
     flex-direction: column;
@@ -719,7 +719,7 @@ ol{
 }
 
 .carousel,
-.second_carousel{
+.slides{
     overflow: hidden;
     white-space: nowrap;
     cursor: pointer;
@@ -727,7 +727,7 @@ ol{
 }
 
 .carousel img,
-.second_carousel img{
+.slide{
     margin-left: 15px;
     width: calc(100% / 3);
     height: 295px;
@@ -735,12 +735,12 @@ ol{
 }
 
 .carousel img:first-child,
-.seccond_carousel img:first-child{
+.slides:first-child{
     margin-left: 15px;
 }
 
 .courses i,
-.second_courses i{
+.slider i{
     font-size: 40px;
     text-align: center;
     background-color: #f7ab1e;
@@ -764,12 +764,12 @@ ol{
 }
 
 .courses i:active,
-.second_courses i:active{
+.slider i:active{
     transform: scale(0.7);
 }
 
 .carousel.dragging,
-.second_carousel.dragging{
+.slides.dragging{
     cursor: grab;
     scroll-behavior: auto;
 }
@@ -779,7 +779,7 @@ ol{
 }
 
 .courses i:hover,
-.second_courses i:hover{
+.slider i:hover{
     /* color: #f7ab1e; */
     display: block;
     background-color: #029F8C;
@@ -787,12 +787,12 @@ ol{
 }
 
 .courses i:first-child,
-.second_courses i:first-child{
+.slider i:first-child{
     left: -5px;
 }
 
 .courses i:last-child,
-.second_courses i:last-child{
+.slider i:last-child{
     right: -5px;
 }
 
@@ -814,3 +814,38 @@ ol{
         top: 60%;
     }
 }
+
+.slider {
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+}
+
+
+  .slides {
+    display: flex;
+    position: absolute;
+
+  }
+  
+  .slides.shifting {
+    transition: left .2s ease-out;
+  }
+  
+  .slide{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    background: #FFCF47;
+    border-radius: 2px;
+}
+
+#prev,
+#next{
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+  
