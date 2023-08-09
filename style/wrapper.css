@@ -76,7 +76,7 @@ nav{
 	/* position: absolute; */
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
+	height: 3px; /*задаём ширину линии*/
 	background-color: #f7ab1e; /*задаём цвет линии*/
 	content: "";
 	transition: width .5s ease-out;
