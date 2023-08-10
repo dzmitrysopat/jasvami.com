@@ -248,7 +248,7 @@ input{
     padding-left: 10px;
     border: 2px solid #029F8C;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-    background-color: #ffffff7a;
+    /* background-color: #ffffff7a; */
 }
 
 textarea{
@@ -259,7 +259,7 @@ textarea{
     width: 500px;
     resize: none;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-    background-color: #f4fcfa88;
+    /* background-color: #f4fcfa88; */
 }
 
 .page__logo{
@@ -589,7 +589,8 @@ fieldset{
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
     flex-direction: row;
     gap: 50px;
-    background-image: url(../img/bg-copy-2-5.png);
+    background-color: #f4fcfa;
+    /* background-image: url(../img/bg-copy-2-5.png); */
 }
 
 legend{
@@ -681,11 +682,13 @@ ol{
 } */
 
 .howicanhelp{
-    padding: 50px 0;
+    padding: 25px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    /* background-image: url('../img/bg-copy-2-5.png'); */
+    /* background-size: 100vw; */
     background-color: #f4fcfa;
     width: 100vw;
 }
@@ -856,7 +859,7 @@ ol{
       transition: all .4s;
       cursor: pointer;
       position: absolute;
-      top: 45%;
+      top: 40%;
       opacity: 0.7;
   }
   
@@ -872,12 +875,9 @@ ol{
   .itc-slider-btn-next:hover{
     background-color: #029F8C;
     opacity: 1;
-  }
-  
+}
+
   .itc-slider-btn-prev:active,
   .itc-slider-btn-next:active{
     transform: scale(0.7);
-  }
-  
-  
-  
+}

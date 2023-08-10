@@ -79,7 +79,7 @@ nav{
 	height: 3px; /*задаём ширину линии*/
 	background-color: #f7ab1e; /*задаём цвет линии*/
 	content: "";
-	transition: width .5s ease-out;
+	transition: width .3s ease-out;
 }
 
 .nav__link:hover:after,
