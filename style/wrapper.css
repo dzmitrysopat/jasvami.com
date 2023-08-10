@@ -256,7 +256,6 @@ nav{
     display: flex;
     gap: 10px;
     flex-direction: row;
-    /* align-items: flex-end; */
     align-items: flex-end;
     justify-content: space-between;
 }

@@ -753,6 +753,7 @@ ol{
     /* transform: translateY(-70%); */
 }
 
+
 .courses .carousel{
     scroll-behavior: smooth;
 }
@@ -800,3 +801,83 @@ ol{
         top: 60%;
     }
 }
+
+.second__slider{
+    max-width: 1200px;
+  
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .itc-slider {
+    position: relative;
+  }
+  
+  .itc-slider-wrapper {
+    overflow: hidden;
+    display: flex;
+    /* flex-direction: row; */
+  }
+  
+  .itc-slider-items {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+  }
+  
+  .itc-slider-transition-none {
+    transition: none;
+  }
+  
+  .itc-slider-item {
+    flex: 0 0 30%;
+    user-select: none;
+    object-fit: cover;
+    height: 295px;
+    width: calc(100% / 3);
+  }
+  
+  
+  /* кнопки влево и вправо */
+  .itc-slider-btn {
+      font-size: 30px;
+      text-align: center;
+      background-color: #f7ab1e;
+      color: #fff;
+      line-height: 50px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: all .4s;
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      opacity: 0.7;
+  }
+  
+  .itc-slider-btn-prev {
+    left: -23px;
+  }
+  
+  .itc-slider-btn-next {
+    right: -23px;
+  }
+  
+  .itc-slider-btn-prev:hover,
+  .itc-slider-btn-next:hover{
+    background-color: #029F8C;
+    opacity: 1;
+  }
+  
+  .itc-slider-btn-prev:active,
+  .itc-slider-btn-next:active{
+    transform: scale(0.7);
+  }
+  
+  
+  
