@@ -654,7 +654,7 @@ legend{
 .button-1:hover:before {
     transform: translate(4px, 4px);
 }
-
+/* 
 ol{
     counter-reset: myCounter;
   }
@@ -678,7 +678,7 @@ ol{
     margin: 0 10px 0 0;
     padding: 5px 10px;
     border-radius: 50%;
-}
+} */
 
 .howicanhelp{
     padding: 50px 0;
@@ -709,7 +709,7 @@ ol{
     border-top: 3px solid #f7ab1e;
 }
 
-.courses, .slider{
+.courses{
     /* padding: 0 23px; */
     display: flex;
     flex-direction: column;
@@ -718,36 +718,32 @@ ol{
     text-align: center;
 }
 
-.carousel,
-.slides{
+.carousel{
     overflow: hidden;
     white-space: nowrap;
     cursor: pointer;
     margin:  0 20px;
 }
 
-.carousel img,
-.slide{
+.carousel img{
     margin-left: 15px;
     width: calc(100% / 3);
     height: 295px;
     object-fit: cover;
 }
 
-.carousel img:first-child,
-.slides:first-child{
+.carousel img:first-child{
     margin-left: 15px;
 }
 
-.courses i,
-.slider i{
-    font-size: 40px;
+.courses i{
+    font-size: 30px;
     text-align: center;
     background-color: #f7ab1e;
     color: #fff;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     transition: all .4s;
     cursor: pointer;
@@ -758,18 +754,15 @@ ol{
     /* transform: translateY(-70%); */
 }
 
-.courses .carousel,
-.second_courses .second_carousel{
+.courses .carousel{
     scroll-behavior: smooth;
 }
 
-.courses i:active,
-.slider i:active{
+.courses i:active{
     transform: scale(0.7);
 }
 
-.carousel.dragging,
-.slides.dragging{
+.carousel.dragging{
     cursor: grab;
     scroll-behavior: auto;
 }
@@ -778,74 +771,33 @@ ol{
     pointer-events: none;
 }
 
-.courses i:hover,
-.slider i:hover{
+.courses i:hover{
     /* color: #f7ab1e; */
     display: block;
     background-color: #029F8C;
     opacity: 1;
 }
 
-.courses i:first-child,
-.slider i:first-child{
+.courses i:first-child{
     left: -5px;
 }
 
-.courses i:last-child,
-.slider i:last-child{
+.courses i:last-child{
     right: -5px;
 }
 
 @media screen and (max-width: 900px) {
-    .carousel img,
-    .second_carousel img{
+    .carousel img{
         width: calc(100% / 2);
     }
 }
 
 @media screen and (max-width: 550px) {
-    .carousel img,
-    .second_carousel img{
+    .carousel img{
         width: 90%;
     }
 
-    .courses i,
     .courses i{
         top: 60%;
     }
 }
-
-.slider {
-    position: relative;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
-}
-
-
-  .slides {
-    display: flex;
-    position: absolute;
-
-  }
-  
-  .slides.shifting {
-    transition: left .2s ease-out;
-  }
-  
-  .slide{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 1s;
-    background: #FFCF47;
-    border-radius: 2px;
-}
-
-#prev,
-#next{
-    background-size: 22px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-  
