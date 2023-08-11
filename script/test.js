@@ -72,15 +72,6 @@ showQuestion();
 
 submitBtn.onclick = checkAnswer;
 
-const openInNewTab = (url) => {
-    window.open(url, target="_self");
-  }
-  const btn = document.getElementById("submit");
-  
-//   btn.addEventListener("click", () => {
-//     openInNewTab("../../tests.html");
-//   });
-
 function clearPage(){
     headerContainer.innerHTML = '';
     listContainer.innerHTML = '';
@@ -191,6 +182,5 @@ function showResults (){
     headerContainer.innerHTML = finalMessage;
 
     submitBtn.blur();
-    submitBtn.innerText = 'Попробовать еще раз'
-    submitBtn.onclick = () => {openInNewTab("../../tests.html")};
+    submitBtn.innerText = 'попробовать еще раз'
 }

@@ -881,3 +881,65 @@ ol{
   .itc-slider-btn-next:active{
     transform: scale(0.7);
 }
+
+.title{
+    font-size: 15px;
+}
+
+.quiz{
+    border-radius: 8px;
+    height: 300px;
+    width: 500px;
+    background-color: #ffffff;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+.quiz-header{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+li{
+    list-style-type: none;
+    padding: 15px;
+    transition: all .5s;
+    border-radius: 8px;
+}
+
+li:hover{
+    background-color: #6ffd2d75;
+}
+
+button #submit{
+    width: inherit;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 0 0 8px 8px;
+    background-color: #2d80fd;
+    padding: 20px 0;
+    transition: all .3s linear;
+}
+
+button #submit:active{
+    background-color: #1edb57;
+}
+
+label{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
