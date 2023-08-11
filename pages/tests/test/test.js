@@ -70,6 +70,8 @@ let questionIndex = 0;
 clearPage();
 showQuestion();
 
+submitBtn.onclick = checkAnswer;
+
 function clearPage(){
     headerContainer.innerHTML = '';
     listContainer.innerHTML = '';
@@ -78,30 +80,107 @@ function clearPage(){
 function showQuestion(){
     console.log('showQuestion');
 
+
     // Question
     const headerTemplate = ` <h2 class="title">%title%</h2>`;
     const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
-
     headerContainer.innerHTML = title;
 
     // Answers
-    for (answerText of questions[questionIndex]['answers']){
-        console.log(answerText);
+    let answerNumber = 1;
 
+    for (answerText of questions[questionIndex]['answers']){
+        // console.log(answerNumber, answerText);
         const questionTemplate = 
             `<li>
                 <label for="">
-                    <input type="radio" class="answer" name="answer">
+                    <input value="%number%" type="radio" class="answer" name="answer">
                     <span>%answer%</span>
                 </label>
             </li>`;
 
-           const answerHTML = questionTemplate.replace('%answer%', answerText);
+        // let answerHTML = questionTemplate.replace('%answer%', answerText);
         //    listContainer.innerHTML = listContainer.innerHTML + answerHTML;
         // or
-        listContainer.innerHTML += answerHTML;
 
+        const answerHTML = questionTemplate
+                                    .replace('%answer%', answerText)
+                                    .replace('%number%', answerNumber);
+        
+        listContainer.innerHTML += answerHTML;
+        answerNumber++;
     }
 
 
 } 
+
+function checkAnswer(){   
+    // Находим выбранную радио кнопку
+    const checkedRadio = listContainer.querySelector('input[type="radio"]:checked');
+    
+    // Если ответ не выбран - ничего не делаем, выходим из функции
+    if (!checkedRadio){
+        submitBtn.blur();
+        return;
+    }
+
+    // узнаем номер ответа пользователя
+
+    const userAnswer = parseInt(checkedRadio.value);
+
+    // Если ответ верный - увеличиваем счет
+    questions[questionIndex]['correct']
+    if (userAnswer === questions[questionIndex]['correct']){
+        score++;
+    }
+
+    console.log('score = ', score);
+
+    if (questionIndex !== questions.length - 1){
+        console.log('Это не последний вопрос');
+        questionIndex++;
+        clearPage();
+        showQuestion();
+    } else {
+        console.log('Это последний вопрос');
+        clearPage();
+        showResults();
+    }
+}
+
+function showResults (){
+    console.log('showResults start');
+    console.log(score);
+
+    const resultsTemplate = `
+            <h2 class="title">%title%</h2>
+            <h3 class="summary">%message%</h3>
+            <p class="result">%result%</p>
+    `;
+
+    let title, message;
+
+    if (score === 7 || score === 8 || score === 9 || score === questions.length ){
+        title = 'Вас можно поздравить! 😎';
+        message = 'Вы неоспоримый лидер! 💪';
+    } else if (score === 6 || score === 5 || score === 4){
+        title = 'Неплохой результат! 😉';
+        message = 'У Вас есть все задатки настоящего лидера! Однако есть куда стремиться! Вперед! Дерзайте 👍';
+    } else if (score === 3 || score === 2 || score === 1){
+        title = 'Стоит постараться!';
+        message = 'У Вас низкий уровень лидерский качеств. Для Вас уготована другая, более крутая роль 😇';
+    }
+
+    // Result
+    let result = `${score} из ${questions.length}`;
+
+    const finalMessage = resultsTemplate
+                        .replace('%title%', title)
+                        .replace('%message%', message)
+                        .replace('%result%', result);
+
+    headerContainer.innerHTML = finalMessage;
+
+    submitBtn.blur();
+    submitBtn.innerText = 'попробовать еще раз'
+}
