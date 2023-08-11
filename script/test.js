@@ -182,5 +182,6 @@ function showResults (){
     headerContainer.innerHTML = finalMessage;
 
     submitBtn.blur();
-    submitBtn.innerText = 'попробовать еще раз'
+    submitBtn.innerText = 'Попробовать еще раз'
+    submitBtn.onclick = () => history.go();
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тесты-опросники</title>
+    <title>Самооценка лидерства</title>
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../style/wrapper.css">
     <link rel="shortcut icon" href="../../img/favicon.svg" type="image/x-icon">
@@ -13,6 +13,14 @@
 <body>
     <div w3-include-html="../wrapper/header.html"></div>
     <main class="main" id="main">
+        <article class="page__logo">
+            <h1>Самооценка лидерства</h1>
+            <ul class="breadcrumb">
+                    <li><a href="../../index.html" class="breadcrumb__link">Главная</a> </li>
+                    <li><a href="../tests.html" class="breadcrumb__link">Тесты-опросники</a></li>
+                    <li></li>
+            </ul>
+        </article>
         <article class="quiz" id="quiz">
             <section class="quiz-header" id="quiz-header">
                 <h2 class="title">Загружаем вопрос ...</h2>
@@ -25,17 +33,17 @@
             </section>
     
             <ul class="quiz-list" id="list">
-                <li>
+                <li class="answer-item">
                     <label for="">
                         <input type="radio" class="answer" name="answer">
-                        <span>Ответ ...</span>
+                        <span class="answer-description">Ответ ...</span>
                     </label>
                 </li>
     
-                <li>
+                <li class="answer-item">
                     <label for="">
                         <input type="radio" class="answer" name="answer">
-                        <span>Ответ ... </span>
+                        <span class="answer-description">Ответ ... </span>
                     </label>
                 </li>
             </ul>

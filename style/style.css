@@ -241,15 +241,14 @@ span{
     text-align: justify;
 }
 
-input{
+/* input{
     border-radius: 5px;
     width: 500px;
     height: 40px;
     padding-left: 10px;
     border: 2px solid #029F8C;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-    /* background-color: #ffffff7a; */
-}
+} */
 
 textarea{
     border-radius: 5px;
@@ -883,25 +882,55 @@ ol{
 }
 
 .title{
-    font-size: 15px;
+    padding: 15px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #029F8C;
+    /* text-transform: uppercase; */
 }
 
-.quiz{
+.summary{
+    color: #383838;
+    font-size: 20px;
+    /* width: 400px;
+    height: 250px; */
+    padding: 0px 25px;
+}
+
+.result{
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+}
+
+.quiz-list{
+    margin: 25px 0;
+}
+
+#quiz{
     border-radius: 8px;
-    height: 300px;
-    width: 500px;
+    box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
+    /* /* height: 300px; */
+    width: 800px; 
     background-color: #ffffff;
-    /* text-align: center; */
-    /* align-items: center; */
-    justify-content: space-between;
+    margin: auto 0;
     display: flex;
     flex-direction: column;
-    padding: 15px 15px 0px 0px;
+    /* align-items: center; */
+    justify-content: space-between;
     overflow: hidden;
 }
 
 .quiz-header{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.answer-description{
+    font-size: 24px;
+    font-weight: 600;
 }
 
 ul{
@@ -913,29 +942,33 @@ ul{
 }
 
 li{
+    font-size: 25px;
+    font-weight: 600;
     list-style-type: none;
     padding: 15px;
     transition: all .5s;
     border-radius: 8px;
 }
 
-li:hover{
-    background-color: #6ffd2d75;
-}
+/* li:hover{ 
+    background-color: #f7ab1e;
+}  */
 
-button #submit{
+
+#submit{
     width: inherit;
     border: none;
     color: #fff;
     font-size: 20px;
     border-radius: 0 0 8px 8px;
-    background-color: #2d80fd;
+    background-color: #029F8C;
     padding: 20px 0;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
-button #submit:active{
-    background-color: #1edb57;
+#submit:active,
+#submit:hover{
+    background-color: #f7ab1e;
 }
 
 label{
@@ -943,3 +976,12 @@ label{
     gap: 10px;
     font-size: 20px;
 }
+
+.results{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
