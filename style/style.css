@@ -898,19 +898,26 @@ ol{
 }
 
 .result{
+    color: #f7ab1e;
     font-weight: 600;
     text-align: center;
     font-size: 25px;
 }
 
 .quiz-list{
-    margin: 25px 0;
+    /* padding-top:50px; */
+    /* margin-bottom: 50px; */
+    margin-left: 50px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #quiz{
     border-radius: 8px;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-    /* /* height: 300px; */
+    height: 300px;
     width: 800px; 
     background-color: #ffffff;
     margin: auto 0;
@@ -933,21 +940,27 @@ ol{
     font-weight: 600;
 }
 
-ul{
+/* ul{
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
     justify-content: flex-start;
-}
+} */
 
 li{
-    font-size: 25px;
-    font-weight: 600;
+    /* font-size: 50px; */
+    /* font-weight: 600; */
     list-style-type: none;
-    padding: 15px;
+    /* padding: 15px; */
     transition: all .5s;
     border-radius: 8px;
+}
+
+
+.nav__link:hover:after,
+.nav__link:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 /* li:hover{ 
