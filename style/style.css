@@ -915,6 +915,7 @@ ol{
 }
 
 #quiz{
+    background-image: url('../img/bg-copy-2-5.png');
     border-radius: 8px;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
     height: 300px;
