@@ -72,6 +72,15 @@ showQuestion();
 
 submitBtn.onclick = checkAnswer;
 
+const openInNewTab = (url) => {
+    window.open(url, target="_self");
+  }
+  const btn = document.getElementById("submit");
+  
+//   btn.addEventListener("click", () => {
+//     openInNewTab("../../tests.html");
+//   });
+
 function clearPage(){
     headerContainer.innerHTML = '';
     listContainer.innerHTML = '';
@@ -126,7 +135,8 @@ function checkAnswer(){
 
     // узнаем номер ответа пользователя
 
-    const userAnswer = parseInt(checkedRadio.value + 1);
+    const userAnswer = parseInt(checkedRadio.value);
+
     // Если ответ верный - увеличиваем счет
     questions[questionIndex]['correct']
     if (userAnswer === questions[questionIndex]['correct']){
