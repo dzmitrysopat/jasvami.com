@@ -20,7 +20,7 @@ body{
 
 .quiz{
     border-radius: 8px;
-    height: 300px;
+    /* height: 300px; */
     width: 500px;
     background-color: #ffffff;
     /* text-align: center; */

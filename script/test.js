@@ -126,8 +126,7 @@ function checkAnswer(){
 
     // узнаем номер ответа пользователя
 
-    const userAnswer = parseInt(checkedRadio.value);
-
+    const userAnswer = parseInt(checkedRadio.value + 1);
     // Если ответ верный - увеличиваем счет
     questions[questionIndex]['correct']
     if (userAnswer === questions[questionIndex]['correct']){
