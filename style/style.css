@@ -912,13 +912,14 @@ ol{
     gap: 30px;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 50px;
 }
 
 #quiz{
     background-image: url('../img/bg-copy-2-5.png');
     border-radius: 8px;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-    height: 300px;
+    /* height: 300px; */
     width: 800px; 
     background-color: #ffffff;
     margin: auto 0;
@@ -948,6 +949,7 @@ ol{
     align-items: flex-start;
     justify-content: flex-start;
 } */
+
 
 li{
     /* font-size: 50px; */
