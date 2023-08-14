@@ -97,7 +97,7 @@ h1{
     flex-direction: row;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
     border-radius: 5px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     gap: 20px;
     padding: 20px 30px;
@@ -245,16 +245,16 @@ span{
     text-align: justify;
 }
 
-/* input{
+.text{
     border-radius: 5px;
     width: 500px;
     height: 40px;
     padding-left: 10px;
     border: 2px solid #029F8C;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-} */
+}
 
-textarea{
+textarea.text{
     border-radius: 5px;
     padding: 10px;
     border: 2px solid #029F8C;
@@ -281,6 +281,7 @@ textarea{
     gap: 10px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.16) inset;
 }
 
 
@@ -366,9 +367,27 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-    color: #e96b42;
+    color: #f7ab1e;
     /* text-decoration: underline; */
 }
+
+.breadcrumb__link:after{
+    display: block;
+	/* position: absolute; */
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+	background-color: #f7ab1e; /*задаём цвет линии*/
+	content: "";
+	transition: width .2s ease-out;
+}
+
+.breadcrumb__link:hover:after,
+.breadcrumb__link:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
 
 li,p,td, .lorem{
     font-size: 18px;
@@ -539,7 +558,7 @@ hr{
 .contacts{
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    /* gap: 10px; */
     /* flex-wrap: wrap; */
 }
 
@@ -694,6 +713,8 @@ ol{
     /* background-size: 100vw; */
     background-color: #f4fcfa;
     width: 100vw;
+    box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.08) inset;
+
 }
 
 .icanhelp{
@@ -941,9 +962,36 @@ ol{
     gap: 35px;
 }
 
-.answer-description{
-    font-size: 24px;
-    font-weight: 600;
+input.answer{
+    display: none;
+    display: inline-flex;
+    line-height: 140%;
+    flex: 0 0 31px;
+    height: 31px;
+    margin-right: 10px;
+    /* border: 2px solid #f7ab1e; */
+    color: #32D4E2;
+    position: relative;
+}
+
+input.answer::before{
+    content: "";
+    line-height: 140%;
+    align-self: center;
+    flex: 0 0 25px;
+    height: 25px;
+    border: 3px solid #f7ab1e;
+    /* background-color: #fff; */
+    border-radius: 50%;
+}
+
+input.answer:checked + .input__label::after{
+    content: "";
+    position: absolute;
+    background-color: #029F8C;
+    width: 26px;
+    top: 4px;
+    left: 4px;
 }
 
 /* ul{
@@ -963,17 +1011,6 @@ li{
     transition: all .5s;
     border-radius: 8px;
 }
-
-
-.nav__link:hover:after,
-.nav__link:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
-
-/* li:hover{ 
-    background-color: #f7ab1e;
-}  */
-
 
 #submit{
     width: inherit;
@@ -1005,3 +1042,14 @@ label{
     justify-content: center;
 }
 
+form *{
+    outline: none;
+}
+
+form:focus{
+    box-shadow: 0 0 25px #029F8C;
+}
+
+input._error{
+    box-shadow: 0 0 15 red;
+}

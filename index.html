@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="./script/wrapper.js"></script>
     <script src="./script/itc-slider.js" defer></script>
-
+     <script src="./script/mail.js" defer></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -70,7 +70,8 @@
                 </section>
 
                 <section class="btns">
-                    <button type="button" id="consultation" class="btn">Получить консультацию</button>
+                    <a href="./index.html#contact__form"><button type="button" id="consultation" class="btn">Получить консультацию</button></a>
+                    
                     <!-- <button type="button" id="more__information" class="btn"> -->
                         <a href="./index.html#howicanhelp"><button type="button" id="more__information" class="btn">Узнать больше</button></a>
                         <!-- </button> -->
@@ -80,19 +81,19 @@
                     <a href="./pages/howitworks.html" class="experience">
                         <h3 class="big__number">5+</h3>
                         <div class="lil__line"></div>
-                        <p class="lil-description">Лет <br> опыта работы</p>
+                        <p class="lil-description">Лет опыта работы</p>
                     </a>
         
-                    <a class="experience">
+                    <a href="./index.html#first__slider" class="experience">
                         <h3 class="big__number">10+</h3>
                         <div class="lil__line"></div>        
-                        <p class="lil-description">Сертификатов и дипломов <br> по специальности</p>
+                        <p class="lil-description">Сертификатов и дипломов по специальности</p>
                     </a>
         
                     <a href="./pages/clients/clients.html" class="experience">
                         <h3 class="big__number">100+</h3>
                         <div class="lil__line"></div>
-                        <p class="lil-description">Пациентов, <br> которым оказана помощь</p>
+                        <p class="lil-description">Пациентов, которым оказана помощь</p>
                     </a>
          
                 </section>
@@ -140,7 +141,7 @@
         </article>
 
 
-    <section class="second__slider">
+    <section class="second__slider" id="first__slider">
         <h2 class="green__name">Обучающие курсы и курсы повышения квалификации</h2>
         <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
             <div class="itc-slider-wrapper">
@@ -194,26 +195,26 @@
                     <div class="for__lil__text">
                 <section class="input__contact">
                     <label for="">Ваше Имя:</label>
-                    <input type="text" class="text" placeholder="Как к вам обращаться">
+                    <input type="text" id="formName" class="text _req" placeholder="Как к вам обращаться" required>
                 </section>
     
                 <section class="input__contact">
                     <label for="" >Телефон для связи:</label>
-                    <input type="tel" class="text" placeholder="Укажите номер телефона" required>
+                    <input type="tel" id="formTel" class="text _req _tel" placeholder="Укажите номер телефона" required>
                 </section>
         
                 <section class="input__contact">
                     <label for="">Психологический запрос :</label>
-                    <input type="text" class="text" placeholder="Ваш вопрос (тема/проблема)">
+                    <input type="text" id="formAbout" class="text _req" placeholder="Ваш вопрос (тема/проблема)" required>
                 </section>
     
             </div>
                 <div class="for__big__text">
                     <section class="input__contact">
                         <label for="">Желаемое время и формат:</label>
-                        <textarea class="text" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea class="text" id="formOptions" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
                     </section>
-                    <button type="button" id="consultation" class="btn">Отправить запрос</button>
+                    <button type="button" id="consultation submit" class="btn submit">Отправить запрос</button>
                 </div>
                
             </fieldset>

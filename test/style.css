@@ -1,0 +1,146 @@
+/* *,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+} */
+
+form{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid #004673;
+    border-radius: 25px;
+    width: 500px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+}
+
+form *{
+    outline: 0;
+}
+
+.form__body{
+    position: relative;
+}
+
+.form__body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0047734d url('./loading-loading-forever.gif') center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+button{
+    width: inherit;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #004673;
+    border: none;
+    color: #fff;
+    transition: all .5s;
+    box-shadow: 2px 5px 0px #161b134b;
+}
+
+button:active,
+button:hover{
+    background-color: #fff;
+    color: #004673;
+    border: 2px solid #004673;
+}
+
+button:active{
+    scale: 0.95;
+}
+
+.form__title{
+    text-align: center;
+}
+.form__item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* display: block; */
+    font-size: 20px;
+}
+
+.form__input{
+    height: 30px;
+    padding-left: 15px;
+    border-radius: 25px;
+    border: 2px solid #004673;
+    font-size: 18px;
+}
+
+.form__input:focus{
+    box-shadow: 0 0 15px #004673;
+}
+
+.form__input._error{
+    box-shadow: 0 0 15px red;
+}
+
+.textarea{
+    height: 150px;
+    padding: 15px;
+    resize: vertical;
+}
+
+.checkbox__label{
+    font-size: 17px;
+    line-height: 140%;
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox._error .checkbox__label::before{
+    box-shadow: 0 0 15px red;
+}
+
+.checkbox__input{
+    display: none;
+}
+
+.checkbox__input:checked + .checkbox__label::after{
+    transform: scale(1);
+}
+
+.checkbox__label::before{
+    content: "";
+    flex: 0 0 24px;
+    /* width: 24px; */
+    height: 24px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #004673;
+}
+
+.checkbox__label::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-color: #004673;
+    border-radius: 4px;
+    top: 4px;
+    left: 4px;
+    transform: scale(0);
+    transition: all .3s ease 0s;
+}
