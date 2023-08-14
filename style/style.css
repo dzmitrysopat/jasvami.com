@@ -105,6 +105,10 @@ h1{
     background-image: url(../img/bg-copy-2-5.png);
 }
 
+.big__number{
+    color: #029F8C;
+}
+
 .offers{
     display: flex;
     /* gap: 0px; */
@@ -708,7 +712,7 @@ ol{
 
 .lil-description{
     padding-top: 10px;
-    border-top: 3px solid #f7ab1e;
+    border-top: 3px solid #029F8C;
 }
 
 .courses{
