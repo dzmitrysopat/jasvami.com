@@ -1,7 +1,7 @@
 "use strict"
 
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contact__form');
+    const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
 
     async function formSend(e){
@@ -9,10 +9,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let error = formValidate(form);
 
-        if (error === 0){
+        // let formData = new FormData(form);
 
+        if (error === 0){
+            form.classList.add('_sending');
+            let response = await fetch ('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok){
+                let result = await response.json();
+                alert(result.message);
+                formPreview.innerHTML = '';
+                form.reset();
+                form.classList.remove('_sending');
+            }else{
+                alert("Что-то пошло не так 😔");
+            }
         }else{
-            alert('Заполните обязательные поля');
+            alert('Пожалуйста, проверьте, что вы заполнили все поля');
         }
     }
 
@@ -24,14 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
             const input = formReq[index];
             formRemoveError(input);
         
-            if(input.classList.contains('_tel')){
-                 if (input.value === ''){
+            if (input.getAttribute("type") === "checkbox" && input.checked === false){
+                formAddError(input);
+                error++;
+            } else{
+                if (input.value === ''){
                     formAddError(input);
                     error++;
-                 };
+                }
             }
         }
+        return error;
     }
+
+
     function formAddError(input){
         input.parentElement.classList.add('_error');
         input.classList.add('_error');

@@ -9,7 +9,7 @@
 <body>
     <div class="wrapper">
         <div class="form">
-            <form action="#" id="form" class="form__body">
+            <form action="sendmail.php" id="form" class="form__body">
                 <h1 class="form__title">Запись на консультацию</h1>
                 <div class="form__item">
                     <label for="formName" class="form__label">Имя*:</label>
