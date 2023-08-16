@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Запрос отправлен</title>
+</head>
+    <script src="./script/wrapper.js"></script>
+
+<body>
+    <div w3-include-html="./pages/wrapper/header.html"></div>
+   
+    <main id="main" class="main fourzerofour">
+
+        <section class="error__page">
+
+            <div class="notfound__description">
+
+                <br>
+                <br>
+                <br>
+                <div class="line"></div>
+                <br>
+                <article class="error__description">
+                    Спасибо! Ваш запрос отправлен!
+                </article>
+                <br>
+                <article class="error__description">
+                   Как только я увижу письмо, я сразу же с Вами свяжусь!
+                </article>
+                <br>
+                <div class="line"></div>
+                <br>
+                <br>
+                <br>
+                <a href="./index.html" class="btn">Вернуться на главную</a>
+            </div>
+
+            <img id="not__found" alt="" class="error-img">
+            <!-- <article class="error">
+                404
+            </article> -->
+            
+        </section>
+
+    </main>
+
+    <div w3-include-html="./pages/wrapper/footer.html"></div>
+    <script src="./script/theme.js"></script>
+
+    <script>
+        includeHTML();
+    </script>
+
+    
+    <script>
+        let imgs = ['img/mail/mail01-green.png', 
+        'img/mail/mail01-orange.png', 
+        'img/mail/mail02-green.png', 
+        'img/mail/mail02-orange.png',
+        'img/mail/mail03-green.png', 
+        'img/mail/mail03-orange.png',
+        'img/mail/mail04-green.png', 
+        'img/mail/mail04-orange.png',
+        'img/mail/mail05-green.png', 
+        'img/mail/mail05-orange.png',
+        'img/mail/mail06-green.png', 
+        'img/mail/mail06-orange.png',
+        'img/mail/mail07-green.png', 
+        'img/mail/mail07-orange.png',
+        'img/mail/mail08-green.png', 
+        'img/mail/mail08-orange.png',
+        'img/mail/mail09-green.png', 
+        'img/mail/mail09-orange.png',
+        'img/mail/mail010-green.png', 
+        'img/mail/mail010-orange.png',
+        'img/mail/mail011-green.png', 
+        'img/mail/mail011-orange.png',
+        'img/mail/mail012-green.png', 
+        'img/mail/mail012-orange.png',
+        'img/mail/mail013-green.png', 
+        'img/mail/mail013-orange.png',
+        'img/mail/mail014-green.png', 
+        'img/mail/mail014-orange.png',
+        'img/mail/mail015-green.png', 
+        'img/mail/mail015-orange.png',
+        'img/mail/mail016-green.png', 
+        'img/mail/mail016-orange.png',
+        'img/mail/mail017-green.png', 
+        'img/mail/mail017-orange.png',
+        'img/mail/mail018-green.png', 
+        'img/mail/mail018-orange.png',
+        'img/mail/mail019-green.png', 
+        'img/mail/mail019-orange.png',
+        'img/mail/mail020-green.png', 
+        'img/mail/mail020-orange.png',
+        'img/mail/mail021-green.png', 
+        'img/mail/mail021-orange.png',
+        'img/mail/mail022-green.png', 
+        'img/mail/mail022-orange.png',
+        'img/mail/mail023-green.png', 
+        'img/mail/mail023-orange.png']; //   Добавьте свои картинки через запятую
+        let i = Math.floor(Math.random() * imgs.length);
+        let not__found = document.getElementById("not__found");
+        imgsrc('img/error'); // Первоначальное заполнение картинки
+        not__found.window.onload = imgsrc;
+        function imgsrc() {
+            not__found.src = imgs[i]; // Увеличить индекс лучше потом
+            if (++i === imgs.length) i = 0;
+        }
+    </script>
+        <script src="./script/snow.js"></script>
+</body>
+</html>

@@ -191,31 +191,35 @@
 </article>
 
         <article>
-            <form action="sendmail.php" id="contact__form">
+            <form action="https://formsubmit.co/dzmitrysopat@gmail.com" method="POST">
                 <fieldset class="fieldset" id="fieldset">
                     <div class="for__lil__text">
                 <section class="input__contact">
                     <label for="">Ваше Имя:</label>
-                    <input type="text" id="formName" class="text _req" placeholder="Как к вам обращаться" required>
+                    <input type="text" id="formName" name="Имя" class="text _req" placeholder="Как к вам обращаться" required>
                 </section>
     
                 <section class="input__contact">
                     <label for="" >Телефон для связи:</label>
-                    <input type="tel" id="formTel" class="text _req _tel" placeholder="Укажите номер телефона" required>
+                    <input type="tel" id="formTel" name="Телефон" class="text _req _tel" placeholder="Укажите номер телефона" required>
                 </section>
         
                 <section class="input__contact">
                     <label for="">Психологический запрос :</label>
-                    <input type="text" id="formAbout" class="text _req" placeholder="Ваш вопрос (тема/проблема)" required>
+                    <input type="text" id="formAbout" name="Психологический запрос" class="text _req" placeholder="Ваш вопрос (тема/проблема)" required>
                 </section>
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/mail.html">
     
             </div>
                 <div class="for__big__text">
                     <section class="input__contact">
                         <label for="">Желаемое время и формат:</label>
-                        <textarea class="text" id="formOptions" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
+                        <textarea class="text" id="formOptions" name="Желаемое время и формат:" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
                     </section>
-                    <button type="button" id="consultation submit" class="btn submit">Отправить запрос</button>
+                    <button type="submit" id="consultation submit" class="btn submit">Отправить запрос</button>
                 </div>
                
             </fieldset>
