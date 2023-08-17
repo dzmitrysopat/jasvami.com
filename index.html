@@ -79,7 +79,7 @@
                         <!-- </button> -->
                 </section>
 
-                <section class="numbers">
+                <!-- <section class="numbers">
                     <a href="./pages/howitworks.html" class="experience">
                         <h3 class="big__number">5+</h3>
                         <div class="lil__line"></div>
@@ -98,7 +98,7 @@
                         <p class="lil-description">Пациентов, которым оказана помощь</p>
                     </a>
          
-                </section>
+                </section> -->
             </section>
         </article>
         
@@ -146,22 +146,34 @@
         <h2 class="green__name">Обучающие курсы и курсы повышения квалификации</h2>
         <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
             <div class="itc-slider-wrapper">
-                
               <div class="itc-slider-items">
-               <img src="./img/diplomas/art_therapy.webp" alt="" class="itc-slider-item">
-               <img src="./img/diplomas/art_therapy_02.webp" alt="" class="itc-slider-item">
-               <img src="./img/diplomas/centr_metafora.webp" alt="" class="itc-slider-item">
-               <img src="./img/diplomas/Cognitive_therapy.webp" alt="" class="itc-slider-item">
-               <img src="./img/diplomas/fairytale_therapy.webp" alt="" class="itc-slider-item">
-               <img src="./img/diplomas/Lomonosow_MGU.webp" alt="" class="itc-slider-item">
-               <img src="img/diplomas/Positive_psychology.webp  " alt="" class="itc-slider-item">
-               <img src="img/diplomas/Psyhological_first_aid.webp" alt="" class="itc-slider-item">
-               <img src="./img/diplomas/sport_support.webp" alt="" class="itc-slider-item">
+                <img src="./img/diplomas/art_therapy.webp" alt="" class="itc-slider-item"> 
+                <img src="./img/diplomas/art_therapy_02.webp" alt="" class="itc-slider-item">
+                <img src="./img/diplomas/centr_metafora.webp" alt="" class="itc-slider-item">
+                <img src="./img/diplomas/Cognitive_therapy.webp" alt="" class="itc-slider-item">
+                <img src="./img/diplomas/fairytale_therapy.webp" alt="" class="itc-slider-item">
+                <img src="./img/diplomas/Lomonosow_MGU.webp" alt="" class="itc-slider-item">
+                <img src="img/diplomas/Positive_psychology.webp" alt="" class="itc-slider-item">
+                <img src="img/diplomas/Psyhological_first_aid.webp" alt="" class="itc-slider-item">
+                <img src="./img/diplomas/sport_support.webp" alt="" class="itc-slider-item">
             </div>
             <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
             <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
           </div>
         </section>
+
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/diplomas/art_therapy.webp" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
 
 <article class="howicanhelp">
     <section class="second__slider">
@@ -190,7 +202,7 @@
     </section>
 </article>
 
-        <articlec id="getHelp" class="second__slider">
+        <article id="getHelp" class="second__slider">
             <h2 class="green__name">Получить консультацию</h2>
             <form action="https://formsubmit.co/d78ab57f4bc631a343e894d1dc4bbb76" method="POST">
                 <fieldset class="fieldset" id="fieldset">
@@ -225,7 +237,7 @@
                
             </fieldset>
             </form>
-        </articlec>
+        </article>
 
     </main>
 
@@ -235,9 +247,11 @@
         includeHTML();
     </script>
         <!-- <script src="./script/snow.js"></script> -->
-        <script>
+        <!-- <script>
             window.history.replaceState({}, null, '/');
-        </script>
+        </script> -->
+
+        <script src="./script/script.js"></script>
 </body>
 
 </html>
