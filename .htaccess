@@ -2,5 +2,5 @@ AddDefaultCharset UTF-8
 AddCharset UTF-8 .html
 AddCharset UTF-8 .php
 
-ErrorDocument 404 http://yasvami.by/error.html
+ErrorDocument 404 error.html
 
