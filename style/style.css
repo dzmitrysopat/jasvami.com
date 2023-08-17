@@ -315,7 +315,7 @@ textarea.text{
     justify-content:space-evenly;
     /* gap: 20px; */
     padding: 10px;
-    width: 280px;
+    /* width: 280px; */
     /* border: 1px solid #e96b42; */
     transition: all 0.7s;
     border-radius: 5px;
@@ -327,7 +327,7 @@ textarea.text{
 } 
 
 .client__img{
-    /* width: 292px; */
+    width: 260px;
 }
 
 .client__name{
@@ -442,12 +442,16 @@ td:nth-child(1){
 
 
 
-/* .tests{
-    justify-content: space-between;
-} */
+.tests{
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: space-between; */
+}
 
 .test{
-    width: 375px;
+    /* width: 375px; */
     /* gap: 10px; */
     border-radius: 5px; 
     opacity: 0.7;
