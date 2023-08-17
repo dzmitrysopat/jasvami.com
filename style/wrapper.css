@@ -83,8 +83,8 @@ nav{
 }
 
 .nav__link:hover:after,
-.nav__link:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+.nav__link:focus:after{
+	width: 102%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 /* .nav__link:nth-child(3):hover:after,
@@ -99,10 +99,15 @@ nav{
     text-align: center;
     text-decoration: none;
     padding: 15px 25px;
-    border: none;
+    /* border: none; */
     border-bottom: 2px solid #e0e0e0;
     color: #fff;
-    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown{
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown .dropbtn{
@@ -111,23 +116,24 @@ nav{
     padding: 15px 25px;
     background-color: inherit;
     border: none;
-    border-bottom: 2px solid #e0e0e0;
+    /* border-bottom: 2px solid #e0e0e0; */
     cursor: pointer;
     z-index: 100;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    border-bottom: 2px solid #26aba3;
-}
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+    border-bottom: 2px solid #029F8C;
+} */
 
 .dropdown-content{
+    /* margin-top: 10px; */
     z-index: 1;
     display: none;
     position: absolute;
-    background-color: #ddd;
-    border-radius: 0 0 10px 10px;
+    /* background-color: #ddd; */
+    background-color: #029F8C;
     box-shadow: 0 8px 16px 0px #00000033;
-    z-index: 100;
+    z-index: 2;
 }
 
 .dropdown-content a{
@@ -137,18 +143,17 @@ nav{
     text-decoration: none;
     color: #383838;
     background-color: #f2f2f2;
-    padding: 5px;
+    padding: 10px;
+    /* border-bottom: 3px solid #f2f2f2; */
     width: 190px;
-}
-
-.dropbtn, .link__btn{
-    transition: 0.3s;
+    font-size: 20px;
+    transition: all .3s;
 }
 
 .dropdown-content a:hover{
     color: #fff;
-    background-color: #26aba3;;
-    border: none;
+    background-color: #029F8C;
+    /* border-bottom: 3px solid #f7ab1e; */
 }
 
 .dropdown:hover .dropdown-content{
@@ -156,7 +161,7 @@ nav{
 }
 
 .last__link{
-    border-radius: 0 0 10px 10px;
+    border-bottom: 0px;
 }
 
 .tablet__menu{
@@ -323,7 +328,6 @@ a{
     text-decoration: none;
     border: none;
     font-size: 15px;
-    transition: all 1s;
 }
 
 a:hover{

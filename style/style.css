@@ -397,6 +397,12 @@ li,p,td, .lorem{
     /* font-weight: 600; */
 }
 
+.lorem{
+    padding: 20px 0;
+    border-bottom: 3px solid #029F8C;
+    border-top: 3px solid #029F8C;
+}
+
 .numered__lists{
     display: flex;
     flex-direction: row;
