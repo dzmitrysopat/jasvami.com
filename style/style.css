@@ -292,8 +292,9 @@ textarea.text{
     font-family: Pacifico, cursive;
     font-size: 25px;
     font-weight: 100;
-    text-align: right;
+    /* text-align: right; */
     justify-self: end;
+    color: #029F8C;
 }
 
 .clients{
