@@ -395,6 +395,7 @@ ul.breadcrumb li a:hover {
 li,p,td, .lorem{
     font-size: 18px;
     text-align: justify;
+    /* text-indent: 20px; */
     /* font-weight: 600; */
 }
 
