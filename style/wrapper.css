@@ -20,7 +20,8 @@ body{
 
 /* Header style */
 header{
-    position: relative;
+    position: fixed;
+    /* position: relative; */
     margin: 0 auto;
     width: 100%;
     /* max-width: 1200px; */
@@ -32,7 +33,8 @@ header{
     /* align-items: flex-start; */
     /* justify-content:; */
     box-shadow: 0px 10px 10px 0px rgba(5, 5, 5, 0.2);
-    /* z-index: 2; */
+    z-index: 2;
+    top: 0;
     /* position: relative; */
 }
 
