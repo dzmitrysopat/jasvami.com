@@ -113,8 +113,8 @@ h1{
     /* color: #f7ab1e; */
     color: #029F8C;
     font-size: 60px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid #029F8C;
+    /* padding-bottom: 15px; */
+    /* border-bottom: 3px solid #029F8C; */
 }
 
 .offers{
@@ -748,7 +748,7 @@ ol{
 
 .lil-description{
     padding-top: 10px;
-    /* border-top: 3px solid #f7ab1e; */
+    border-top: 3px solid #029F8C;
 }
 
 .courses{
@@ -1200,28 +1200,37 @@ input._error{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    gap: 50px;
-        box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
-
+    /* gap: 30px; */
+    box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
 }
 
 .price__item, .consultation__name{
     /* color: #fff; */
+    font-size: 20px;
 }
 
 .price-list{
-    padding: 15px 0;
-    border-top: 3px solid #f7ab1e;
-    border-bottom: 3px solid #f7ab1e;
+    padding: 0;
+    /* border-top: 3px solid #f7ab1e; */
+    /* border-bottom: 3px solid #f7ab1e; */
+    margin-top: 70px;
+    margin-bottom: 50px;
+    gap: 15px;
 }
 
 .consultation__name{
     text-transform: uppercase;
     font-size: 30px;
     color: #029F8C;
+    /* margin-bottom: 50px; */
     border-bottom: 3px solid #029F8C;
+    /* line-height: 40px; */
 }
 
 .money{
     text-align: left;
+    margin-bottom: 30px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
 }
