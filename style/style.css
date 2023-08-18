@@ -1287,7 +1287,7 @@ input._error{
 
 .lorem__ipsum{
     font-size: 20px;
-    padding-left: 20px;
+    /* padding-left: 10px; */
     /* margin-left: 20px; */
     /* border-left: 5px solid #029F8C; */
 }
