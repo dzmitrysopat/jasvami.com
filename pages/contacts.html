@@ -112,37 +112,40 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A67d1e092523e53c38dd1c98d154298ef7fa58b4ca3be46853dd99d27c06a4fbe&amp;width=600&amp;height=370&amp;lang=ru_RU&amp;scroll=true"></script>        </div>
             </article>
 
-        <button type="button" id="consultation" class="btn">Записаться на консультацию</button>
-        <!-- <form action="" id="contact__form">
-            <fieldset class="fieldset" id="fieldset">
-                <div class="for__lil__text">
-            <section class="input__contact">
-                <label for="">Ваше Имя:</label>
-                <input type="text" class="text" placeholder="Как к вам обращаться">
-            </section>
-
-            <section class="input__contact">
-                <label for="" >Телефон для связи:*</label>
-                <input type="tel" class="text" placeholder="Укажите номер телефона" required>
-            </section>
-
-           
-
-            <section class="input__contact">
-                <label for="">Психологический запрос :</label>
-                <input type="text" class="text" placeholder="Ваш вопрос (тема/проблема)">
-            </section>
-
-        </div>
-            <div class="for__big__text">
+        <!-- <button type="button" id="consultation" class="btn">Записаться на консультацию</button> -->
+            <form action="https://formsubmit.co/d78ab57f4bc631a343e894d1dc4bbb76" method="POST">
+                <fieldset class="fieldset" id="fieldset">
+                    <div class="for__lil__text">
                 <section class="input__contact">
-                    <label for="">Желаемое время и формат:</label>
-                    <textarea class="text" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Ваше Имя:</label>
+                    <input type="text" id="formName" name="Имя" class="text _req" placeholder="Как к вам обращаться" required>
                 </section>
-                <button type="button" id="consultation" class="btn">Отправить запрос</button>
+    
+                <section class="input__contact">
+                    <label for="" >Телефон для связи:</label>
+                    <input type="tel" id="formTel" name="Телефон" class="text _req _tel" placeholder="Укажите номер телефона" required>
+                </section>
+        
+                <section class="input__contact">
+                    <label for="">Психологический запрос :</label>
+                    <input type="text" id="formAbout" name="Психологический запрос" class="text _req" placeholder="Ваш вопрос (тема/проблема)" required>
+                </section>
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/mail.html">
+    
             </div>
-        </fieldset>
-        </form> -->
+                <div class="for__big__text">
+                    <section class="input__contact">
+                        <label for="">Желаемое время и формат:</label>
+                        <textarea class="text" id="formOptions" name="Желаемое время и формат:" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
+                    </section>
+                    <button type="submit" id="consultation" class="btn">Отправить запрос</button>
+                </div>
+               
+            </fieldset>
+            </form>
     </section>
     </main>
     <div w3-include-html="./wrapper/footer.html"></div>
