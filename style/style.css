@@ -244,11 +244,11 @@ h3{
 }
 
 h2{
-     /* font-family: 'caveat', cursive; */
+     font-family: 'caveat', cursive;
     /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; */
     color: #f7ab1e;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 span{
@@ -1267,7 +1267,7 @@ input._error{
 }
 
 .consultation__name{
-    font-family: 'caveat', cursive;
+    /* font-family: 'caveat', cursive; */
     text-transform: uppercase;
     font-size: 30px;
     color: #029F8C;
