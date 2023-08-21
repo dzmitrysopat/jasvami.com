@@ -95,6 +95,18 @@ function showQuestion(){
     const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
     headerContainer.innerHTML = title;
 
+    const questionTemplate = `<p class="result">%number% из </p>`;
+    const number = questionTemplate.replace('%number%', questionIndex+1);
+    questionTemplate.innerHTML = number;
+
+    let result = `${number} из ${questions.length}`;
+
+    // const finalMessage = resultsTemplate
+                        // .replace('%title%', title)
+                        // .replace('%message%', message)
+                        // .replace('%result%', result);
+
+
     // Answers
     let answerNumber = 1;
 

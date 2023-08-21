@@ -1021,7 +1021,6 @@ input.answer{
     height: 31px;
     margin-right: 10px;
     /* border: 2px solid #f7ab1e; */
-    color: #32D4E2;
     position: relative;
 }
 
@@ -1044,6 +1043,7 @@ input.answer:checked + .input__label::after{
     top: 4px;
     left: 4px;
 }
+
 
 /* ul{
     display: flex;
@@ -1317,7 +1317,7 @@ input._error{
     transition: all 1s;
     /* text-decoration: underline; */
     color: #029F8C;
-    font-size: 30px;
+    font-size: 35px;
     /* text-align: left; */
     font-weight: 700;
 }
