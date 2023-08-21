@@ -289,7 +289,7 @@ textarea.text{
     background-size: auto;
     background-image: url(../img/bg-copy-2-5.png);
     display: flex;
-    padding: 50px 380px;
+    padding: 100px 380px 50px;
     flex-direction: column;
     justify-content: flex-start;
     /* align-items: ; */
