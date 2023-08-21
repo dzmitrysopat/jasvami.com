@@ -285,9 +285,9 @@ textarea.text{
     background-image: url(../img/bg-copy-2-5.png);
     display: flex;
     padding: 50px 380px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: ; */
     box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.16) inset;
 }
 
@@ -354,7 +354,7 @@ ul.breadcrumb {
 /* Display list items side by side */
 ul.breadcrumb li {
     display: inline;
-    font-size: 16px;
+    font-size: 14px;
     /* font-weight: 600; */
 }
 
@@ -367,10 +367,11 @@ ul.breadcrumb li+li:before {
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    /* font-weight: 600; */
     color: #029F8C;
     text-decoration: none;
+    transition: all .2s;
 }
 
 /* Add a color on mouse-over */
@@ -379,16 +380,6 @@ ul.breadcrumb li a:hover {
     /* text-decoration: underline; */
 }
 
-.breadcrumb__link:after{
-    display: block;
-	/* position: absolute; */
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 3px; /*задаём ширину линии*/
-	background-color: #f7ab1e; /*задаём цвет линии*/
-	content: "";
-	transition: width .2s ease-out;
-}
 
 .breadcrumb__link:hover:after,
 .breadcrumb__link:focus:after {
@@ -693,7 +684,7 @@ legend{
 .button-1:hover:before {
     transform: translate(4px, 4px);
 }
-/* 
+
 ol{
     counter-reset: myCounter;
   }
@@ -701,7 +692,7 @@ ol{
  ol li{
     list-style: none;
     line-height: 20px;
-    margin: 0 0 8px 0;
+    margin: 0 0 8px 0px;
   }
   
   ol li:before {
@@ -715,9 +706,9 @@ ol{
     height: auto;
     width: auto;
     margin: 0 10px 0 0;
-    padding: 5px 10px;
+    padding: 8px 13px;
     border-radius: 50%;
-} */
+}
 
 .howicanhelp{
     padding: 25px 0;
