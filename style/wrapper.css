@@ -27,7 +27,7 @@ header{
     /* max-width: 1200px; */
     height: 100px;
     background: #fff;
-    /* background: linear-gradient(135deg,#029F8C 85%,  #f7ab1e 70%); */
+    /* background: linear-gradient(135deg,#fff 85%,  #029F8C 70%); */
     display: flex;
     flex-direction: row;
     /* align-items: flex-start; */
@@ -35,6 +35,7 @@ header{
     box-shadow: 0px 10px 10px 0px rgba(5, 5, 5, 0.2);
     z-index: 2;
     top: 0;
+    padding-left: 5%;
 }
 
 .logotype{
@@ -64,8 +65,8 @@ header{
 
 /* menu style */
 nav{
-    padding: 35px 0;
-    margin: 0 35%;
+    padding: 40px 0 0 0;
+    margin-left: 35%;
     position: absolute;
     align-items: center;
     display: flex;
@@ -73,7 +74,7 @@ nav{
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     gap: 30px;
-    width: 700px;
+    /* width: 700px; */
 }
 
 .nav__link{
@@ -360,9 +361,9 @@ a:hover{
 } */
 
 .copyright{
-    font-family: Pacifico, cursive;
-    /* font-size: 5px; */
-    font-weight: 100;
+    font-family: 'caveat', cursive;
+    font-size: 20px;
+    font-weight: 700;
     color: #fff;
     display: flex;
     justify-self:flex-end;
