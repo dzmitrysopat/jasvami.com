@@ -985,9 +985,9 @@ ol{
     /* margin-bottom: 50px; */
     /* margin-left: 50px; */
     display: flex;
-    gap: 30px;
+    gap: 50px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     /* gap: 30px; */
     flex-wrap: wrap;
     padding: 50px;
