@@ -25,9 +25,9 @@ header{
     /* margin: 0 auto; */
     width: 100vw;
     /* max-width: 1200px; */
-    height: 60px;
-    /* background: #029F8C; */
-    background: linear-gradient(135deg,#029F8C 85%,  #f7ab1e 70%);
+    height: 100px;
+    background: #fff;
+    /* background: linear-gradient(135deg,#029F8C 85%,  #f7ab1e 70%); */
     display: flex;
     flex-direction: row;
     /* align-items: flex-start; */
@@ -48,7 +48,7 @@ header{
 }
 
 .logo__header{
-    width: 250px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     /* gap: 20px; */
@@ -57,14 +57,15 @@ header{
 .site_name{
     /* font-family: 'Pacifico', cursive; */
     font-family: 'caveat', cursive;
-    color: #fff;
+    /* color: #fff; */
+    color: #029F8C;
     font-size: 30px;
 }
 
 /* menu style */
 nav{
-    padding: 20px 0;
-    margin: 0 30%;
+    padding: 35px 0;
+    margin: 0 35%;
     position: absolute;
     align-items: center;
     display: flex;
@@ -72,11 +73,14 @@ nav{
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     gap: 30px;
+    width: 700px;
 }
 
 .nav__link{
+    /* font-family: 'caveat', cursive; */
     font-size: 18px;
     text-transform: uppercase;
+    color: #029F8C;
     /* font-weight: 600; */
 }
 
@@ -111,12 +115,14 @@ nav{
     /* border: none; */
     border-bottom: 2px solid #e0e0e0;
     color: #fff;
+    
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown{
     position: relative;
     display: inline-block;
+    
 }
 
 .dropdown .dropbtn{
@@ -155,7 +161,7 @@ nav{
     padding: 10px;
     /* border-bottom: 3px solid #f2f2f2; */
     width: 190px;
-    font-size: 20px;
+    font-size: 18px;
     transition: all .3s;
 }
 

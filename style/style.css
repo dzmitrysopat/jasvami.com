@@ -8,11 +8,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* font-family: 'caveat', cursive; */
     font-family: "Open Sans", sans-serif;
     /* font-weight: 600; */
     /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 16px;
     color: #383838;
+
 }
 
 
@@ -33,6 +35,7 @@ body{
 }
 
 .main{
+    
     width: 100%;
     max-width: 1200px;
     /* margin-top: 60px; */
@@ -241,7 +244,8 @@ h3{
 }
 
 h2{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+     font-family: 'caveat', cursive;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; */
     color: #f7ab1e;
     font-weight: 600;
     font-size: 40px;
@@ -348,7 +352,8 @@ textarea.text{
 
 /* Style the list */
 ul.breadcrumb {
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'caveat', cursive;
+    /* font-family: 'OpenSans', sans-serif; */
     padding: 5px 2px;
     list-style: none;
     display: flex;
@@ -360,6 +365,7 @@ ul.breadcrumb {
 
 /* Display list items side by side */
 ul.breadcrumb li {
+    font-family: 'caveat', cursive;
     display: inline;
     font-size: 14px;
     /* font-weight: 600; */
@@ -376,11 +382,12 @@ ul.breadcrumb li+li:before {
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-    font-size: 15px;
+    font-size: 25px;
     /* font-weight: 600; */
     color: #029F8C;
     text-decoration: none;
     transition: all .2s;
+    font-family: 'caveat', cursive;
 }
 
 /* Add a color on mouse-over */
@@ -398,10 +405,11 @@ ul.breadcrumb li a:hover {
 
 
 li,p,td, .lorem{
-    font-size: 18px;
+    font-size: 22px;
     text-align: justify;
     /* text-indent: 20px; */
     /* font-weight: 600; */
+    /* font-family: 'caveat', cursive; */
 }
 
 .lorem{
@@ -1235,6 +1243,7 @@ input._error{
 }
 
 .consultation__name{
+    font-family: 'caveat', cursive;
     text-transform: uppercase;
     font-size: 30px;
     color: #029F8C;
@@ -1244,6 +1253,7 @@ input._error{
 }
 
 .money{
+    
     text-align: left;
     margin-bottom: 30px;
     /* display: flex; */
@@ -1274,6 +1284,7 @@ input._error{
     box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.1);
     /* border: 3px solid #029F8C; */
     transition: all 1s;
+    
 }
 
 
