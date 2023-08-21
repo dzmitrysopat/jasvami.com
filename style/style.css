@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Pacifico&family=Raleway:wght@500&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Open+Sans:wght@300;400;500;600&family=Pacifico&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
 
 *{
@@ -67,9 +68,9 @@ body{
 }
 h1{
     color: #029F8C;
-    /* font-family: cursive; */
+    font-family: caveat, cursive;
     /* font-family: 'Pacifico', cursive; */
-    /* font-weight: 600; */
+    font-weight: 700;
     font-size: 50px;
     /* width: 450px; */
 }
@@ -292,9 +293,10 @@ textarea.text{
 }
 
 .author{
-    font-family: Pacifico, cursive;
+    font-family: caveat, cursive;
+    /* font-family: Pacifico, cursive; */
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 700;
     /* text-align: right; */
     justify-self: end;
     color: #029F8C;
@@ -368,8 +370,8 @@ ul.breadcrumb li+li:before {
     padding: 5px;
     color: #029F8C;
     /* color: #494949; */
-    /* content: "»"; */
-    content: "/";
+    content: "»";
+    /* content: "/"; */
 }
 
 /* Add a color to all links inside the list */
@@ -713,8 +715,9 @@ ol{
     height: auto;
     width: auto;
     margin: 0 10px 0 0;
-    padding: 8px 13px;
+    padding: 7px 13px;
     border-radius: 50%;
+    font-size: 20px;
 }
 
 
