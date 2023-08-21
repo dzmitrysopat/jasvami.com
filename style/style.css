@@ -326,8 +326,13 @@ textarea.text{
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
 }
 
+.gray{
+    filter: grayscale(1);
+}
+
 .about__client:hover{ 
     scale: 1.05;
+    /* filter: grayscale(0); */
 } 
 
 .client__img{
@@ -361,8 +366,10 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
     padding: 5px;
-    color: #494949;
-    content: "»";
+    color: #029F8C;
+    /* color: #494949; */
+    /* content: "»"; */
+    content: "/";
 }
 
 /* Add a color to all links inside the list */
@@ -709,6 +716,7 @@ ol{
     padding: 8px 13px;
     border-radius: 50%;
 }
+
 
 .howicanhelp{
     padding: 25px 0;
