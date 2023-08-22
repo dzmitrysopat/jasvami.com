@@ -35,7 +35,6 @@ body{
 }
 
 .main{
-    
     width: 100%;
     max-width: 1200px;
     /* margin-top: 60px; */
@@ -45,7 +44,7 @@ body{
     flex-grow: 1;
     flex-direction: column;
     justify-content: center;
-    gap: 90px;
+    gap: 100px;
     align-items: center; 
     position: relative;
 }
@@ -214,6 +213,10 @@ h4{
     box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
 }
 
+.form-btn{
+    width: inherit;
+}
+
 .btn:hover{
     background-color: #fff;
     color: #e96b42;
@@ -221,12 +224,12 @@ h4{
     scale: 1.02; 
 }
 
-#consultation{
+#consultation, .form-btn{
     background-color: #029F8C;
     border: 1px solid #029F8C;
     color: #fff;
     transition: all 0.5s;
-    width: 300px;
+    /* width: 300px; */
     /* border-radius: 15px; */
 }
 
@@ -637,7 +640,7 @@ hr{
 #contact__form{
     gap: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* background-image: url(../img/bg-copy-2-5.png); */
 }
 
@@ -676,6 +679,10 @@ legend{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.form-img{
+    width: 500px;
 }
 
 .map-widget-app{

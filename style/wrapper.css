@@ -70,7 +70,7 @@ nav{
     position: absolute;
     align-items: center;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     gap: 25px;
