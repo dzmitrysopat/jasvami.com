@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Open+Sans:wght@300;400;500;600&family=Pacifico&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    transition: all 2s;
+}
 
 *{
     box-sizing: border-box;
@@ -14,7 +18,6 @@
     /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 16px;
     color: #383838;
-
 }
 
 
@@ -32,6 +35,7 @@ body{
     justify-content: center;
     overflow-x: hidden;
     /* background-color: #e4e5b94f; */
+    scroll-behavior:smooth;
 }
 
 .main{
@@ -47,6 +51,7 @@ body{
     gap: 100px;
     align-items: center; 
     position: relative;
+    scroll-behavior:smooth;
 }
 
 .personal{
