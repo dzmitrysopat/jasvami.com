@@ -61,6 +61,7 @@ const questions = [
 ];
 
 const headerContainer = document.querySelector('#quiz-header');
+const bodyContainer = document.querySelector('#test-body');
 const listContainer = document.querySelector('#list');
 const submitBtn = document.querySelector('#submit');
 
@@ -86,26 +87,26 @@ function clearPage(){
     listContainer.innerHTML = '';
 }
 
-function showQuestion(){
-    console.log('showQuestion');
-
-
+function showQuestion(){    
+    
+    
     // Question
-    const headerTemplate = ` <h2 class="title">%title%</h2>`;
+    const headerTemplate = `<h2 class="title">%title%</h2>`;
+   
     const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
+
     headerContainer.innerHTML = title;
+    
 
-    const questionTemplate = `<p class="result">%number% из </p>`;
-    const number = questionTemplate.replace('%number%', questionIndex+1);
-    questionTemplate.innerHTML = number;
+    // questionnumber
+    const bodyTemplate = `<p class="number">%number%</p>`;
+    
+    let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
+    console.log(number);
 
-    let result = `${number} из ${questions.length}`;
+    const questionNumber = bodyTemplate.replace('%number%', number);
 
-    // const finalMessage = resultsTemplate
-                        // .replace('%title%', title)
-                        // .replace('%message%', message)
-                        // .replace('%result%', result);
-
+    bodyContainer.innerHTML = questionNumber;
 
     // Answers
     let answerNumber = 1;
@@ -130,10 +131,13 @@ function showQuestion(){
         
         listContainer.innerHTML += answerHTML;
         answerNumber++;
+
     }
-
-
 } 
+
+
+
+
 
 function checkAnswer(){   
     // Находим выбранную радио кнопку
@@ -206,3 +210,5 @@ function showResults (){
     submitBtn.innerText = 'Попробовать еще раз'
     submitBtn.onclick = () => history.go();
 }
+
+
