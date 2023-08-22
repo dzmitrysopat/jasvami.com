@@ -5,7 +5,16 @@
 
 html {
     scroll-behavior: smooth;
+    opacity: 1;
     transition: all 2s;
+}
+
+.body_hide {
+	opacity: 0;
+	transition: .8s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
 }
 
 *{
@@ -221,6 +230,10 @@ h4{
 
 .form-btn{
     width: inherit;
+}
+
+.test-btn{
+    width: 650px;
 }
 
 .price-btn{
@@ -1255,4 +1268,16 @@ fieldset{
 
 .lorem__orange{
     /* border-left: 5px solid #f7ab1e; */
+}
+
+.test-pic{
+    /* height: 500px; */
+    width: 650px;
+    padding-bottom: 10px;
+}
+
+.preview{
+    padding-top: 150px;
+    align-items: end;
+    /* padding-bottom: 10px; */
 }
