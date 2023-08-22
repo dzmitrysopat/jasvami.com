@@ -122,7 +122,7 @@
                 </section>
     
                 <section class="input__contact">
-                    <label for="" >Телефон для связи:</label>
+                    <label for="" >Телефон для связи*:</label>
                     <input type="tel" id="formTel" name="Телефон" class="text _req _tel" placeholder="Укажите номер телефона" required>
                 </section>
         
@@ -131,24 +131,28 @@
                     <input type="text" id="formAbout" name="Психологический запрос" class="text _req" placeholder="Ваш вопрос (тема/проблема)" required>
                 </section>
 
+                <section class="input__contact">
+                    <label for="">Желаемое время и формат:</label>
+                    <textarea class="text" id="formOptions" name="Желаемое время и формат:" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
+                </section>
+
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/mail.html">
-    
-            </div>
-                <div class="for__big__text">
-                    <section class="input__contact">
-                        <label for="">Желаемое время и формат:</label>
-                        <textarea class="text" id="formOptions" name="Желаемое время и формат:" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
-                    </section>
-                    <button type="submit" id="consultation" class="btn">Отправить запрос</button>
+                <input type="hidden" name="_next" value="./mail.html">
+
+                <button type="submit" id="consultation" class="btn form-btn">Отправить запрос</button>
                 </div>
+                
+                    <img src="../img/form/Consultation-green-01.png" id="not__found" alt="" class="form-img error-img">
+               
                
             </fieldset>
             </form>
+
     </section>
     </main>
     <div w3-include-html="./wrapper/footer.html"></div>
     <script>includeHTML();</script>
+    <script src="../script/random.js"></script>
 </body>
 </html>
