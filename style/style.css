@@ -263,7 +263,8 @@ span{
 
 .text{
     border-radius: 5px;
-    width: 450px;
+    width: inherit;
+    /* width: 450px; */
     height: 40px;
     padding-left: 10px;
     border: 2px solid #029F8C;
@@ -660,10 +661,11 @@ fieldset{
     border: 2px solid #029F8C;
     border-radius: 10px;
     display: flex;
-    box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
+    box-shadow:  4px 4px 8px 10px rgba(34, 60, 80, 0.2);
     flex-direction: row;
     gap: 10px;
     background-color: #f4fcfa;
+    
     /* background-image: url(../img/bg-copy-2-5.png); */
 }
 
@@ -689,11 +691,11 @@ legend{
 }
 
 .lil-input{
-    width: 250px;
+    width: 200px;
 }
 
 .form-img{
-    width: 500px;
+    width: 400px;
 }
 
 .map-widget-app{
