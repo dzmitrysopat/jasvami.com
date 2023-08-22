@@ -263,7 +263,7 @@ span{
 
 .text{
     border-radius: 5px;
-    width: 520px;
+    width: 450px;
     height: 40px;
     padding-left: 10px;
     border: 2px solid #029F8C;
@@ -275,7 +275,7 @@ textarea.text{
     padding: 10px;
     border: 2px solid #029F8C;
     height: 140px;
-    width: 500px;
+    width: inherit;
     resize: none;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
     /* background-color: #f4fcfa88; */
@@ -652,7 +652,7 @@ label{
     gap: 5px;
     display: flex;
     flex-direction: column;
-    width: ;
+    /* width: ; */
 }
 
 fieldset{
@@ -662,7 +662,7 @@ fieldset{
     display: flex;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
     flex-direction: row;
-    gap: 50px;
+    gap: 10px;
     background-color: #f4fcfa;
     /* background-image: url(../img/bg-copy-2-5.png); */
 }
@@ -1123,6 +1123,7 @@ form:focus{
 
 fieldset{
     background-image: url(../img/bg-copy-2-5.png);
+    padding: 20px;
 }
 
 

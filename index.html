@@ -259,19 +259,20 @@
             <h2 >Запись на консультацию</h2>
             <form action="https://formsubmit.co/d78ab57f4bc631a343e894d1dc4bbb76" method="POST">
                 <fieldset class="fieldset" id="fieldset">
+                    
+
                     <div class="for__lil__text">
                 <article class="lil-inputs">
-                    <section class="input__contact">
-                    <label for="">Ваше Имя:</label>
-                    <input type="text" id="formName" name="Имя" class="text lil-input" placeholder="Как к вам обращаться" required>
-                </section>
-    
-                <section class="input__contact">
-                    <label for="" >Телефон для связи*:</label>
-                    <input type="tel" id="formTel" name="Телефон" class="text lil-input" placeholder="Укажите номер телефона" required>
-                </section>
             </article>
-        
+            <section class="input__contact">
+                <label for="">Ваше Имя:</label>
+                <input type="text" id="formName" name="Имя" class="text" placeholder="Как к вам обращаться" required>
+            </section>
+            <section class="input__contact">
+                <label for="" >Телефон для связи*:</label>
+                <input type="tel" id="formTel" name="Телефон" class="text" placeholder="Укажите номер телефона" required>
+            </section>
+                
                 <section class="input__contact">
                     <label for="">Психологический запрос :</label>
                     <input type="text" id="formAbout" name="Психологический запрос" class="text" placeholder="Ваш вопрос (тема/проблема)" required>
@@ -284,14 +285,11 @@
 
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="./mail.html">
+                <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/mail.html">
 
                 <button type="submit" id="consultation" class="btn form-btn">Отправить запрос</button>
-                </div>
-                
-                    <img src="./img/form/Consultation-green-02.png" id="not__found" alt="" class="form-img error-img">
-               
-               
+                </div>           
+                <img src="./img/form/messaging-1-animate-green.svg" alt="" class="form-img error-img">
             </fieldset>
             </form>
         </article>
