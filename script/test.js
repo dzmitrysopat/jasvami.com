@@ -99,7 +99,7 @@ function showQuestion(){
     
 
     // questionnumber
-    const bodyTemplate = `<p class="number">%number%</p>`;
+    const bodyTemplate = `<p class="number result">%number%</p>`;
     
     let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
     console.log(number);
