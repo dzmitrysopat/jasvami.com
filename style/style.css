@@ -217,7 +217,7 @@ h4{
     width: 300px;
     height: 30px;
     border: 1px solid #f7ab1e;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 17.5px;
     display: flex;
     align-items: center;
@@ -373,7 +373,7 @@ textarea.text{
     flex-direction: column;
     align-items: center;
     justify-content:end;
-    gap: 20px;
+    gap: 0px;
     /* gap: 20px; */
     padding: 10px;
     /* width: 280px; */
@@ -1026,15 +1026,19 @@ ol{
 
 .quiz-list{
     /* padding-top:50px; */
-    /* margin-bottom: 50px; */
-    /* margin-left: 50px; */
-    display: flex;
-    gap: 50px;
-    flex-direction: row;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    /* display: flex; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
     justify-content: center;
     /* gap: 30px; */
-    flex-wrap: wrap;
+    /* wrap: wrap; */
     padding: 50px;
+    /* padding-bottom: 0; */
 }
 
 #quiz{
@@ -1044,7 +1048,7 @@ ol{
     /* height: 300px; */
     width: 800px; 
     background-color: #ffffff;
-    margin: auto 0;
+    /* margin: auto 0; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -1072,7 +1076,7 @@ input.answer{
 
 input.answer::before{
     content: "";
-    line-height: 140%;
+    /* line-height: 140%; */
     align-self: center;
     flex: 0 0 25px;
     height: 25px;
@@ -1089,15 +1093,6 @@ input.answer:checked + .input__label::after{
     top: 4px;
     left: 4px;
 }
-
-
-/* ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
-    justify-content: flex-start;
-} */
 
 
 li{
@@ -1275,7 +1270,7 @@ fieldset{
 
 .test-pic{
     /* height: 500px; */
-    width: 650px;
+    width: 600px;
     padding-bottom: 10px;
 }
 
