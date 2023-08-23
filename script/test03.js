@@ -65,6 +65,7 @@ const headerContainer = document.querySelector('#quiz-header');
 const bodyContainer = document.querySelector('#test-body');
 const listContainer = document.querySelector('#list');
 const submitBtn = document.querySelector('#submit');
+const progressContainer = document.querySelector('#progress');
 
 let score = 0;
 let questionIndex = 0;
@@ -91,6 +92,18 @@ function showQuestion(){
     const questionNumber = bodyTemplate.replace('%number%', number);
 
     bodyContainer.innerHTML = questionNumber;
+
+    // progressBar
+    let step = questionIndex+1;
+    const progressTemplate = 
+    `<progress max="%max%" value="%step%" id="progress"></progress>`;
+
+    
+    console.log(step);
+    console.log(questions.length);
+
+    progressContainer.value = step;
+    progressContainer.max = questions.length;
 
     // Question
     const headerTemplate = ` <h2 class="title">%title%</h2>`;
@@ -189,6 +202,7 @@ function showResults (){
 
     headerContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';
+    progressContainer.hidden = true;
 
     submitBtn.blur();
     submitBtn.innerText = 'Попробовать еще раз'
