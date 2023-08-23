@@ -1292,7 +1292,7 @@ progress{
     width: 700px;
     height: 15px;
     /* border-radius: 8px; */
-    margin: 10px;
+    margin: 10px auto;
 }
 
 
@@ -1303,6 +1303,7 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value { 
     /* background: #029F8C;  */
     background: #f7ab1e;
+    background: linear-gradient(135deg,#f7ab1e 85%,  #f7ab1e 85%);
     border-radius: 25px;
 }
 
