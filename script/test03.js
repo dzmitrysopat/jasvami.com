@@ -62,6 +62,7 @@ const questions = [
 ];
 
 const headerContainer = document.querySelector('#quiz-header');
+const bodyContainer = document.querySelector('#test-body');
 const listContainer = document.querySelector('#list');
 const submitBtn = document.querySelector('#submit');
 
@@ -80,6 +81,16 @@ function clearPage(){
 
 function showQuestion(){
     // console.log('showQuestion');
+
+    // questionnumber
+    const bodyTemplate = `<p class="number result">%number%</p>`;
+    
+    let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
+    console.log(number);
+
+    const questionNumber = bodyTemplate.replace('%number%', number);
+
+    bodyContainer.innerHTML = questionNumber;
 
     // Question
     const headerTemplate = ` <h2 class="title">%title%</h2>`;
@@ -110,8 +121,6 @@ function showQuestion(){
         listContainer.innerHTML += answerHTML;
         answerNumber++;
     }
-
-
 } 
 
 function checkAnswer(){   
@@ -179,6 +188,7 @@ function showResults (){
                         // .replace('%result%', result);
 
     headerContainer.innerHTML = finalMessage;
+    bodyContainer.innerHTML = '';
 
     submitBtn.blur();
     submitBtn.innerText = 'Попробовать еще раз'

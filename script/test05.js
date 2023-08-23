@@ -82,6 +82,7 @@ const questions = [
 ];
 
 const headerContainer = document.querySelector('#quiz-header');
+const bodyContainer = document.querySelector('#test-body');
 const listContainer = document.querySelector('#list');
 const submitBtn = document.querySelector('#submit');
 
@@ -105,6 +106,16 @@ function showQuestion(){
     const headerTemplate = ` <h2 class="title">%title%</h2>`;
     const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
     headerContainer.innerHTML = title;
+
+    // questionnumber
+    const bodyTemplate = `<p class="number result">%number%</p>`;
+    
+    let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
+    console.log(number);
+
+    const questionNumber = bodyTemplate.replace('%number%', number);
+
+    bodyContainer.innerHTML = questionNumber;
 
     // Answers
     let answerNumber = 1;
@@ -199,6 +210,7 @@ function showResults (){
                         // .replace('%result%', result);
 
     headerContainer.innerHTML = finalMessage;
+    bodyContainer.innerHTML = '';
 
     submitBtn.blur();
     submitBtn.innerText = 'Попробовать еще раз'

@@ -226,6 +226,7 @@ h4{
     gap: 30px;
     transition: all 0.5s;
     box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
+    cursor: pointer;
 }
 
 .form-btn{

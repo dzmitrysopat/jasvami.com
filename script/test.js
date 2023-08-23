@@ -135,10 +135,6 @@ function showQuestion(){
     }
 } 
 
-
-
-
-
 function checkAnswer(){   
     // Находим выбранную радио кнопку
     const checkedRadio = listContainer.querySelector('input[type="radio"]:checked');
@@ -187,13 +183,13 @@ function showResults (){
 
     if (score === 7 || score === 8 || score === 9 || score === questions.length ){
         title = 'Ваши результаты';
-        message = 'У Вас высокий уровень лидерства: 7-10 баллов';
+        message = 'У Вас высокий уровень лидерства';
     } else if (score === 6 || score === 5 || score === 4){
         title = 'Ваши результаты';
-        message = 'У Вас средний уровень лидерства: 4-6 баллов';
+        message = 'У Вас средний уровень лидерства';
     } else if (score === 3 || score === 2 || score === 1){
         title = 'Ваши результаты';
-        message = 'У Вас низкий уровень лидерства: 1-3 балла';
+        message = 'У Вас низкий уровень лидерства';
     }
 
     // Result
@@ -205,6 +201,8 @@ function showResults (){
                         .replace('%result%', result);
 
     headerContainer.innerHTML = finalMessage;
+    bodyContainer.innerHTML = '';
+
 
     submitBtn.blur();
     submitBtn.innerText = 'Попробовать еще раз'
