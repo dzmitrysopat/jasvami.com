@@ -92,6 +92,8 @@ const submitBtn = document.querySelector('#submit');
 const progressContainer = document.querySelector('#progress');
 
 let score = 0;
+let score1 = 0;
+let score2 = 0;
 let questionIndex = 0;
 
 clearPage();
@@ -128,7 +130,7 @@ function showQuestion(){
     const bodyTemplate = `<p class="number result">%number%</p>`;
     
     let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
-    console.log(number);
+    // console.log(number);
 
     const questionNumber = bodyTemplate.replace('%number%', number);
 
@@ -138,10 +140,6 @@ function showQuestion(){
     let step = questionIndex+1;
     const progressTemplate = 
     `<progress max="%max%" value="%step%" id="progress"></progress>`;
-
-    
-    console.log(step);
-    console.log(questions.length);
 
     progressContainer.value = step;
     progressContainer.max = questions.length;
@@ -169,7 +167,6 @@ function showQuestion(){
         
         listContainer.innerHTML += answerHTML;
         answerNumber++;
-
     }
 } 
 
@@ -186,14 +183,24 @@ function checkAnswer(){
     // узнаем номер ответа пользователя
 
     const userAnswer = parseInt(checkedRadio.value);
-
+    // console.log(parseInt(checkedRadio.value));
     // Если ответ верный - увеличиваем счет
-    questions[questionIndex]['correct']
-    if (userAnswer === questions[questionIndex]['correct']){
-        score++;
+    // questions[questionIndex]['answers']
+    // if (userAnswer === questions[questionIndex]['answers']){
+        // score = score + (userAnswer - 1);
+    // }
+
+    if (questionIndex >=0 && questionIndex <= 6){
+        score = score + (userAnswer - 1);
+    } else if (questionIndex >=7 && questionIndex <= 13) {
+        score1 = score1 + (userAnswer - 1);
+    } else if (questionIndex >=14 && questionIndex <= 20) {
+        score2 = score2 + (userAnswer - 1);
     }
 
     console.log('score = ', score);
+    console.log('score1 = ', score1);
+    console.log('score2 = ', score2);
 
     if (questionIndex !== questions.length - 1){
         console.log('Это не последний вопрос');
@@ -214,38 +221,35 @@ function showResults (){
     const resultsTemplate = `
             <h2 class="title">%title%</h2>
             <h3 class="summary">%message%</h3>
-            <p class="result">%result%</p>
     `;
 
     let title, message;
 
-    if (score === 7 || score === 8 || score === 9 || score === questions.length ){
-        title = 'Ваши результаты';
-        message = 'У Вас высокий уровень лидерства';
-    } else if (score === 6 || score === 5 || score === 4){
-        title = 'Ваши результаты';
-        message = 'У Вас средний уровень лидерства';
-    } else if (score === 3 || score === 2 || score === 1){
-        title = 'Ваши результаты';
-        message = 'У Вас низкий уровень лидерства';
+    if (score1 > score && score1 > score2 && score2 > score){
+        title = 'Ваш результат';
+        message = 'У вас получилась формула ВДР. Вы обладаете развитым чувством ответственности, в меру импульсивны и не склонны к назиданиям и нравоучениям. Постарайтесь сохранить эти качества';
+    } else if (score2 > score1 && score2 > score && score){
+        title = 'Ваш результат';
+        message = 'вы получили формулу РДВ, то для вас характерны категоричность и самоуверенность. Кроме того, «Родитель» с детской непосредственностью режет «правду-матку», ни в чем не сомневаясь и не заботясь о последствиях. Поэтому таким людям желательно работать не с людьми, а с машинами, кульманом, этюдником и т. п.';
+    } else if (score > score1 && score > score2){
+        title = 'Ваш результат';
+        message = 'На первом месте в формуле Д. Это вполне приемлемый вариант для научной работы. Но детская непосредственность хороша только до определенных пределов. Если она начинает мешать делу, то пора взять свои эмоции под контроль.';
     }
 
     // Result
-    let result = `${score} из ${questions.length}`;
+    // let result = `${score} из ${questions.length}`;
 
     const finalMessage = resultsTemplate
                         .replace('%title%', title)
                         .replace('%message%', message)
-                        .replace('%result%', result);
+                        // .replace('%result%', result);
 
     headerContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';
     progressContainer.hidden = true;
 
-
     submitBtn.blur();
     submitBtn.innerText = 'Попробовать еще раз'
     submitBtn.onclick = () => history.go();
 }
-
 
