@@ -251,7 +251,49 @@
     </section>
 </article>
 
-        <article id="getHelp" class="howicanhelp">
+<div class="container">
+    <div class="modal-wrapper" id="modalWrapper">
+        <div class="modal">
+            <button id="close-btn" class="btn close">X</button>
+            <form action="https://formsubmit.co/d78ab57f4bc631a343e894d1dc4bbb76" method="POST">
+                <fieldset class="fieldset" id="fieldset">
+                    <div class="for__lil__text">
+                <article class="lil-inputs">
+                    <section class="input__contact lil-input">
+                        <label for="">Ваше Имя:</label>
+                        <input type="text" id="formName" name="Имя" class="text lil-input" placeholder="Как к вам обращаться" required>
+                    </section>
+                    <section class="input__contact lil-input">
+                        <label for="" >Телефон для связи*:</label>
+                        <input type="tel" id="formTel" name="Телефон" class="text lil-input" placeholder="Контактный номер" required>
+                    </section>
+                        
+                </article>
+            
+                <section class="input__contact">
+                    <label for="">Психологический запрос :</label>
+                    <input type="text" id="formAbout" name="Психологический запрос" class="text" placeholder="Ваш вопрос (тема/проблема)" required>
+                </section>
+
+                <section class="input__contact">
+                    <label for="">Желаемое время и формат:</label>
+                    <textarea class="text" id="formOptions" name="Желаемое время и формат:" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
+                </section>
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/mail.html">
+
+                <button type="submit" id="consultation" class="btn form-btn">Отправить запрос</button>
+                </div>           
+                <img src="./img/form/messaging-1-animate-green.svg" alt="" class="form-img error-img">
+            </fieldset>
+            </form>
+        </div>
+    </div>             
+</div>
+
+        <!-- <article id="getHelp" class="howicanhelp">
             <h2 >Запись на консультацию</h2>
             <form action="https://formsubmit.co/d78ab57f4bc631a343e894d1dc4bbb76" method="POST">
                 <fieldset class="fieldset" id="fieldset">
@@ -289,8 +331,7 @@
                 <img src="./img/form/messaging-1-animate-green.svg" alt="" class="form-img error-img">
             </fieldset>
             </form>
-        </article>
-
+        </article> -->
     </main>
 
     <div w3-include-html="./pages/wrapper/footer.html"></div>
@@ -304,6 +345,7 @@
         </script> -->
 
         <script src="./script/random.js"></script>
+        <script src="./script/script.js"></script>
 
     </body>
 
