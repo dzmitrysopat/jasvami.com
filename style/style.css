@@ -1345,20 +1345,23 @@ progress::-webkit-progress-value {
 }
 
 .close{
-    border-radius: 10px;
-    width: 5px;
-    height: 5px;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    color: #029F8C;
     position: absolute;
-    background-color: #029F8C;
-    border: 1px solid #029F8C;
+    background-color: #fff;
+    border: 1px solid #fff;
     top: 20px;
     right: 20px;
     font-size: 25px; 
     /* font-weight: 700; */
+    scale: 1;
 }
 
 .close:hover{
     background-color: #f7ab1e;
     border: 1px solid #f7ab1e;
     color: #fff;
+    scale: 1;
 }
