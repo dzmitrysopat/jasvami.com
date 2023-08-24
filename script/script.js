@@ -29,6 +29,11 @@ openModalButton.addEventListener('click', () =>{
 	document.body.style.overflow = 'hidden';
 });
 
+closeModalButton.addEventListener('click', () =>{
+	modalWrapper.style.display = 'none';
+	document.body.style.overflow = 'visible';
+});
+
 openPersonalButton.addEventListener('click', () =>{
 	modalWrapper.style.display = 'block';
 	document.body.style.overflow = 'hidden';
@@ -39,7 +44,4 @@ openFamilyButton.addEventListener('click', () =>{
 	document.body.style.overflow = 'hidden';
 });
 
-closeModalButton.addEventListener('click', () =>{
-	modalWrapper.style.display = 'none';
-	document.body.style.overflow = 'visible';
-});
+
