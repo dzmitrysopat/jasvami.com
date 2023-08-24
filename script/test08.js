@@ -189,19 +189,31 @@ function showResults (){
     const resultsTemplate = `
             <h2 class="title">%title%</h2>
             <h3 class="summary">%message%</h3>
+            <h3 class="summary">%message1%</h3>
     `;
 
-    let title, message;
+    let title, message, message1;
 
-    if (score1 > score && score1 > score2 && score2 > score){
+    if (score <= 7){
         title = 'Ваш результат';
-        message = 'У вас получилась формула ВДР. Вы обладаете развитым чувством ответственности, в меру импульсивны и не склонны к назиданиям и нравоучениям. Постарайтесь сохранить эти качества';
-    } else if (score2 > score1 && score2 > score && score){
+        message = 'У Вас не наблюдается достоверно выраженных симптомов тревоги';
+    } else if (score >= 8 && score <= 10){
         title = 'Ваш результат';
-        message = 'Вы получили формулу РДВ. Для вас характерны категоричность и самоуверенность. Кроме того, «Родитель» с детской непосредственностью режет «правду-матку», ни в чем не сомневаясь и не заботясь о последствиях. Поэтому таким людям желательно работать не с людьми, а с машинами, кульманом, этюдником и т. п.';
-    } else if (score > score1 && score > score2){
+        message = 'У Вас наблюдается субклинически выраженная тревога';
+    } else if (score >= 11){
         title = 'Ваш результат';
-        message = 'На первом месте в формуле Д. Это вполне приемлемый вариант для научной работы. Но детская непосредственность хороша только до определенных пределов. Если она начинает мешать делу, то пора взять свои эмоции под контроль.';
+        message = 'У Вас клинически выраженная тревога';
+    }
+
+    if (score1 <= 7){
+        title = 'Ваш результат';
+        message1 = 'У Вас не наблюдается достоверно выраженных симптомов депрессии';
+    } else if (score1 >= 8 && score1 <= 10){
+        title = 'Ваш результат';
+        message1 = 'У Вас наблюдается субклинически выраженная депрессия';
+    } else if (score1 >= 11){
+        title = 'Ваш результат';
+        message1 = 'У Вас клинически выраженная депрессия';
     }
 
     // Result
@@ -210,6 +222,7 @@ function showResults (){
     const finalMessage = resultsTemplate
                         .replace('%title%', title)
                         .replace('%message%', message)
+                        .replace('%message1%', message1)
                         // .replace('%result%', result);
 
     headerContainer.innerHTML = finalMessage;
