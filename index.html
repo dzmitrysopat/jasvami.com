@@ -150,20 +150,74 @@
         <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
             <div class="itc-slider-wrapper">
               <div class="itc-slider-items">
-                <img src="./img/diplomas/art_therapy.webp" alt="" class="itc-slider-item"> 
-                <img src="./img/diplomas/art_therapy_02.webp" alt="" class="itc-slider-item">
-                <img src="./img/diplomas/centr_metafora.webp" alt="" class="itc-slider-item">
-                <img src="./img/diplomas/Cognitive_therapy.webp" alt="" class="itc-slider-item">
-                <img src="./img/diplomas/fairytale_therapy.webp" alt="" class="itc-slider-item">
-                <img src="img/diplomas/Positive_psychology.webp" alt="" class="itc-slider-item">
-                <img src="./img/diplomas/Lomonosow_MGU.webp" alt="" class="itc-slider-item">
-                <img src="img/diplomas/Psyhological_first_aid.webp" alt="" class="itc-slider-item">
-                <img src="./img/diplomas/sport_support.webp" alt="" class="itc-slider-item">
+                <img src="./img/diplomas/art_therapy.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(1)"> 
+                <img src="./img/diplomas/art_therapy_02.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(2)">
+                <img src="./img/diplomas/centr_metafora.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(3)">
+                <img src="./img/diplomas/Cognitive_therapy.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(4)">
+                <img src="./img/diplomas/fairytale_therapy.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(5)">
+                <img src="img/diplomas/Positive_psychology.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(6)">
+                <img src="./img/diplomas/Lomonosow_MGU.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(7)">
+                <img src="img/diplomas/Psyhological_first_aid.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(8)">
+                <img src="./img/diplomas/sport_support.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(9)">
             </div>
             <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
             <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
           </div>
         </section>
+
+        <div id="myModal" class="modal0">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <figure class="mySlides">
+                  <img src="./img/diplomas/art_therapy.webp" style="width:100%">
+                  <figcaption>Арт терапия</figcaption>
+              </figure>
+        
+              <figure class="mySlides">
+                  <img src="./img/diplomas/art_therapy_02.webp" style="width:100%">
+                  <figcaption>Art therapy</figcaption>
+              </figure>
+          
+              <figure class="mySlides">
+                  <img src="./img/diplomas/centr_metafora.webp" style="width:100%">
+                  <figcaption>Центр</figcaption>
+              </figure>
+          
+              <figure class="mySlides">
+                  <img src="./img/diplomas/Cognitive_therapy.webp" style="width:100%">
+                  <figcaption>Когнитив</figcaption>
+              </figure>
+          
+              <figure class="mySlides">
+                  <img src="./img/diplomas/fairytale_therapy.webp" style="width:100%">
+                  <figcaption>ысывс</figcaption>
+              </figure>
+        
+              <figure class="mySlides">
+                  <img src="./img/diplomas/Positive_psychology.webp" style="width:100%">
+                  <figcaption>ывсывс</figcaption>
+              </figure>
+        
+              <figure class="mySlides">
+                  <img src="./img/diplomas/Lomonosow_MGU.webp" style="width:100%">
+                  <figcaption>Lomonosov MGU</figcaption>
+              </figure>
+        
+              <figure class="mySlides">
+                  <img src="./img/diplomas/Psyhological_first_aid.webp" style="width:100%">
+                  <figcaption>вввввв</figcaption>
+              </figure>
+        
+              <figure class="mySlides">
+                  <img src="./img/diplomas/sport_support.webp" style="width:100%">
+                  <figcaption>assssssssssssssss</figcaption>
+              </figure>
+        
+            </div>
+            <a class="left" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="right" onclick="plusSlides(1)">&#10095;</a>
+          </div>
 
 <article class="howicanhelp">
     <section class="second__slider">
@@ -292,46 +346,6 @@
         </div>
     </div>             
 </div>
-
-        <!-- <article id="getHelp" class="howicanhelp">
-            <h2 >Запись на консультацию</h2>
-            <form action="https://formsubmit.co/d78ab57f4bc631a343e894d1dc4bbb76" method="POST">
-                <fieldset class="fieldset" id="fieldset">
-                    
-                   
-                    <div class="for__lil__text">
-                <article class="lil-inputs">
-                    <section class="input__contact lil-input">
-                        <label for="">Ваше Имя:</label>
-                        <input type="text" id="formName" name="Имя" class="text lil-input" placeholder="Как к вам обращаться" required>
-                    </section>
-                    <section class="input__contact lil-input">
-                        <label for="" >Телефон для связи*:</label>
-                        <input type="tel" id="formTel" name="Телефон" class="text lil-input" placeholder="Контактный номер" required>
-                    </section>
-                        
-                </article>
-            
-                <section class="input__contact">
-                    <label for="">Психологический запрос :</label>
-                    <input type="text" id="formAbout" name="Психологический запрос" class="text" placeholder="Ваш вопрос (тема/проблема)" required>
-                </section>
-
-                <section class="input__contact">
-                    <label for="">Желаемое время и формат:</label>
-                    <textarea class="text" id="formOptions" name="Желаемое время и формат:" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
-                </section>
-
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/mail.html">
-
-                <button type="submit" id="consultation" class="btn form-btn">Отправить запрос</button>
-                </div>           
-                <img src="./img/form/messaging-1-animate-green.svg" alt="" class="form-img error-img">
-            </fieldset>
-            </form>
-        </article> -->
     </main>
 
     <div w3-include-html="./pages/wrapper/footer.html"></div>
@@ -343,7 +357,7 @@
         <!-- <script>
             window.history.replaceState({}, null, '/');
         </script> -->
-
+        <script src="./script/photos.js"></script>
         <script src="./script/random.js"></script>
         <script src="./script/script.js"></script>
 

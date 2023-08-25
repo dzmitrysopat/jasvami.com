@@ -1365,3 +1365,137 @@ progress::-webkit-progress-value {
     color: #fff;
     scale: 1;
 }
+
+
+/* photo viewer */
+
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+  }
+  
+  /* The Modal (background) */
+  .modal0,
+  .modal01 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000c7;
+    z-index: 5;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    /* background-color: #fefefe00; */
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    /* max-width: 1200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides,
+  .mySlides01 {
+    margin: 0;
+    padding: 0;
+    display: none;
+    /* width: 1200px; */
+    /* height: 500px; */
+    background-color: inherit;
+  }
+  
+  /* Next & previous buttons */
+  .left,
+  .right {
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    /* left: 0; */
+    width: 50px;
+    height: 100vh;
+    padding: 16px;
+    opacity: 0.3;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-top: -50px; */
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* -webkit-user-select: none; */
+  }
+  
+  /* Position the "next button" to the right */
+  .right {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .left {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .left:hover,
+  .right:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+figure{
+    background-color: inherit;
+  }
+  
+  figcaption{
+    font-size: 25px;
+    text-align: center;
+    background-color: inherit;
+    color: #fff;
+  }
