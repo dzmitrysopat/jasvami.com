@@ -1445,7 +1445,10 @@ progress::-webkit-progress-value {
     display: none;
     /* width: 1200px; */
     /* height: 500px; */
+    display: flex;
+    justify-content: center;
     background-color: inherit;
+    align-items: center;
   }
 
 
