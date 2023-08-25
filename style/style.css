@@ -973,6 +973,7 @@ ol{
     object-fit: cover;
     height: 295px;
     width: calc(100% / 3);
+    cursor: pointer;
   }
   
   
