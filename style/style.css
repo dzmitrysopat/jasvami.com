@@ -1325,6 +1325,7 @@ progress::-webkit-progress-value {
     left: 0;
     background-color: #1b1b1bb4;
     display: none;
+    z-index: 2;
 }
 
 .modal{
@@ -1342,27 +1343,28 @@ progress::-webkit-progress-value {
     border-radius: 25px;
     box-shadow: 4px 4px 8px 10px #00000080;
     background-image: url('../img/bg-copy-2-5.png');
+    
 }
 
 .close{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 2px;
     height: 2px;
-    color: #029F8C;
+    /* color: #029F8C; */
     position: absolute;
-    background-color: #fff;
-    border: 1px solid #fff;
+    border: none;
     top: 20px;
     right: 20px;
     font-size: 25px; 
     /* font-weight: 700; */
     scale: 1;
+    transition: all .3s;
 }
 
 .close:hover{
-    background-color: #f7ab1e;
-    border: 1px solid #f7ab1e;
-    color: #fff;
+    /* background-color: #f7ab1e; */
+    border: none;
+    color: #029F8C;
     scale: 1;
 }
 
@@ -1405,7 +1407,8 @@ progress::-webkit-progress-value {
   }
   
   /* Modal Content */
-  .modal-content {
+  .modal-content,
+  .modal-content01 {
     position: relative;
     /* background-color: #fefefe00; */
     margin: auto;
@@ -1420,17 +1423,16 @@ progress::-webkit-progress-value {
   
   /* The Close Button */
   .close {
-    color: white;
+    color: #f7ab1e;
     position: absolute;
     top: 10px;
     right: 100px;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
   }
   
   .close:hover,
   .close:focus {
-    color: #999;
     text-decoration: none;
     cursor: pointer;
   }
@@ -1445,10 +1447,11 @@ progress::-webkit-progress-value {
     /* height: 500px; */
     background-color: inherit;
   }
-  
+
+
   /* Next & previous buttons */
-  .left,
-  .right {
+.left,
+.right {
     cursor: pointer;
     position: absolute;
     top: 0%;
@@ -1470,10 +1473,10 @@ progress::-webkit-progress-value {
     user-select: none;
     background-color: rgba(0, 0, 0, 0.8);
     /* -webkit-user-select: none; */
-  }
-  
+}
+
   /* Position the "next button" to the right */
-  .right {
+.right {
     right: 0px;
     border-radius: 3px 0 0 3px;
   }
@@ -1487,6 +1490,7 @@ progress::-webkit-progress-value {
   .left:hover,
   .right:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
 }
 
 figure{

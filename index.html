@@ -224,27 +224,55 @@
         <h2>Участие в профессиональных конференциях</h2>
     <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
         <div class="itc-slider-wrapper">
-          <div class="itc-slider-items">
-           
-              <!-- Контент 1 слайда -->
-              <img src="./img/conferentions/FUN-sertificate.webp" alt="" class="itc-slider-item">
-                  <!-- Контент 2 слайда -->
-              <img src="./img/conferentions/metafora-conferention.webp" alt="" class="itc-slider-item">
-                  <!-- Контент 3 слайда -->
-              <img src="./img/conferentions/mgafk.webp" alt="" class="itc-slider-item">
-                  <!-- Контент 4 слайда -->
-              <img src="./img/conferentions/pre-cbt-forum.webp" alt="" class="itc-slider-item">
-                  <!-- Контент 5 слайда -->
-              <img src="./img/conferentions/sport-psychology-seminar.webp" alt="" class="itc-slider-item">
-                  <!-- Контент 6 слайда -->
-              <img src="./img/conferentions/suicide-conferention.webp" alt="" class="itc-slider-item">
-            
+          <div class="itc-slider-items">           
+            <img src="./img/conferentions/FUN-sertificate.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide(1)">
+            <img src="./img/conferentions/metafora-conferention.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide(2)">
+            <img src="./img/conferentions/mgafk.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide(3)">
+            <img src="./img/conferentions/pre-cbt-forum.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide(4)">
+            <img src="./img/conferentions/sport-psychology-seminar.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide(5)">
+            <img src="./img/conferentions/suicide-conferention.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide(6)">
         </div>
         <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
         <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
       </div>
     </section>
 </article>
+
+<div id="myModal01" class="modal01">
+    <span class="close cursor" onclick="closeModal01()">&times;</span>
+    <div class="modal-content01">
+      <figure class="mySlides01">
+          <img src="./img/conferentions/FUN-sertificate.webp" style="width:100%">
+          <figcaption>00</figcaption>
+      </figure>
+  
+      <figure class="mySlides01">
+          <img src="./img/conferentions/metafora-conferention.webp" style="width:100%">
+          <figcaption>01</figcaption>
+      </figure>
+  
+      <figure class="mySlides01">
+          <img src="./img/conferentions/mgafk.webp" style="width:100%">
+          <figcaption>02</figcaption>
+      </figure>
+  
+      <figure class="mySlides01">
+          <img src="./img/conferentions/pre-cbt-forum.webp" style="width:100%">
+          <figcaption>03</figcaption>
+      </figure>
+  
+      <figure class="mySlides01">
+          <img src="./img/conferentions/sport-psychology-seminar.webp" style="width:100%">
+          <figcaption>04</figcaption>
+      </figure>
+      <figure class="mySlides01">
+        <img src="./img/conferentions/suicide-conferention.webp" style="width:100%">
+        <figcaption>05</figcaption>
+    </figure>
+    </div>
+    <a class="left" onclick="plusSlides01(-1)">&#10094;</a>
+    <a class="right" onclick="plusSlides01(1)">&#10095;</a>
+  </div>
 
 <article class="second__slider">
     <h2 class="green__name">Стоимость консультаций</h2>
@@ -308,7 +336,7 @@
 <div class="container">
     <div class="modal-wrapper" id="modalWrapper">
         <div class="modal">
-            <button id="close-btn" class="btn close">X</button>
+            <button id="close-btn" class="close">&times;</button>
             <form action="https://formsubmit.co/d78ab57f4bc631a343e894d1dc4bbb76" method="POST">
                 <fieldset class="fieldset" id="fieldset">
                     <div class="for__lil__text">
