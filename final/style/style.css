@@ -125,6 +125,7 @@ h1 {
 .btns{
     display: flex;
     gap: 30px;
+    
 }
 
 .btn{
@@ -165,6 +166,15 @@ h1 {
 
 .orange-btn:hover{
     color: #f7ab1e;
+}
+
+.test-btn{
+    width: 530px;
+}
+
+.orange-border{
+    border-top: 3px solid #f7ab1e;
+    border-bottom: 3px solid #f7ab1e;
 }
 
 .main-container{
@@ -227,7 +237,6 @@ h1 {
     color: #f7ab1e;
     opacity: 1;
 }
-
 
 .offer-img{
     width: 80px;
@@ -390,16 +399,13 @@ h1 {
     cursor: pointer;
     position: absolute;
     top: 0%;
-    /* left: 0; */
     width: 50px;
     height: 100vh;
     padding: 16px;
     opacity: 0.3;
     text-align: center;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* margin-top: -50px; */
     color: #fff;
     font-weight: bold;
     font-size: 30px;
@@ -407,7 +413,6 @@ h1 {
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(0, 0, 0, 0.8);
-    /* -webkit-user-select: none; */
 }
 
   /* Position the "next button" to the right */
@@ -462,7 +467,6 @@ figcaption{
     font-size: 35px;
     border-bottom: 3px solid #029F8C;
     opacity: 1;
-    /* text-transform: none; */
     font-weight: 600;
 }
 
@@ -472,7 +476,8 @@ figcaption{
 }
 
 #personalConsultation,
-#familyConsultation{
+#familyConsultation,
+#testBtn{
     width: inherit;
 }
 
@@ -514,7 +519,6 @@ fieldset{
     box-shadow:  4px 4px 8px 10px rgba(34, 60, 80, 0.2);
     flex-direction: row;
     gap: 20px;
-    /* background-color: #f4fcfa; */
     background-image: url('../img/background.png');
 }
 
@@ -545,7 +549,6 @@ textarea.text{
     resize: none;
     font-size: 17px;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-    /* background-color: #f4fcfa88; */
 }
 
 .input__contact{
@@ -590,7 +593,6 @@ textarea.text{
 .header-container{
     background-image: url('../img/background.png');
     background-position: center;
-    /* box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.08) inset; */
     box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.16) inset;
     margin-bottom: 50px;
 }
@@ -606,7 +608,7 @@ textarea.text{
 .page-container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
 }
 
 ul.breadcrumb {
@@ -743,4 +745,20 @@ ol li:before {
 
 .client-img{
     width: 250px;
+}
+
+.test-img{
+    width: 350px;
+}
+
+.test-photo{
+    width: 750px;
+}
+
+.test-orange{
+    height: 500px;
+}
+
+#test-preview{
+    align-items: center;
 }
