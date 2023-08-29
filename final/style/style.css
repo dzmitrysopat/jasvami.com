@@ -41,7 +41,7 @@ body{
 main{
     position: relative;
     padding: 0 50px;
-    margin: 200px auto 0;
+    margin: 150px auto 0;
     max-width: 1200px;
     text-align: justify;
     display: flex;
@@ -127,7 +127,7 @@ h1 {
     color: #fff;
     font-size: 17.5px;
     border: none;
-    /* border-radius: 25px; */
+    border-radius: 10px;
     transition: all .8s;
     box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
     display: flex;
@@ -442,7 +442,7 @@ figcaption{
 
 .consultation{
     box-shadow: 0px 0px 15px 5px rgba(34, 80, 46, 0.2);
-    /* border-radius: 5px; */
+    border-radius: 15px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -550,4 +550,15 @@ textarea.text{
 
 .form-btn{
     width: inherit;
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(30%);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
 }

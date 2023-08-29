@@ -175,7 +175,7 @@ ul a:hover{
     opacity: 1;
 }
 
-.footer-title{
+.footer-title, .footer-favicon{
     color: #fff;
     opacity: 0.7;
     font-size: 25px;
