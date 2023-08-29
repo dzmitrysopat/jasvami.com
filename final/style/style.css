@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* color: #383838; */
 }
 
 html {
@@ -52,6 +53,10 @@ main{
     justify-content: center;
 }
 
+a{
+    color: black;
+}
+
 .green{
     color: #029F8C;
 }
@@ -60,6 +65,9 @@ main{
     color: #f7ab1e;
 }
 
+.gray{
+    filter: grayscale(1);
+}
 
 .site-info{
     display: flex;
@@ -71,7 +79,7 @@ main{
 .my-photo{
     max-width: 500px;
     border-radius: 25px;
-    /* height: 650px; */
+    box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
 }
 
 .psy-info{
@@ -91,6 +99,7 @@ h1 {
     border-bottom: 3px solid #029F8C;
     padding: 20px 0;
     font-size: 20px;
+    text-align: justify;
 }
 
 .check-list-container{
@@ -162,7 +171,7 @@ h1 {
     width: 100vw;
     padding: 50px 0;
     text-align: center;
-    background-color: #f4fcfa;
+    /* background-color: #f4fcfa; */
     box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.08) inset;
     display: flex;
     flex-direction: column;
@@ -506,7 +515,7 @@ fieldset{
     flex-direction: row;
     gap: 20px;
     /* background-color: #f4fcfa; */
-    background-image: url(../img/bg-copy-2-5.png);
+    background-image: url('../img/background.png');
 }
 
 .input-section{
@@ -561,4 +570,177 @@ textarea.text{
     opacity: 1;
     transition: all 1.5s;
     transform: translateY(0%);
+}
+
+/* pages style */
+.page-main{
+    text-align: left;
+    /* align-items: flex-start; */
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+.no-border{
+    border: none;
+    padding: 10px 0;
+}
+
+.header-container{
+    background-image: url('../img/background.png');
+    background-position: center;
+    /* box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.08) inset; */
+    box-shadow: 0px 0px 75px 8px rgba(34, 60, 80, 0.16) inset;
+    margin-bottom: 50px;
+}
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1200px;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul.breadcrumb {
+    font-family: 'caveat';
+    padding: 5px 2px;
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    font-family: 'caveat', cursive;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 5px;
+    color: #029F8C;
+    content: "»";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    font-size: 25px;
+    color: #029F8C;
+    transition: all .2s;
+    font-family: 'caveat', cursive;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #f7ab1e;
+}
+
+ol, .list{
+    counter-reset: myCounter;
+    background-image: url('../img/background.png');
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ol li,
+ul li{
+    list-style-type: none;
+    line-height: 20px;
+    margin: 0 0 8px 0px;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ol li:before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    color: #fff;
+    background: #029F8C;
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+    height: auto;
+    width: auto;
+    margin: 0 10px 0 0;
+    padding: 7px 13px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card{
+    /* width: 585px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url('../img/background.png');
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.1);
+}
+
+#sign{
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.signature{
+    margin: 20px 0;
+}
+
+.clients-cards{
+    gap: 15px;
+}
+
+.client-card{
+    border-radius: 5px;
+    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: none;
+    padding: 19px;
+    transition: all .7s;
+    box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
+}
+
+.client-card:hover{
+    scale: 1.05;
+}
+
+.client-card:hover > h3{
+    color: #f7ab1e;
+    /* opacity: 1; */
+}
+
+.clients-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    text-transform: none;
+    font-weight: 100;
+}
+
+.client-img{
+    width: 250px;
 }
