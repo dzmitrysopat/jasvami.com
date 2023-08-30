@@ -42,7 +42,7 @@ body{
 main{
     position: relative;
     padding: 0 50px;
-    margin: 150px auto 0;
+    margin: 150px auto;
     max-width: 1200px;
     text-align: justify;
     display: flex;
@@ -259,17 +259,22 @@ h1 {
     max-width: 1200px;
 }
 
+.test-slider{
+}
+
+.hidden{
+    display: none;
+}
+
 .itc-slider-wrapper {
     overflow: hidden;
     display: flex;
-    /* flex-direction: row; */
 }
 
 .itc-slider-items {
     display: flex;
     transition: transform 0.5s ease;
     align-items: center;
-    /* justify-content: center; */
     gap: 30px;
 }
 
@@ -284,6 +289,13 @@ h1 {
     height: 295px;
     width: calc(100% / 3);
     cursor: pointer;
+}
+
+.test-slider-item{
+    width: 225px;
+    height: 450px;
+    align-items: center;
+    z-index: 2;
 }
 
   /* кнопки влево и вправо */
@@ -608,7 +620,7 @@ textarea.text{
 .page-container{
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 10px;
 }
 
 ul.breadcrumb {
@@ -725,6 +737,7 @@ ol li:before {
     padding: 19px;
     transition: all .7s;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
+    
 }
 
 .client-card:hover{
@@ -752,13 +765,26 @@ ol li:before {
 }
 
 .test-photo{
-    width: 750px;
+    width: 600px;
 }
 
-.test-orange{
-    height: 500px;
-}
+/* .test-orange{
+    height: 0px;
+} */
 
 #test-preview{
     align-items: center;
+    /* gap: 100px; */
 }
+
+.more-tests{
+    margin: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+/* .more-test{
+    width: 300px;
+} */

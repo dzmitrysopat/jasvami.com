@@ -58,4 +58,18 @@ openFamilyButton.addEventListener('click', () =>{
 	// document.body.style.overflow = 'hidden';
 });
 
+function showSlider(){
+	document.querySelector(".test-slider").classList.remove("hidden");
+}
 
+const handleEditClick = () => {
+	document.querySelector(".test-slider").classList.remove("hidden");
+  }
+  
+  document.querySelector(".orange-btn").addEventListener("click", handleEditClick)
+  
+  const handleSaveClick = () => {
+	console.log("сохранено")
+  }
+  
+  document.querySelector(".save").addEventListener("click", handleSaveClick)
