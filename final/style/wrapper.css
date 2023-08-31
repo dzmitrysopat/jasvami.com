@@ -41,11 +41,11 @@ header{
 
 a, a:visited{
     text-decoration: none;
-    /* color: #029f8c; */
+    /* color: #6d89b9; */
 }
 
 .logo-title{
-    color: #029f8c;
+    color: #6d89b9;
     font-family: 'caveat';
     font-size: 30px;
     font-weight: 600;
@@ -62,7 +62,7 @@ nav{
 .nav-link{
     font-size: 19px;
     text-transform: uppercase;
-    color: #029F8C;
+    color: #6d89b9;
 }
 
 .nav-link:after{
@@ -115,7 +115,7 @@ nav{
 
 .dropdown-content a:hover{
     color: #fff;
-    background-color: #029F8C;
+    background-color: #6d89b9;
 }
 
 .dropdown:hover .dropdown-content{
@@ -128,7 +128,7 @@ footer{
     /* margin-top: 100px; */
     padding: 25px 50px 25px 0px;
     box-shadow: 0px -8px 8px 0px rgba(0, 0, 0, 0.2);
-    background-color: #029f8c;
+    background-color: #6d89b9;
     display: flex;
     align-items: end;
     justify-content: space-between;
