@@ -192,16 +192,16 @@ function showResults (){
             <p class="result">%result%</p>
     `;
 
-    let title, message;
+    let resultTitle, message;
 
     if (score === 7 || score === 8 || score === 9 || score === questions.length ){
-        title = 'Ваш результат';
+        resultTitle = 'Ваш результат';
         message = 'У Вас высокий уровень лидерства';
     } else if (score === 6 || score === 5 || score === 4){
-        title = 'Ваш результат';
+        resultTitle = 'Ваш результат';
         message = 'У Вас средний уровень лидерства';
     } else if (score === 3 || score === 2 || score === 1){
-        title = 'Ваш результат';
+        resultTitle = 'Ваш результат';
         message = 'У Вас низкий уровень лидерства';
     }
 
@@ -209,12 +209,12 @@ function showResults (){
     let result = `${score} из ${questions.length}`;
 
     const finalMessage = resultsTemplate
-                        .replace('%title%', title)
+                        .replace('%title%', resultTitle)
                         .replace('%message%', message)
                         .replace('%result%', result);
 
-    bodyContainer.innerHTML = finalMessage;
-    // bodyContainer.innerHTML = '';
+    listContainer.innerHTML = finalMessage;
+    bodyContainer.innerHTML = '';
     progressContainer.hidden = true;
 
 
