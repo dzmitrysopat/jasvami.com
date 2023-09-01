@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+/* #029F8c */
 /* #6d89b9 */
-/* #029F8C */
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -254,7 +254,9 @@ h1 {
 .test-body,
 .result,
 .summary,
-.title,span{
+.title,
+span,
+.question{
     font-size: 16px;
     opacity: 0.8;
     text-transform: uppercase;
@@ -798,17 +800,17 @@ ol li:before {
 .interactiveQuiz{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     /* align-items: center; */
     /* text-align: center; */
     justify-content: space-between;
     background-image: url('../img/background.png');
     border: 2px solid #6d89b9;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow:  4px 4px 8px 5px rgba(21, 33, 43, 0.2);
-    width: 1000px;
-    height: 350px;
+    /* width: 815px; */
+    /* height: 400px; */
 }
 
 .quiz-list{
@@ -818,7 +820,7 @@ ol li:before {
     border-radius: 5px;
     /* border: 2px solid #6d89b9; */
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     align-items: flex-start;
     align-self: flex-start;
@@ -836,7 +838,7 @@ ol li:before {
 }
 
 progress{
-    width: 800px;
+    width: 600px;
     height: 15px;
     border-radius: 50px;
     justify-content: space-between;
@@ -848,22 +850,68 @@ progress::-webkit-progress-bar {
     border-radius: 25px;
 } 
 progress::-webkit-progress-value { 
-    /* background: #029F8C;  */
+    /* background: #6d89b9;  */
     background: #f7ab1e;
     border-radius: 50px;
 }
 
 .title{
-    font-size: 20px;
+    font-size: 21px;
+    align-self: center;
+    text-align: center;
+    /* font-size: 20px; */
+    height: 80px;
+    /* color: #f7ab1e; */
+    /* width: 700px; */
+}
+
+.message{
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
     height: 50px;
+}
+
+h2.question{
+    font-size: 22px;
+    width: 700px;
+    align-self: flex-start;
+    text-align: left;
 }
 
 span{
     font-size: 22px;
     font-weight: 700;
+    text-transform: none;
 }
 
 .result{
     align-self: center;
-    /* font-size: 20px; */
+    color: #6d89b9;
+    font-size: 20px;
+}
+
+.summary{
+    font-size: 18px;
+}
+
+.results{
+    /* margin-left: 15px; */
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.result-comntainer{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow:  4px 4px 8px 5px rgba(21, 33, 43, 0.2);
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
 }

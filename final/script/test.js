@@ -92,9 +92,9 @@ function showQuestion(){
     
     
     // Question
-    const headerTemplate = `<h2 class="title">%title%</h2>`;
+    const headerTemplate = `<h2 class="question">%question%</h2>`;
    
-    const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
+    const title = headerTemplate.replace('%question%', questions[questionIndex]['question']);
 
     headerContainer.innerHTML = title;
     
@@ -187,9 +187,13 @@ function showResults (){
     console.log(score);
 
     const resultsTemplate = `
+            <div class="results">
+            <div class="result-comntainer">
             <h2 class="title">%title%</h2>
-            <h3 class="summary">%message%</h3>
             <p class="result">%result%</p>
+            </div>
+            <h3 class="summary">%message%</h3>
+            </div>
     `;
 
     let resultTitle, message;
