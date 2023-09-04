@@ -226,7 +226,7 @@ function showResults (){
                         .replace('%message%', message)
                         // .replace('%result%', result);
 
-    headerContainer.innerHTML = finalMessage;
+    listContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';
     progressContainer.hidden = true;
 

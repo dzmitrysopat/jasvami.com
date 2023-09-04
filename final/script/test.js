@@ -199,13 +199,13 @@ function showResults (){
     let resultTitle, message;
 
     if (score === 7 || score === 8 || score === 9 || score === questions.length ){
-        resultTitle = 'Ваш результат';
+        resultTitle = 'Ваш результат:';
         message = 'У Вас высокий уровень лидерства';
     } else if (score === 6 || score === 5 || score === 4){
-        resultTitle = 'Ваш результат';
+        resultTitle = 'Ваш результат:';
         message = 'У Вас средний уровень лидерства';
     } else if (score === 3 || score === 2 || score === 1){
-        resultTitle = 'Ваш результат';
+        resultTitle = 'Ваш результат:';
         message = 'У Вас низкий уровень лидерства';
     }
 

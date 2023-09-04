@@ -226,13 +226,13 @@ function showResults (){
     let title, message;
 
     if (score <= 99){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'У Вас низкий уровень стресса!';
     } else if (score >= 100 && score <= 125){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'У Вас средний уровень стресса!';
     } else if (score >= 125){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'У Вас высокий уровень стресса!';
     }
 

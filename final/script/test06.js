@@ -207,18 +207,18 @@ function showResults (){
         title = 'Ваш результат:';
         message = 'У Вас наблюдается субклинически выраженная тревога';
     } else if (score >= 11){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'У Вас клинически выраженная тревога';
     }
 
     if (score1 <= 7){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message1 = 'У Вас не наблюдается достоверно выраженных симптомов депрессии';
     } else if (score1 >= 8 && score1 <= 10){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message1 = 'У Вас наблюдается субклинически выраженная депрессия';
     } else if (score1 >= 11){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message1 = 'У Вас клинически выраженная депрессия';
     }
 
@@ -231,7 +231,7 @@ function showResults (){
                         .replace('%message1%', message1)
                         // .replace('%result%', result);
 
-    headerContainer.innerHTML = finalMessage;
+    listContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';
     progressContainer.hidden = true;
 
