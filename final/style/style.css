@@ -995,3 +995,7 @@ span{
 .contact-btn{
     align-self: flex-start;
 }
+
+.map{
+    border-radius: 50%;
+}
