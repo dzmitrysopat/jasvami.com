@@ -129,10 +129,10 @@ h1 {
 .btns{
     display: flex;
     gap: 30px;
-    
 }
 
-.btn{
+.btn,
+.link-btn{
     text-align: center;
     cursor: pointer;
     width: 300px;
@@ -149,7 +149,7 @@ h1 {
     align-items: center;   
 }
 
-.green-btn{
+.green-btn, .link-btn{
     background-color: #6d89b9;
     border: 1px solid #6d89b9;
 }
@@ -178,6 +178,30 @@ h1 {
 
 .test-btn:hover{
     scale: 1.02;
+}
+
+a.top{
+    position: absolute;
+    right: -15%;
+    bottom: -4%;
+    display: none;
+    /* top: 50%; */
+}
+
+.fa-angle-up{
+    opacity: 0.6;
+    background-color: #6d89b9;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+a.top:hover>.fa-angle-up{
+    opacity: 1;
 }
 
 .orange-border{
@@ -320,6 +344,14 @@ span,
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
     border-radius: 5px;
     padding: 22px;
+    cursor: auto;
+}
+
+.test-slider-item:hover > .link-btn{
+    scale: 1.05;
+    border: 1px solid #6d89b9;
+    color: #6d89b9;
+    background-color: #fff;
 }
 
   /* кнопки влево и вправо */
@@ -646,6 +678,13 @@ textarea.text{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* margin: 0px 50px; */
+}
+
+.contact-page{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 
 ul.breadcrumb {
@@ -867,7 +906,7 @@ progress::-webkit-progress-value {
     height: 50px;
     max-width: 700px;
     margin: 20px;
-    color: #6d89b9;
+    /* color: #6d89b9; */
 }
 
 .message{
@@ -922,4 +961,37 @@ span{
     flex-direction: column;
     border-radius: 10px;
     padding: 20px;
+}
+
+.contact-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-card{
+    padding: 15px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/background.png');
+    border-radius: 15px;
+    box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
+    align-items: flex-start;
+    /* gap: 15px; */
+    justify-content: space-between;
+}
+
+.contact-link{
+    font-size: 18px;
+    transition: all .5s;
+}
+
+.contact-link:hover{
+    color: #e96b42;
+}
+
+.contact-btn{
+    align-self: flex-start;
 }
