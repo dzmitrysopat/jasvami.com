@@ -34,61 +34,49 @@
                     <br><br>
                     Очень часто, Часто, Иногда, Редко, Никогда
                     </p>
-                    <div class="btns">
-                        <button class="green-btn btn">Начать</button>
-                        <a href="#testsSlider"><button class="orange-btn btn" onclick="showSlider()">Больше тестов</button></a>
-                    </div>
-            </section>
+                    <button class="green-btn btn" id="testBtn" onclick="showTest()">Начать</button>
+                </section>
                 <img src="../../img/tests/samoocenka-preview-animate.svg" alt="Моё фото" class="test-photo">
         </article>
 
-<div class="itc-slider test-slider hidden element-animation" id="testsSlider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
-                <div class="itc-slider-wrapper">
-                    <div class="itc-slider-items">
-                        <a href="../../pages/tests/leader-preview.html" class="itc-slider-item test-slider-item">
-                            <div class="client-card consultation">
-                                <img src="../../img/tests/leadership-bro.png" alt="" class="test-img">
-                                <h3 class="clients-name offer-name">Самооценка лидерства</h3>
-                            </div>
-                            </a>
-                        <a href="../../pages/tests/stress-preview.html" class="itc-slider-item test-slider-item">
-                            <div class="client-card consultation">
-                                <img src="../../img/tests/Worried-bro-orange.png" alt="" class="test-img more-test">
-                                <h3 class=" clients-name offer-name">Уровень стресса</h3>
-                            </div>
-                            </a>
-                            <!-- <a href="../../pages/tests/samoocenka-preview.html" class="itc-slider-item test-slider-item">
-                            <div class="client-card consultation">
-                                <img src="../../img/tests/Enthusiastic-pana-green.png" alt="" class="test-img  more-test">
-                                <h3 class="clients-name offer-name">Уровень самооценки</h3>
-                            </div>
-                            </a> -->
-                            <a href="../../pages/tests/relationship-preview.html" class="itc-slider-item test-slider-item">
-                            <div class="client-card consultation">
-                                <img src="../../img/tests/Couple-stress-orange.png" alt="" class="test-img  more-test">
-                                <h3 class="clients-name offer-name">Роли в отношениях</h3>
-                            </div>
-                            </a>
-                            <a href="../../pages/tests/isolation-preview .html" class="itc-slider-item test-slider-item">
-                                <div class="client-card consultation">
-                                    <img src="../../img/tests/Alone-pana-green.png" alt="" class="test-img  more-test">
-                                    <h3 class="clients-name offer-name">Изолированность личности</h3>
-                                </div>
-                                </a>
-                                <a href="../../pages/tests/depression-preview.html" class="itc-slider-item test-slider-item">
-                                    <div class="client-card consultation">
-                                        <img src="../../img/tests/depression-orange.png" alt="" class="test-img  more-test">
-                                        <h3 class="clients-name offer-name">Тревога и депрессия</h3>
-                                    </div>
-                                    </a>
-                    </div>
-                    <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
-                    <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
+        <article class="hidden element-animation" id="interactiveQuiz">
+            <section class="progress">
+                <div id="test-body">
+                    <p class="number result">Номер вопроса ...</p>
                 </div>
-            </div>    </main>
+                <progress max="%max%" value="%step%" id="progress"></progress>
+            </section>
+            <section class="quiz-header" id="quiz-header">
+                <h2 class="question">Загружаем вопрос ...</h2>
+            </section>
+
+            <section class="quiz-list" id="list">
+                <div class="answer-item" id="answer">
+                    <label for="answer" class="label__input">
+                        <input type="radio" class="answer" name="answer" id="answer">
+                        <span class="answer-description">Ответ ...</span> 
+                    </label>
+                </div>
+                <div class="answer-item">
+                    <label for="answer"  class="label__input">
+                        <input type="radio" class="answer" name="answer">
+                        <span class="answer-description">Ответ ... </span> 
+                    </label>
+                </div>
+                <div class="results">
+                    <div class="result-comntainer">
+                        <h2 class="title">%title%</h2>
+                        <p class="result">%result%</p>
+                    </div>
+                    <h3 class="summary">%message%</h3>
+                </div>
+            </section>
+            <button id="submit" class="green-btn btn test-btn">Далее</button>
+        </article>
+        </main>
     <div w3-include-html="../wrapper/footer.html"></div>
     <script>includeHTML();</script>
-    <script src="../../script/test.js"></script>
+    <script src="../../script/test03.js"></script>
     <script src="../../script/script.js"></script>
 
 </body>

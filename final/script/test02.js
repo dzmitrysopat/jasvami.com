@@ -124,7 +124,7 @@ function showQuestion(){
     // console.log('showQuestion');
 
     // Question
-    const headerTemplate = ` <h2 class="question">%question%</h2>`;
+    const headerTemplate = `<h2 class="question">%question%</h2>`;
     const title = headerTemplate.replace('%question%', questions[questionIndex]['question']);
     headerContainer.innerHTML = title;
 
