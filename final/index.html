@@ -25,7 +25,7 @@
     <div w3-include-html="./pages/wrapper/header.html"></div>
     <main>
         <article class="site-info element-animation">
-            <img src="./img/Hanna01.jpg" alt="Моё фото" class="my-photo">
+            <img alt="Моё фото" class="my-photo" id="me">
 
             <section class="psy-info">
                 <h1 class="site-name">Психолог рядом с Вами</h1>
@@ -73,7 +73,6 @@
                     <h2 class="container-name orange">Чем я могу Вам помочь</h2>
                     <p class="container-description">Я провожу консультации по следующим вопросам:</p>
                 </article>
-                
                 <article class="offers">
                 <section class="offer">
                     <img src="./img/help/depression.svg" class="offer-img" alt="">
@@ -295,5 +294,35 @@
     <script src="./script/script.js"></script>
     <script src="./script/snow.js"></script>
     <script>includeHTML();</script>
+    <script>
+        let imgs = [ 
+        'img/photo/Hanna01.jpg', 
+        'img/photo/Hanna02.jpg', 
+        'img/photo/Hanna03.jpg',
+        'img/photo/Hanna04.jpg', 
+        'img/photo/Hanna05.jpg',
+        'img/photo/Hanna06.jpg', 
+        'img/photo/Hanna07.jpg', 
+        'img/photo/Hanna08.jpg', 
+        'img/photo/Hanna09.jpg', 
+        'img/photo/Hanna10.jpg', 
+        'img/photo/Hanna11.jpg', 
+        'img/photo/Hanna12.jpg', 
+        'img/photo/Hanna13.jpg', 
+        'img/photo/Hanna14.jpg', 
+        'img/photo/Hanna15.jpg', 
+        'img/photo/Hanna16.jpg', 
+        'img/photo/Hanna17.jpg', 
+        'img/photo/Hanna18.jpg', 
+        'img/photo/Hanna19.jpg']; 
+        let i = Math.floor(Math.random() * imgs.length);
+        let not__found = document.getElementById("me");
+        imgsrc('img/mail/'); // Первоначальное заполнение картинки
+        not__found.window.onload = imgsrc;
+        function imgsrc() {
+            not__found.src = imgs[i]; // Увеличить индекс лучше потом
+            if (++i === imgs.length) i = 0;
+        }
+    </script>
 </body>
 </html>
