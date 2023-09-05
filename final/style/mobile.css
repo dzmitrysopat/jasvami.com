@@ -16,15 +16,33 @@ body{
         display: none;
     }
 
+    /* footer style */
+
+    footer{
+        padding-left: 50px;
+    }
+
+    .footer-lists{
+        margin: 0;
+    }
+    
     /* body style */
     main{
-        padding: 15px;
+        /* padding: 0 15px; */
         gap: 20px;
-        margin: 50px 0;
+        margin: 100px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-container{
+        /* padding-right: 15px; */
+        width: 95%;
+        /* margin-top: 0; */
     }
 
     .site-info{
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         justify-content: center;
         align-items: center;
     }
@@ -34,7 +52,8 @@ body{
         text-align: center;
     }
 
-    .my-photo{
+    .my-photo,
+    .test-photo{
         max-width: 90%;
         align-self: center;
     }
@@ -56,7 +75,7 @@ body{
     }
 
     h2.container-name{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .offers{
@@ -75,9 +94,84 @@ body{
 
     .consultations{
         justify-content: center;
+        gap: 10px;
     }
 
     .price-img{
         width: 90vw;
     }
+
+    /* #help{
+        display: none;
+    } */
+
+    .element-animation {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+
+    .consultation{
+        scale: 0.9;
+    }
+
+    .page-header{
+        /* padding-left: 20px; */
+        align-items: center;
+        width: 100vw;
+    }
+
+    .breadcrumb{
+        display: none;
+    }
+
+    .contact-page,
+    .contact-cards{
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-card{
+        gap: 20px;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .contact-btn{
+        align-self: center;
+        width: inherit;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    ol, .list{
+        padding: 15px;
+    }
+
+    ol li,
+    ul li{
+        text-align: left;
+    }
+
+    .information{
+        text-align: left;
+    }
+
+    .test-slider-item{
+        flex: 1;
+        padding: 12px;
+    }
+
+    a.link-btn{
+        width: 310px;
+    }
+
 }

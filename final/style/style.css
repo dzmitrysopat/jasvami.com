@@ -80,7 +80,7 @@ a{
 }
 
 .my-photo{
-    /* max-width: calc(100% / 2.3); */
+    /* max-width: calc(100% / 2.4); */
     max-width: 500px;
     border-radius: 25px;
     box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
@@ -344,7 +344,7 @@ span,
     align-items: flex-start;
     gap: 10px;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 22px;
     cursor: auto;
 }
@@ -637,7 +637,7 @@ textarea.text{
 
 .element-animation {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(15%);
 }
 
 .element-animation.element-show {
