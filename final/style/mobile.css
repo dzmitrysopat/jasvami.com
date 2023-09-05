@@ -1,0 +1,83 @@
+body{
+    overflow-x: hidden;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1200px){
+    /* header style */
+    header{
+        flex-wrap: wrap;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    /* body style */
+    main{
+        padding: 15px;
+        gap: 20px;
+        margin: 50px 0;
+    }
+
+    .site-info{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .my-photo{
+        max-width: 90%;
+        align-self: center;
+    }
+
+    .check-list-container,
+    .check-list,
+    .btns{
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .btn{
+        width: inherit;
+    }
+
+    .btn:hover{
+        scale: 1.02;
+        background-color: #fff;
+    }
+
+    h2.container-name{
+        font-size: 35px;
+    }
+
+    .offers{
+        justify-content: center;
+    }
+
+    .itc-slider{
+        max-width: 85%;
+    }
+
+    .itc-slider-item{
+        flex: 0 0 100%;
+        /* width: 90%; */
+    }
+
+
+    .consultations{
+        justify-content: center;
+    }
+
+    .price-img{
+        width: 90vw;
+    }
+}

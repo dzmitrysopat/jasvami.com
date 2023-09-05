@@ -8,6 +8,7 @@
     <script src="./script/wrapper.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
     <link rel="stylesheet" href="./style/wrapper.css">
     <script src="./script/itc-slider.js" defer></script>
     <script>
@@ -61,7 +62,8 @@
 
                 <div class="btns">
                     <button id="consultation" class="green-btn btn">Получить консультацию</button>
-                    <a href="./index.html#help"><button class="orange-btn btn">Узнать больше</button></a>
+                    <a href="./index.html#help" class=" link-btn orange-btn btn test-btn">Узнать больше</a>
+                    <!-- <a href="./index.html#help" class="btn"><button class="orange-btn btn">Узнать больше</button></a> -->
                 </div>
             </section>
         </article>
@@ -292,7 +294,6 @@
     <div w3-include-html="./pages/wrapper/footer.html"></div>
     <script src="./script/photos.js"></script>
     <script src="./script/script.js"></script>
-    <script src="./script/snow.js"></script>
     <script>includeHTML();</script>
     <script>
         let imgs = [ 
@@ -311,10 +312,7 @@
         'img/photo/Hanna13.jpg', 
         'img/photo/Hanna14.jpg', 
         'img/photo/Hanna15.jpg', 
-        'img/photo/Hanna16.jpg', 
-        'img/photo/Hanna17.jpg', 
-        'img/photo/Hanna18.jpg', 
-        'img/photo/Hanna19.jpg']; 
+        'img/photo/Hanna16.jpg']; 
         let i = Math.floor(Math.random() * imgs.length);
         let not__found = document.getElementById("me");
         imgsrc('img/mail/'); // Первоначальное заполнение картинки
