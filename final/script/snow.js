@@ -17,7 +17,7 @@ var snowtype=new Array("Times")
 var snowletter="."
 
 // Set the speed of sinking (recommended values range from 0.3 to 2)
-var sinkspeed=0.4
+var sinkspeed=0.3
 
 // Set the maximum-size of your snowflakes
 var snowmaxsize=40
@@ -67,7 +67,7 @@ function initsnow() {
         var snowsizerange=snowmaxsize-snowminsize
         for (i=0;i<=snowmax;i++) {
                 crds[i] = 0;
-            lftrght[i] = Math.random()*15;
+        //     lftrght[i] = Math.random()*15;
             x_mv[i] = 0.03 + Math.random()/10;
                 snow[i]=document.getElementById("s"+i)
                 snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
@@ -106,7 +106,7 @@ function movesnow() {
 }
 
 for (i=0;i<=snowmax;i++) {
-        document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+        document.write("<div id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</div>")
 }
 if (browserok) {
         window.onload=initsnow

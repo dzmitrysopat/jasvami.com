@@ -59,7 +59,6 @@ openFamilyButton.addEventListener('click', () =>{
 });
 
 function showTest(){
-	
 	document.getElementById("test-preview").classList.add("hidden");
 	document.getElementById("interactiveQuiz").classList.remove("hidden");
 	document.getElementById("interactiveQuiz").classList.add("interactiveQuiz");
