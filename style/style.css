@@ -349,6 +349,10 @@ span,
     cursor: auto;
 }
 
+.none{
+    display: none;
+}
+
 .test-slider-item:hover > .link-btn{
     scale: 1.05;
     border: 1px solid #6d89b9;

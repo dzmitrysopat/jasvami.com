@@ -82,6 +82,14 @@ body{
         justify-content: center;
     }
 
+    .none{
+        display: block;
+    }
+
+    .hide{
+        display: none;
+    }
+
     .itc-slider{
         max-width: 85%;
     }
@@ -184,7 +192,7 @@ body{
 
     .close{
         top: 0px;
-        right: 0px;
+        right: 60px;
     }
 
     .modal{
