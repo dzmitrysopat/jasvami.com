@@ -42,7 +42,7 @@ body{
     }
 
     .site-info{
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
