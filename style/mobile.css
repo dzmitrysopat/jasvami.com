@@ -111,16 +111,14 @@ body{
         opacity: 1;
     }
 
-    .offer-slider-items{
-        /* gap: 50px; */
+    .offer-slider-item:hover{
+        box-shadow: none;
     }
 
     .offer-slider-item{
         flex:  0 0 20%;
         height: auto;
-        width: auto;
         width: 300px;
-        /* margin: 0 30px; */
     }
 
     .consultations{
