@@ -183,7 +183,18 @@ body{
     }
 
     .close{
-        right: 50px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .modal{
+        left: 5%;
+        top: 20%;
+        transform: translate(-0px, -0px);
+    }
+
+    input.text{
+        width: inherit;
     }
 
 }
