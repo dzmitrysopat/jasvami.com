@@ -107,7 +107,7 @@ body{
 
     .element-animation {
         opacity: 0;
-        transform: translateY(0%);
+        transform: translateY(-20%);
     }
 
     .consultation{
@@ -180,6 +180,10 @@ body{
 
     a.link-btn{
         width: 310px;
+    }
+
+    .close{
+        right: 50px;
     }
 
 }
