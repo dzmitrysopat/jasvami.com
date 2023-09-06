@@ -148,7 +148,8 @@ h1 {
     box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    transition: all 1s;   
 }
 
 .green-btn, .link-btn{
@@ -158,22 +159,22 @@ h1 {
 
 .orange-btn{
     background: linear-gradient(90deg, rgba(2,159,140,1) 0%, rgba(247,171,30,1) 100%);   
-    /*  border: 1px solid #f7ab1e; */
+     /* border: 1px solid #f7ab1e; */
 }
 
 .btn:hover{
     scale: 1.05;
-    background: #fff;
-    border: 1px solid #029F8c;
+    /* background: #fff; */
+    /* border: 1px solid #029F8c; */
 }
 
 .green-btn:hover{
-    color: #029F8c;
+    /* color: #029F8c; */
 }
 
 .orange-btn:hover{
-    border: 1px solid #f7ab1e;
-    color: #f7ab1e;
+    /* border: 1px solid #f7ab1e; */
+    /* color: #029F8c; */
 }
 
 .test-btn{
