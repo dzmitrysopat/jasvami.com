@@ -164,7 +164,6 @@ h1 {
 .btn:hover{
     scale: 1.05;
     background: #fff;
-    color: #029F8c;
     border: 1px solid #029F8c;
 }
 
@@ -173,7 +172,6 @@ h1 {
 }
 
 .orange-btn:hover{
-    /* color: #fff; */
     border: 1px solid #f7ab1e;
     color: #f7ab1e;
 }
@@ -616,13 +614,13 @@ input.text{
     height: 40px;
     padding: 10px;
     font-size: 17px;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     border: 2px solid #029F8c;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
 }
 
 textarea.text{
-    /* border-radius: 5px; */
+    border-radius: 5px;
     padding: 10px;
     border: 2px solid #029F8c;
     height: 140px;
