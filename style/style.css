@@ -335,6 +335,10 @@ span,
     cursor: pointer;
 }
 
+.offer-slider-item{
+    flex: 0;
+}
+
 .test-slider-item{
     flex: 0;
     height: 450px;

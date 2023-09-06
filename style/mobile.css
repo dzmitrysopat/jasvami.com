@@ -99,6 +99,13 @@ body{
         /* width: 50%; */
     }
 
+    .offer-slider-item{
+        flex:  1;
+    }
+
+    .container-description{
+        width: 290px;
+    }
 
     .consultations{
         justify-content: center;
