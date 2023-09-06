@@ -109,12 +109,16 @@ body{
         align-items: center;
     }
 
-    .offer-slider-item{
-        flex:  1;
+    .offer-slider-items{
+        /* gap: 50px; */
     }
 
-    .container-description{
-        width: 290px;
+    .offer-slider-item{
+        flex:  1;
+        height: auto;
+        width: auto;
+        width: 300px;
+        /* margin: 0 30px; */
     }
 
     .consultations{
