@@ -598,7 +598,8 @@ fieldset{
     box-shadow:  4px 4px 8px 10px rgba(34, 60, 80, 0.2);
     flex-direction: row;
     gap: 20px;
-    background-image: url('../img/background.png');
+    background-color: #f4fcfa;
+    /* background-image: url('../img/background.png'); */
 }
 
 .input-section{

@@ -35,6 +35,10 @@ body{
         justify-content: center;
     }
 
+    .main-container{
+        align-items: center;
+    }
+
     .page-container{
         /* padding-right: 15px; */
         width: 95%;
@@ -83,7 +87,9 @@ body{
     }
 
     .none{
-        display: block;
+        display: flex;
+        align-self: center;
+        gap: 20px;
     }
 
     .hide{
@@ -97,6 +103,10 @@ body{
     .itc-slider-item{
         flex: 0 0 100%;
         /* width: 50%; */
+    }
+
+    .container-title{
+        align-items: center;
     }
 
     .offer-slider-item{
