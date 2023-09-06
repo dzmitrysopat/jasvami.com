@@ -107,7 +107,7 @@ body{
 
     .itc-slider-btn-prev:hover,
     .itc-slider-btn-next:hover{
-        background-color: #6d89b9;
+        /* background-color: #029F8c; */
         opacity: 1;
     }
 
@@ -116,7 +116,7 @@ body{
     }
 
     .offer-slider-item{
-        flex:  0 0 20%;
+        flex:  20%;
         height: auto;
         width: 300px;
     }
@@ -129,10 +129,6 @@ body{
     .price-img{
         width: 90vw;
     }
-
-    /* #help{
-        display: none;
-    } */
 
     .element-animation {
         opacity: 0;

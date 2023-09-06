@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
 /* #029F8c */
-/* #6d89b9 */
+/* #029F8c */
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +38,7 @@ body{
 }
 
 ::selection {
-    background: #6d89b9; /* Safari */
+    background: #029F8c; /* Safari */
     color: #fff;
 }
 
@@ -61,7 +61,7 @@ a{
 }
 
 .green{
-    color: #6d89b9;
+    color: #029F8c;
 }
 
 .orange{
@@ -81,7 +81,7 @@ a{
 
 .my-photo{
     /* max-width: calc(100% / 2.4); */
-    max-width: 500px;
+    max-width: 480px;
     border-radius: 25px;
     box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
 }
@@ -95,13 +95,13 @@ a{
 h1 {
     font-family: 'caveat';
     font-size: 50px;
-    color: #6d89b9;
+    color: #029F8c;
 }
 
 
 .information{
-    border-top: 3px solid #6d89b9;
-    border-bottom: 3px solid #6d89b9;
+    border-top: 3px solid #029F8c;
+    border-bottom: 3px solid #029F8c;
     padding: 20px 0;
     font-size: 20px;
     text-align: justify;
@@ -152,25 +152,29 @@ h1 {
 }
 
 .green-btn, .link-btn{
-    background-color: #6d89b9;
-    border: 1px solid #6d89b9;
+    background: linear-gradient(45deg, rgba(109,137,185,1) 0%, rgba(2,159,140,1) 25%, rgba(74,144,170,1) 85%, rgba(109,137,185,1) 100%);;
+    /* border: 1px solid #029F8c; */
 }
 
 .orange-btn{
-    background-color: #f7ab1e;
-    border: 1px solid #f7ab1e;
+    background: linear-gradient(45deg, rgba(109,137,185,1) 0%, rgba(2,159,140,1) 25%, rgba(74,144,170,1) 85%, rgba(109,137,185,1) 100%);   
+    /*  border: 1px solid #f7ab1e; */
 }
 
 .btn:hover{
     scale: 1.05;
-    background-color: #fff;
+    background: #fff;
+    color: #029F8c;
+    border: 1px solid #029F8c;
 }
 
 .green-btn:hover{
-    color: #6d89b9;
+    color: linear-gradient(45deg, rgba(109,137,185,1) 0%, rgba(2,159,140,1) 25%, rgba(74,144,170,1) 85%, rgba(109,137,185,1) 100%);
+    /* color: #029F8c; */
 }
 
 .orange-btn:hover{
+    /* color: #fff; */
     color: #f7ab1e;
 }
 
@@ -192,7 +196,7 @@ a.top{
 
 .fa-angle-up{
     opacity: 0.6;
-    background-color: #6d89b9;
+    background-color: #029F8c;
     color: #fff;
     padding: 15px 20px;
     border-radius: 50%;
@@ -355,8 +359,8 @@ span,
 
 .test-slider-item:hover > .link-btn{
     scale: 1.05;
-    border: 1px solid #6d89b9;
-    color: #6d89b9;
+    border: 1px solid #029F8c;
+    color: #029F8c;
     background-color: #fff;
 }
 
@@ -364,7 +368,7 @@ span,
 .itc-slider-btn {
     font-size: 30px;
     text-align: center;
-    background-color: #6d89b9;
+    background-color: #029F8c;
     color: #fff;
     line-height: 50px;
     width: 50px;
@@ -387,7 +391,7 @@ span,
 
 .itc-slider-btn-prev:hover,
 .itc-slider-btn-next:hover{
-    background-color: #f7ab1e;
+    /* background-color: #f7ab1e; */
     opacity: 1;
 }
 
@@ -447,7 +451,7 @@ span,
 }
 
 #close-btn{
-    color: #6d89b9;
+    color: #029F8c;
     background-color: inherit;
     right: 25px;
 }
@@ -530,7 +534,7 @@ figcaption{
 
 .consultation{
     box-shadow: 0px 0px 15px 5px rgba(34, 80, 46, 0.2);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -539,7 +543,7 @@ figcaption{
 
 .consultation-name{
     font-size: 35px;
-    border-bottom: 3px solid #6d89b9;
+    border-bottom: 3px solid #029F8c;
     opacity: 1;
     font-weight: 600;
 }
@@ -588,14 +592,14 @@ figcaption{
 
 fieldset{
     padding: 25px;
-    border: 2px solid #6d89b9;
+    border: 2px solid #029F8c;
     border-radius: 5px;
     display: flex;
     box-shadow:  4px 4px 8px 10px rgba(34, 60, 80, 0.2);
     flex-direction: row;
     gap: 20px;
-    background-color: #f4fcfa;
-    /* background-image: url('../img/background.png'); */
+    /* background-color: #f4fcfa; */
+    background-image: url('../img/background.png');
 }
 
 .input-section{
@@ -611,15 +615,15 @@ input.text{
     height: 40px;
     padding: 10px;
     font-size: 17px;
-    border-radius: 5px;
-    border: 2px solid #6d89b9;
+    /* border-radius: 5px; */
+    border: 2px solid #029F8c;
     box-shadow:  4px 4px 8px 1px rgba(34, 60, 80, 0.2);
 }
 
 textarea.text{
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 10px;
-    border: 2px solid #6d89b9;
+    border: 2px solid #029F8c;
     height: 140px;
     /* width: inherit; */
     resize: none;
@@ -710,14 +714,14 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
     padding: 5px;
-    color: #6d89b9;
+    color: #029F8c;
     content: "»";
 }
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
     font-size: 25px;
-    color: #6d89b9;
+    color: #029F8c;
     transition: all .2s;
     font-family: 'caveat', cursive;
 }
@@ -755,7 +759,7 @@ ol li:before {
     counter-increment: myCounter;
     content: counter(myCounter);
     color: #fff;
-    background: #6d89b9;
+    background: #029F8c;
     display: inline-block;
     text-align: center;
     line-height: normal;
@@ -852,7 +856,7 @@ ol li:before {
     /* text-align: center; */
     justify-content: space-between;
     background-image: url('../img/background.png');
-    border: 2px solid #6d89b9;
+    border: 2px solid #029F8c;
     padding: 20px;
     border-radius: 15px;
     box-shadow:  4px 4px 8px 5px rgba(21, 33, 43, 0.2);
@@ -863,7 +867,7 @@ ol li:before {
     margin: 10px 0;
     /* padding: 20px; */
     border-radius: 5px;
-    /* border: 2px solid #6d89b9; */
+    /* border: 2px solid #029F8c; */
     flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
@@ -897,11 +901,11 @@ progress{
 }
 
 progress::-webkit-progress-bar { 
-    background:  #6d89b977; 
+    background:  #029F8c77; 
     border-radius: 25px;
 } 
 progress::-webkit-progress-value { 
-    /* background: #6d89b9;  */
+    /* background: #029F8c;  */
     background: #f7ab1e;
     border-radius: 50px;
 }
@@ -913,7 +917,7 @@ progress::-webkit-progress-value {
     height: 50px;
     max-width: 700px;
     margin: 20px;
-    /* color: #6d89b9; */
+    /* color: #029F8c; */
 }
 
 .message{
@@ -938,7 +942,7 @@ span{
 
 .result{
     align-self: center;
-    color: #6d89b9;
+    color: #029F8c;
     font-size: 20px;
     max-width: 300px;
     align-items: center;
