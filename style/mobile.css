@@ -105,8 +105,10 @@ body{
         /* width: 50%; */
     }
 
-    .container-title{
-        align-items: center;
+    .itc-slider-btn-prev:hover,
+    .itc-slider-btn-next:hover{
+        background-color: #6d89b9;
+        opacity: 1;
     }
 
     .offer-slider-items{
@@ -114,7 +116,7 @@ body{
     }
 
     .offer-slider-item{
-        flex:  1;
+        flex:  0 0 20%;
         height: auto;
         width: auto;
         width: 300px;
