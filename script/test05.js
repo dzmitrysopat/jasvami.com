@@ -1,82 +1,82 @@
 const questions = [
     {
-        question: "1. Я несчастлив, занимаясь столькими вещами в одиночку.",
+        question: "Я несчастлив, занимаясь столькими вещами в одиночку.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "2. Мне не с кем поговорить.",
+        question: "Мне не с кем поговорить.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "3. Для меня невыносимо быть таким одиноким.",
+        question: "Для меня невыносимо быть таким одиноким.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "4. Мне не хватает общения.",
+        question: "Мне не хватает общения.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "5. Я чувствую, что никто действительно не понимает меня.",
+        question: "Я чувствую, что никто действительно не понимает меня.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "6. Я часто ловлю себя на ожидании, что люди позвонят или напишут мне.",
+        question: "Я часто ловлю себя на ожидании, что люди позвонят или напишут мне.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "7. Нет никого, к кому я мог бы обратиться.",
+        question: "Нет никого, к кому я мог бы обратиться.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "8. Я сейчас больше ни с кем не близок.",
+        question: "Я сейчас больше ни с кем не близок.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "9. Те, кто меня окружает, не разделяют мои интересы и идеи.",
+        question: "Те, кто меня окружает, не разделяют мои интересы и идеи.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "10. Я чувствую себя покинутым.",
+        question: "Я чувствую себя покинутым.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "11. Я не способен раскрепощаться и общаться с теми, кто меня окружает.",
+        question: "Я не способен раскрепощаться и общаться с теми, кто меня окружает.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "12. Я чувствую себя совершенно одиноким.",
+        question: "Я чувствую себя совершенно одиноким.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "13. Мои социальные отношения и связи поверхностны.",
+        question: "Мои социальные отношения и связи поверхностны.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "14. Я умираю от тоски по компании.",
+        question: "Я умираю от тоски по компании.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "15. В действительности никто как следует не знает меня.",
+        question: "В действительности никто как следует не знает меня.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "16. Я чувствую себя изолированным от других.",
+        question: "Я чувствую себя изолированным от других.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "17. Я несчастен оттого, что всеми отвергнут.",
+        question: "Я несчастен оттого, что всеми отвергнут.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "18. Мне трудно заводить друзей.",
+        question: "Мне трудно заводить друзей.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "19. Я чувствую себя исключенным и изолированным другими.",
+        question: "Я чувствую себя исключенным и изолированным другими.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     },
     {
-        question: "20. Люди вокруг меня, но не со мной.",
+        question: "Люди вокруг меня, но не со мной.",
         answers: ["Никогда", "Редко", "Иногда", "Часто"],
     }
 ];
@@ -104,8 +104,8 @@ function showQuestion(){
     // console.log('showQuestion');
 
     // Question
-    const headerTemplate = ` <h2 class="title">%title%</h2>`;
-    const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
+    const headerTemplate = ` <h2 class="question">%question%</h2>`;
+    const title = headerTemplate.replace('%question%', questions[questionIndex]['question']);
     headerContainer.innerHTML = title;
 
     // questionnumber
@@ -136,12 +136,12 @@ function showQuestion(){
     for (answerText of questions[questionIndex]['answers']){
         // console.log(answerNumber, answerText);
         const questionTemplate = 
-            `<li>
+            `<div>
                 <label for="">
                     <input value="%number%" type="radio" class="answer" name="answer">
                     <span>%answer%</span>
                 </label>
-            </li>`;
+            </div>`;
 
         // let answerHTML = questionTemplate.replace('%answer%', answerText);
         //    listContainer.innerHTML = listContainer.innerHTML + answerHTML;
@@ -197,20 +197,24 @@ function showResults (){
     console.log(score);
 
     const resultsTemplate = `
+            <div class="results">
+            <div class="result-comntainer">
             <h2 class="title">%title%</h2>
+            </div>
             <h3 class="summary">%message%</h3>
+            </div>
     `;
 
     let title, message;
 
     if (score >= 0 && score <= 20){
-        title = 'Ваш результат: от 0 до 20 баллов';
+        title = 'Ваш результат: <br><br> от 0 до 20 баллов';
         message = 'У Вас низкая степень изолированности от людей';
     } else if (score >= 21 && score <= 40){
-        title = 'Ваш результат: от 21 до 40 баллов';
+        title = 'Ваш результат: <br><br> от 21 до 40 баллов';
         message = 'У Вас средняя степень социальной изолированности';
     } else if (score > 40){
-        title = 'Ваш результат: более 40 баллов';
+        title = 'Ваш результат: <br><br> более 40 баллов';
         message = 'У Вас высокая степень социальной закрытости';
     }
 
@@ -222,7 +226,7 @@ function showResults (){
                         .replace('%message%', message)
                         // .replace('%result%', result);
 
-    headerContainer.innerHTML = finalMessage;
+    listContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';
     progressContainer.hidden = true;
 

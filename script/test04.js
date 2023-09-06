@@ -119,9 +119,9 @@ function showQuestion(){
     
     
     // Question
-    const headerTemplate = `<h2 class="title">%title%</h2>`;
+    const headerTemplate = `<h2 class="question">%question%</h2>`;
    
-    const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
+    const title = headerTemplate.replace('%question%', questions[questionIndex]['question']);
 
     headerContainer.innerHTML = title;
     
@@ -150,12 +150,12 @@ function showQuestion(){
     for (answerText of questions[questionIndex]['answers']){
         // console.log(answerNumber, answerText);
         const questionTemplate = 
-            `<li>
+            `<div>
                 <label for="">
                     <input value="%number%" type="radio" class="answer" name="answer">
                     <span>%answer%</span>
                 </label>
-            </li>`;
+            </div>`;
 
         // let answerHTML = questionTemplate.replace('%answer%', answerText);
         //    listContainer.innerHTML = listContainer.innerHTML + answerHTML;
@@ -219,29 +219,34 @@ function showResults (){
     // console.log(score);
 
     const resultsTemplate = `
-            <h2 class="title">%title%</h2>
-            <h3 class="summary">%message%</h3>
+                <div class="results">
+                <div class="result-comntainer">
+                <h2 class="title">%title%</h2>
+                <h3 class="summary">%message%</h3>
+                </div>
+                
+                </div>
     `;
 
     let title, message;
 
     if (score1 > score && score > score2){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'У вас получилась формула ВДР (Взрослый-Дитя-Родитель). Вы обладаете развитым чувством ответственности, в меру импульсивны и не склонны к назиданиям и нравоучениям. Постарайтесь сохранить эти качества';
     } else if (score1 > score2 && score2 > score){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'У вас получилась формула ВРД (Взрослый-Родитель-Дитя). Вы обладаете развитым чувством ответственности, в меру импульсивны и не склонны к назиданиям и нравоучениям. Постарайтесь сохранить эти качества';
     } else if (score2 > score && score > score1){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'Вы получили формулу РДВ (Родитель-Дитя-Взрослый). Для вас характерны категоричность и самоуверенность. Кроме того, «Родитель» с детской непосредственностью режет «правду-матку», ни в чем не сомневаясь и не заботясь о последствиях. Поэтому таким людям желательно работать не с людьми, а с машинами, кульманом, этюдником и т. п.';
     }else if (score2 > score1 && score1 > score){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'Вы получили формулу РВД (Родитель-Взрослый-Дитя). Для вас характерны категоричность и самоуверенность. Кроме того, «Родитель» с детской непосредственностью режет «правду-матку», ни в чем не сомневаясь и не заботясь о последствиях. Поэтому таким людям желательно работать не с людьми, а с машинами, кульманом, этюдником и т. п.';
     } else if (score > score1 && score > score2){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'На первом месте в формуле Д. Это вполне приемлемый вариант для научной работы. Но детская непосредственность хороша только до определенных пределов. Если она начинает мешать делу, то пора взять свои эмоции под контроль.';
     }else if (score == score1 || score == score2 || score1 == score2){
-        title = 'Ваш результат';
+        title = 'Ваш результат:';
         message = 'Согласно изданию, в котором был опубликован данный тест, у Вас не может быть одиаковое количество баллов у разных ролей. Попробуйте пройти тест ещё раз';
     }
 
@@ -253,7 +258,7 @@ function showResults (){
                         .replace('%message%', message)
                         // .replace('%result%', result);
 
-    headerContainer.innerHTML = finalMessage;
+    listContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';
     progressContainer.hidden = true;
 

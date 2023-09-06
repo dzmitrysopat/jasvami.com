@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роли в отношениях</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/wrapper.css">
+    <link rel="shortcut icon" href="../../img/favicon.svg" type="image/x-icon">
+    <script src="../../script/wrapper.js"></script>
+</head>
+    
+<body class="body_hide">
+    <div w3-include-html="../wrapper/header.html"></div>
+    <main class="main" id="main">
+        <article class="page__logo">
+            <h1>Роли в отношениях</h1>
+            <ul class="breadcrumb">
+                    <li><a href="../../index.html" class="breadcrumb__link">Главная</a> </li>
+                    <li><a href="../tests.html" class="breadcrumb__link">Тесты-опросники</a></li>
+                    <li></li>
+            </ul>
+        </article>
+        <article class="quiz" id="quiz">
+            <section class="quiz-header" id="quiz-header">
+                <h2 class="title">Загружаем вопрос ...</h2>
+                
+               <div class="results">
+                <h2 class="title">%title%</h2>
+                <h3 class="summary">%message%</h3>
+                <p class="result">%result%</p>
+            </div>
+            </section>
+            
+            <ul class="quiz-list" id="list">
+                <li class="answer-item">
+                    <label for="answer" class="label__input">
+                        <input type="radio" class="answer" name="answer" id="answer">
+                       <label for="answer" class="input__label"><span class="answer-description">Ответ ...</span></label> 
+                    </label>
+                </li>
+    
+                <li class="answer-item">
+                    <label for="answer"  class="label__input">
+                        <input type="radio" class="answer" name="answer">
+                       <label for="answer"><span class="answer-description">Ответ ... </span></label> 
+                    </label>
+                </li>
+            </ul>
+            <div id="test-body">
+                <p class="number result">Номер вопроса ...</p>
+            </div>
+            <progress max="%max%" value="%step%" id="progress"></progress>
+            <button id="submit" class="quiz-submit submit">Далее</button>
+        </article>
+    </main>
+    <div w3-include-html="../wrapper/footer.html"></div>
+    <script>includeHTML();</script>
+    <script src="../../script/test04.js"></script>
+    <script src="../../script/script.js"></script>
+
+</body>
+</html>

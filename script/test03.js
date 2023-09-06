@@ -1,62 +1,62 @@
 const questions = [
     {
-        question: "1. Я часто волнуюсь понапрасну",
+        question: "Я часто волнуюсь понапрасну",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "2. Мне хочется, чтобы мои друзья подбадривали меня.",
+        question: "Мне хочется, чтобы мои друзья подбадривали меня.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "3. Я боюсь выглядеть глупцом.",
+        question: "Я боюсь выглядеть глупцом.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "4. Я беспокоюсь за свое будущее.",
+        question: "Я беспокоюсь за свое будущее.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "5. Внешний вид других куда лучше, чем мой.",
+        question: "Внешний вид других куда лучше, чем мой.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "6. Как жаль, что многие не понимают меня.",
+        question: "Как жаль, что многие не понимают меня.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "7. Чувствую, что не умею как следует разговаривать с людьми.",
+        question: "Чувствую, что не умею как следует разговаривать с людьми.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "8. Люди ждут от меня очень многого.",
+        question: "Люди ждут от меня очень многого.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "9. Чувствую себя скованным.",
+        question: "Чувствую себя скованным.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "10. Мне кажется, что со мной должна случиться какая-нибудь неприятность.",
+        question: "Мне кажется, что со мной должна случиться какая-нибудь неприятность.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "11. Меня волнует мысль о том, как люди относятся ко мне.",
+        question: "Меня волнует мысль о том, как люди относятся ко мне.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "12. Я чувствую, что люди говорят обо мне за моей спиной.",
+        question: "Я чувствую, что люди говорят обо мне за моей спиной.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "13. Я не чувствую себя в безопасности.",
+        question: "Я не чувствую себя в безопасности.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "14. Мне не с кем поделиться своими мыслями.",
+        question: "Мне не с кем поделиться своими мыслями.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
     {
-        question: "15. Люди не особенно интересуются моими достижениями.",
+        question: "Люди не особенно интересуются моими достижениями.",
         answers: ["Никогда", "Редко", "Иногда", "Часто", "Очень часто"],
     },
 ];
@@ -106,8 +106,8 @@ function showQuestion(){
     progressContainer.max = questions.length;
 
     // Question
-    const headerTemplate = ` <h2 class="title">%title%</h2>`;
-    const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
+    const headerTemplate = `<h2 class="question">%question%</h2>`;
+    const title = headerTemplate.replace('%question%', questions[questionIndex]['question']);
     headerContainer.innerHTML = title;
 
     // Answers
@@ -116,12 +116,12 @@ function showQuestion(){
     for (answerText of questions[questionIndex]['answers']){
         // console.log(answerNumber, answerText);
         const questionTemplate = 
-            `<li>
+            `<div>
                 <label for="">
                     <input value="%number%" type="radio" class="answer" name="answer">
                     <span>%answer%</span>
                 </label>
-            </li>`;
+            </div>`;
 
         // let answerHTML = questionTemplate.replace('%answer%', answerText);
         //    listContainer.innerHTML = listContainer.innerHTML + answerHTML;
@@ -130,7 +130,6 @@ function showQuestion(){
         const answerHTML = questionTemplate
                                     .replace('%answer%', answerText)
                                     .replace('%number%', answerNumber);
-        
         listContainer.innerHTML += answerHTML;
         answerNumber++;
     }
@@ -175,20 +174,24 @@ function showResults (){
     console.log(score);
 
     const resultsTemplate = `
-            <h2 class="title">%title%</h2>
-            <h3 class="summary">%message%</h3>
+                <div class="results">
+                <div class="result-comntainer">
+                <h2 class="title">%title%</h2>
+                </div>
+                <h3 class="summary">%message%</h3>
+                </div>
     `;
 
     let title, message;
 
     if (score <= 10){
-        title = 'Ваш результат: 10 баллов и менее';
+        title = 'Ваш результат: <br><br>  10 баллов и менее';
         message = 'У Вас завышенный уроввень самооценки';
     } else if (score >= 11 && score <= 29){
-        title = 'Ваш результат: 11-29 баллов';
+        title = 'Ваш результат: <br><br>  11-29 баллов';
         message = ' Средний, нормативный уровень реалистической оценки своих возможностей';
     } else if (score > 29){
-        title = 'Ваш результат: более 29 баллов';
+        title = 'Ваш результат: <br><br> более 29 баллов';
         message = 'У Вас заниженный уровень самооценки';
     }
 
@@ -200,7 +203,7 @@ function showResults (){
                         .replace('%message%', message)
                         // .replace('%result%', result);
 
-    headerContainer.innerHTML = finalMessage;
+    listContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';
     progressContainer.hidden = true;
 

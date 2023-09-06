@@ -1,84 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тесты-опросники</title>
+    <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/wrapper.css">
-    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
     <script src="../script/wrapper.js"></script>
+    <script src="../script/itc-slider.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // инициализация слайдера
+          var slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+          });
+        });
+      </script>
 </head>
-
 <body class="body_hide">
-    <div w3-include-html="./wrapper/header.html"></div>
-    <main class="main" id="main">
-        <article class="page__logo">
-            <h1>Тесты-опросники</h1>
+    <div w3-include-html="../pages/wrapper/header.html"></div>
+    <main id="main" class="page-main">
+    <div class="main-container header-container">
+        <article class="page-header">
+            <h1 class="page-title">Тесты-опросники</h1>
             <ul class="breadcrumb">
-                    <li><a href="../index.html" class="breadcrumb__link">Главная</a> </li>
-                    <li></li>
+                <li class="breadcrumb"><a href="../index.html">Главная</a></li>
+                <li class="breadcrumb"></li>
             </ul>
         </article>
-        <article class="information">
-           <p>Мои дорогие интересующиеся!</p>
-           <br> 
-           <p>В наше время общество все чаще обращается к психологическому знанию. К сожалению или счастью, под запрос есть всегда и желающие предоставить информацию.</p>
-           <br>
-           <p>В своей частной практике я часто сталкиваюсь с «любовью» своих клиентов, в процессе поиска ответов на сложившиеся ситуации, прибегать к психологической диагностике.</p>
-           <br>
-           <p>К сожалению, я крайне плохо отношусь к онлайн диагностикам, которые так часто можно встретить на просторах интернета. И все лишь потому, что многие из них автоматизированы по подсчетам, а алгоритм подсчета неизвестен. Более того, часто неизвестен и автор методики, ее название и показатели валидности и надежности.</p>
-           <br>
-           <p>Именно потому, в этой рубрике я постараюсь, по возможности, выкладывать краткие, проверенные,  взятые из надежных источников,  стандартизированные самоотчеты (тесты-опросники). Некоторые из них помогут Вам понять свои состояния и особенности личности. </p>
-           <p>Пользуйтесь только «на психологическое здоровье», а если вдруг так не выходит, то</p>
-           <span class="author">Меньше слов, больше Тестов!</span>
-        </article>
+    </div>
+    <div class="page-container">
+        <p class="information no-border element-animation">
+            Мои дорогие интересующиеся!
+        </p>
 
-        <section class="test">
+        <p class="information no-border element-animation">
+            В наше время общество все чаще обращается к психологическому знанию. К сожалению или счастью, под запрос есть всегда и желающие предоставить информацию.
+        </p>
 
-        <article class="clients tests">
-            <a href="../pages/tests/leader-preview.html" class="about__client" id="test_01">
-                <img src="../img/tests/leadership-bro.png" alt="" class="client__img test__img">
-                <p class="client__name">Самооценка лидерства</p>
-                <!-- <span class="test__description">Определите актуальный уровень проявления лидерства в совместной деятельности.</span> -->
-            </a>
-            <a href="../pages/tests/stress-preview.html" class="about__client" id="test_02">
-                <img src="../img/tests/Blaming-bro (1).png" alt="" class="client__img test__img">
-                <p class="client__name">Уровень стресса</p>
-                <!-- <span class="test__description">Дайте оценку вашему общему состоянию.</span> -->
-            </a>
-            <a href="../pages/tests/samoocenka-preview.html" class="about__client" id="test_03">
-                <img src="../img/tests/Enthusiastic-pana (1).png" alt="" class="client__img test__img">
-                <p class="client__name">Уровень самооценки</p>
-                <!-- <span class="test__description">Экспресс-диагностика уровня самооценки.</span> -->
-            </a>
-            <a href="../pages/tests/relationship-preview.html" class="about__client" id="test_04">
-                <img src="../img/tests/Couple stress-amico.png" alt="" class="client__img test__img">
-                <p class="client__name">Роли в отношениях</p>
-                <!-- <span class="test__description">Попробуйте оценить, как сочетаются три «Я» в вашем поведении.</span> -->
-            </a>
+        <p class="information no-border element-animation">
+            В своей частной практике я часто сталкиваюсь с «любовью» своих клиентов, в процессе поиска ответов на сложившиеся ситуации, прибегать к психологической диагностике.
+        </p>
 
-            <a href="../pages/tests/isolation-preview .html" class="about__client">
-                <img src="../img/tests/Alone-pana (1).png" alt="" class="client__img test__img">
-                <p class="client__name">Изолированность личности</p>
-                <!-- <span class="test__description">Экспресс-диагностика уровня социальной изолированности личности</span> -->
-            </a>
-            <!-- <a href="../pages/tests/trevoga.html" class="about__client">
-                <img src="../img/tests/Worried-bro.png" alt="" class="client__img test__img">
-                <p class="client__name">Тревога</p>
-                <!-- <span class="test__description">Госпитальная Шкала Тревоги и Депрессии </span> -->
-            </a>
-            <a href="../pages/tests/depression-preview.html" class="about__client">
-                <img src="../img/tests/Depression-amico (1).png" alt="" class="client__img test__img">
-                <p class="client__name">Тревога и Депрессия</p>
-                <!-- <span class="test__description">Госпитальная Шкала Тревоги и Депрессии </span> -->
-            </a>
-        </article>
+        <p class="information no-border element-animation">
+            К сожалению, я крайне плохо отношусь к онлайн диагностикам, которые так часто можно встретить на просторах интернета. И все лишь потому, что многие из них автоматизированы по подсчетам, а алгоритм подсчета неизвестен. Более того, часто неизвестен и автор методики, ее название и показатели валидности и надежности.
+        </p>
 
-    </section>
+        <p class="information no-border element-animation">
+            Именно потому, в этой рубрике я постараюсь, по возможности, выкладывать краткие, проверенные, взятые из надежных источников, стандартизированные самоотчеты (тесты-опросники). Некоторые из них помогут Вам понять свои состояния и особенности личности.
+        </p>
 
+        <p class="information no-border element-animation">
+            Пользуйтесь только «на психологическое здоровье», а если вдруг так не выходит, то
+        </p>
+
+        <h2 class="logo-title element-animation signature" id="sign">Меньше слов, больше Тестов!</h2>
+
+    </div>
+    
+    <div class="itc-slider test-slider element-animation" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+        <div class="itc-slider-wrapper">
+            <div class="itc-slider-items">
+                
+                    <div class="test-slider-item itc-slider-item">
+                        <img src="../img/tests/leadership-bro.png" alt="" class="test-img">
+                        <h3 class="clients-name offer-name">Самооценка лидерства</h3>
+                        <a href="../pages/tests/leader.html" class="link-btn green-btn btn test-btn">Пройти</a>
+                    </div>
+                
+                    <div class="test-slider-item itc-slider-item">
+                        <img src="../../img/tests/Worried-bro-orange.png" alt="" class="test-img">
+                        <h3 class=" clients-name offer-name">Уровень стресса</h3>
+                        <a href="../pages/tests/stress.html" class=" link-btn green-btn btn test-btn">Пройти</a>
+                    </div>
+                    <div class="itc-slider-item test-slider-item">
+                        <img src="../../img/tests/Enthusiastic-pana-green.png" alt="" class="test-img">
+                        <h3 class="clients-name offer-name">Уровень самооценки</h3>
+                        <a href="../pages/tests/samoocenka.html" class=" link-btn green-btn btn test-btn">Пройти</a>
+                    </div>
+                    <div class="test-slider-item itc-slider-item">
+                        <img src="../../img/tests/Couple-stress-orange.png" alt="" class="test-img">
+                        <h3 class="clients-name offer-name">Роли в отношениях</h3>
+                        <a href="../pages/tests/relationship.html" class=" link-btn green-btn btn test-btn">Пройти</a>
+                    </div>
+                    <div class="test-slider-item itc-slider-item">
+                        <img src="../../img/tests/Alone-pana-green.png" alt="" class="test-img">
+                        <h3 class="clients-name offer-name">Изолированность личности</h3>
+                        <a href="../pages/tests/isolation.html" class=" link-btn green-btn btn test-btn">Пройти</a>
+                    </div>
+                    <div class="test-slider-item itc-slider-item">
+                        <img src="../../img/tests/depression-orange.png" alt="" class="test-img">
+                        <h3 class="clients-name offer-name">Тревога и депрессия</h3>
+                        <a href="../pages/tests/depression.html" class=" link-btn green-btn btn test-btn">Пройти</a>
+                    </div>
+            </div>
+            <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
+            <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
+        </div>
+    </div>
     </main>
-    <div w3-include-html="./wrapper/footer.html"></div>
+
+    <div w3-include-html="../pages/wrapper/footer.html"></div>
     <script>includeHTML();</script>
     <script src="../script/script.js"></script>
 </body>

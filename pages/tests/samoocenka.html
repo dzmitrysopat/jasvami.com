@@ -6,57 +6,78 @@
     <title>Уровень самооценки</title>
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../style/wrapper.css">
-    <link rel="shortcut icon" href="../../img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="../../script/wrapper.js"></script>
+    <script src="../../script/itc-slider.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // инициализация слайдера
+          var slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+          });
+        });
+      </script>
 </head>
     
 <body class="body_hide">
     <div w3-include-html="../wrapper/header.html"></div>
     <main class="main" id="main">
-        <article class="page__logo">
-            <h1>Уровень самооценки</h1>
-            <ul class="breadcrumb">
-                    <li><a href="../../index.html" class="breadcrumb__link">Главная</a> </li>
-                    <li><a href="../tests.html" class="breadcrumb__link">Тесты-опросники</a></li>
-                    <li></li>
-            </ul>
+        
+        <article class="site-info element-animation" id="test-preview">
+            <section class="psy-info">
+                <h1 class="site-name">Экспресс-диагностика уровня самооценки</h1>
+                <p class="information">
+                    Отвечая на вопросы, указывайте, насколько часты для вас перечисленные состояния:
+                    <br><br>
+                    Очень часто, Часто, Иногда, Редко, Никогда
+                    </p>
+                    <button class="green-btn btn" id="testBtn" onclick="showTest()">Начать</button>
+                </section>
+                <img src="../../img/tests/samoocenka-preview-animate.svg" alt="Моё фото" class="test-photo">
         </article>
-        <article class="quiz" id="quiz">
-            <section class="quiz-header" id="quiz-header">
-                <h2 class="title">Загружаем вопрос ...</h2>
-    
-               <div class="results">
-                <h2 class="title">%title%</h2>
-                <h3 class="summary">%message%</h3>
-                <!-- <p class="result">%result%</p> -->
-            </div>
+
+        <article class="hidden element-animation" id="interactiveQuiz">
+            <section class="progress">
+                <div id="test-body">
+                    <p class="number result">Номер вопроса ...</p>
+                </div>
+                <progress max="%max%" value="%step%" id="progress"></progress>
             </section>
-    
-            <ul class="quiz-list" id="list">
-                <li class="answer-item">
-                    <label for="">
-                        <input type="radio" class="answer" name="answer">
-                        <span class="answer-description">Ответ ...</span>
+            <section class="quiz-header" id="quiz-header">
+                <h2 class="question">Загружаем вопрос ...</h2>
+            </section>
+
+            <section class="quiz-list" id="list">
+                <div class="answer-item" id="answer">
+                    <label for="answer" class="label__input">
+                        <input type="radio" class="answer" name="answer" id="answer">
+                        <span class="answer-description">Ответ ...</span> 
                     </label>
-                </li>
-    
-                <li class="answer-item">
-                    <label for="">
+                </div>
+                <div class="answer-item">
+                    <label for="answer"  class="label__input">
                         <input type="radio" class="answer" name="answer">
-                        <span class="answer-description">Ответ ... </span>
+                        <span class="answer-description">Ответ ... </span> 
                     </label>
-                </li>
-            </ul>
-            <div id="test-body">
-                <p class="number result">Номер вопроса ...</p>
-            </div>
-            <progress max="%max%" value="%step%" id="progress"></progress>
-            <button id="submit" class="quiz-submit submit">Далее</button>
+                </div>
+                <div class="results">
+                    <div class="result-comntainer">
+                        <h2 class="title">%title%</h2>
+                        <p class="result">%result%</p>
+                    </div>
+                    <h3 class="summary">%message%</h3>
+                </div>
+            </section>
+            <button id="submit" class="green-btn btn test-btn">Далее</button>
         </article>
-    </main>
+        </main>
     <div w3-include-html="../wrapper/footer.html"></div>
     <script>includeHTML();</script>
     <script src="../../script/test03.js"></script>
     <script src="../../script/script.js"></script>
+
 </body>
 </html>
