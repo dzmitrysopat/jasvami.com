@@ -114,6 +114,14 @@ body{
         scale: 0.9;
     }
 
+    h2.price{
+        text-align: center;
+    }
+
+    .form-img{
+        display: none;
+    }
+
     .page-header{
         /* padding-left: 20px; */
         align-items: center;
