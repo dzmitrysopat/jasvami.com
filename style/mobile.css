@@ -107,7 +107,7 @@ body{
 
     .element-animation {
         opacity: 0;
-        transform: translateY(-20%);
+        transform: translateY(0%);
     }
 
     .consultation{
@@ -188,9 +188,14 @@ body{
     }
 
     .modal{
-        left: 5%;
-        top: 20%;
-        transform: translate(-0px, -0px);
+        align-self: center;
+        left: 7%;
+        top: 10%;
+        transform: translate(-10px, -0px);
+    }
+
+    fieldset{
+        padding: 50px 25px 20px 25px;
     }
 
     input.text{
