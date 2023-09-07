@@ -315,19 +315,14 @@ hr{
   padding-top: 150px;
   opacity: 1;
   background: linear-gradient(45deg, rgba(109,137,185,1) 0%, rgba(2,159,140,1) 25%, rgba(74,144,170,1) 85%, rgba(109,137,185,1) 100%);
-  /* list-style-type: none; */
-  /* -webkit-font-smoothing: antialiased; */
-  /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 28px;
 }
 
