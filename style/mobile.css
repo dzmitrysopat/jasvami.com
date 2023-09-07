@@ -23,7 +23,7 @@ body{
     /* footer style */
 
     footer{
-        padding-left: 80px;
+        padding-left: 10%;
     }
 
     .footer-lists{
@@ -38,19 +38,20 @@ body{
     main{
         /* padding: 0 15px; */
         gap: 50px;
-        margin: 100px 0;
+        margin: 100px 0 0 0;
         align-items: center;
         justify-content: center;
     }
 
     .main-container{
         align-items: center;
+        margin-bottom: 0;
     }
 
     .page-container{
-        /* padding-right: 15px; */
         width: 95%;
-        /* margin-top: 0; */
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .site-info{
@@ -164,9 +165,13 @@ body{
         margin: 150px 0;
     }
     .page-header{
-        /* padding-left: 20px; */
         align-items: center;
         width: 100vw;
+    }
+
+    .page-title{
+        /* align-self: flex-start; */
+        font-size: 38px;
     }
 
     .breadcrumb{
@@ -230,13 +235,16 @@ body{
 
     .modal{
         align-self: center;
-        left: 6%;
+        left: 3%;
+        /* right: 3%; */
         top: 10%;
-        transform: translate(-10px, -0px);
+        transform: translate(-0px, -0px);
     }
 
     fieldset{
         padding: 50px 25px 20px 25px;
+        width: 300px;
+        margin: 0 auto;
     }
 
     input.text{

@@ -917,7 +917,6 @@ progress::-webkit-progress-value {
     height: 50px;
     max-width: 700px;
     margin: 20px;
-    /* color: #029F8c; */
 }
 
 .message{
@@ -953,7 +952,6 @@ span{
 }
 
 .results{
-    /* margin-left: 15px; */
     gap: 30px;
     display: flex;
     align-items: center;
@@ -963,7 +961,6 @@ span{
 }
 
 .result-comntainer{
-    /* width: 150px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -990,7 +987,6 @@ span{
     border-radius: 15px;
     box-shadow: 12px 11px 19px -3px rgba(34, 60, 80, 0.32);
     align-items: flex-start;
-    /* gap: 15px; */
     justify-content: space-between;
 }
 
