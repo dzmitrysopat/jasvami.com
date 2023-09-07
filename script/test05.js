@@ -136,12 +136,10 @@ function showQuestion(){
     for (answerText of questions[questionIndex]['answers']){
         // console.log(answerNumber, answerText);
         const questionTemplate = 
-            `<div>
-                <label for="">
-                    <input value="%number%" type="radio" class="answer" name="answer">
-                    <span>%answer%</span>
-                </label>
-            </div>`;
+            `<label class="label__input answer-item">
+            <input value="%number%" type="radio" class="answer" name="answer">
+            <span class="answer-description">%answer%</span>
+        </label>`;
 
         // let answerHTML = questionTemplate.replace('%answer%', answerText);
         //    listContainer.innerHTML = listContainer.innerHTML + answerHTML;
