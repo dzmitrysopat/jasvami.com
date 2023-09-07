@@ -328,7 +328,7 @@ hr{
 #menu li
 {
   padding: 10px 0;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 /*
@@ -341,7 +341,7 @@ hr{
 
 .burger-copyright{
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 15%;
     opacity: 1;
 }
