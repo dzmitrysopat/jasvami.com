@@ -211,7 +211,7 @@ body{
     }
 
     .information{
-        /* text-align: center; */
+        text-align: left;
     }
 
     .test-slider-item{
