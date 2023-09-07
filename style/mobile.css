@@ -268,4 +268,8 @@ body{
         width: auto;
     }
 
+    h3.summary{
+        text-align: center;
+    }
+
 }
