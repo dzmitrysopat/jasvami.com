@@ -310,7 +310,7 @@ hr{
   top: -40px;
   /* left: 20%; */
   margin: 0px 0;
-  padding: 70px;
+  padding: 0px 0px 0px 80px;
   padding-top: 150px;
   opacity: 1;
   background: linear-gradient(45deg, rgba(109,137,185,1) 0%, rgba(2,159,140,1) 25%, rgba(74,144,170,1) 85%, rgba(109,137,185,1) 100%);
