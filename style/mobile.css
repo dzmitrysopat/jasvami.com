@@ -253,7 +253,7 @@ body{
     }
 
     #interactiveQuiz{
-        height: 500px;
+        /* height: 500px; */
     }
 
     .progress{
