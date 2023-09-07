@@ -205,7 +205,6 @@ body{
 
     .card{
         width: 95%;
-        align-items: center;
     }
 
     ol, .list{
@@ -218,7 +217,7 @@ body{
     }
 
     .information{
-        text-align: center;
+        text-align: left;
     }
 
     .test-slider-item{
