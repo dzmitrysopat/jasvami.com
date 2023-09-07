@@ -58,6 +58,7 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 20px;
     }
     
     h1{
@@ -67,7 +68,7 @@ body{
 
     .my-photo,
     .test-photo{
-        max-width: 90%;
+        max-width: 95%;
         align-self: center;
     }
 

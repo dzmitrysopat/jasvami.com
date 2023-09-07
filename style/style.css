@@ -47,7 +47,7 @@ main{
     padding: 0 50px;
     margin: 120px auto;
     max-width: 1200px;
-    text-align: justify;
+    /* text-align: justify; */
     display: flex;
     gap: 50px;     
     flex-grow: 1;
@@ -934,7 +934,11 @@ h2.question{
 span{
     font-size: 22px;
     font-weight: 700;
-    text-transform: none;
+    /* text-transform: uppercase; */
+}
+
+span.label__input{
+    text-align: left;
 }
 
 .result{
