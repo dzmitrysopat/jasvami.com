@@ -200,6 +200,7 @@ function showResults (){
             <div class="results">
             <div class="result-comntainer">
             <h2 class="title">%title%</h2>
+            <p class="result">%result%</p>
             </div>
             <h3 class="summary">%message%</h3>
             </div>
