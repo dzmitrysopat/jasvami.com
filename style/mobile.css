@@ -16,6 +16,10 @@ body{
         display: none;
     }
 
+    .burger-menu{
+        display: block;
+    }
+
     /* footer style */
 
     footer{
@@ -155,6 +159,10 @@ body{
         display: none;
     }
 
+    .mySlides,
+    .mySlides01 {
+        margin: 150px 0;
+    }
     .page-header{
         /* padding-left: 20px; */
         align-items: center;
@@ -203,7 +211,7 @@ body{
     }
 
     .information{
-        text-align: center;
+        /* text-align: center; */
     }
 
     .test-slider-item{
