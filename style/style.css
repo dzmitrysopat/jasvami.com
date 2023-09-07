@@ -100,8 +100,8 @@ h1 {
 
 
 .information{
-    border-top: 3px solid #029F8c;
-    border-bottom: 3px solid #029F8c;
+    /* border-top: 3px solid #029F8c; */
+    /* border-bottom: 3px solid #029F8c; */
     padding: 20px 0;
     font-size: 20px;
     text-align: justify;
@@ -114,7 +114,7 @@ h1 {
 }
 
 .check-list{
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
