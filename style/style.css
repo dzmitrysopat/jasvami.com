@@ -865,9 +865,7 @@ ol li:before {
 .quiz-list{
     display: flex;
     margin: 10px 0;
-    /* padding: 20px; */
     border-radius: 5px;
-    /* border: 2px solid #029F8c; */
     flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;

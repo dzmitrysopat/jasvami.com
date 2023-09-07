@@ -251,4 +251,20 @@ body{
         width: inherit;
     }
 
+    #interactiveQuiz{
+        height: 500px;
+    }
+
+    .progress{
+        flex-direction: column;
+    }
+
+    progress{
+        width: 250px;
+    }
+
+    h2.question{
+        width: auto;
+    }
+
 }
