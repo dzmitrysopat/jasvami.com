@@ -183,7 +183,6 @@ hr{
     background: #fff;
     border: 1px solid #fff;
     opacity: 0.7;
-    margin: 0 0px;
 }
 
 .footer-title, .footer-favicon{
@@ -337,7 +336,7 @@ hr{
 .burger-copyright{
     position: absolute;
     top: 10px;
-    left: 15%;
+    left: 20%;
     opacity: 1;
 }
 
@@ -345,8 +344,4 @@ hr{
     color: #fff;
     opacity: 1;
     font-size: 30px;
-}
-
-.sublist{
-    margin-left: 20px;
 }

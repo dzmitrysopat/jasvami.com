@@ -864,10 +864,11 @@ ol li:before {
 
 .quiz-list{
     display: flex;
+    width: inherit;
     margin: 10px 0;
     border-radius: 5px;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
     flex-wrap: wrap;
     align-items: flex-start;
     align-self: flex-start;
@@ -916,6 +917,7 @@ label{
 
 label:hover{
     background-color: #029f8d77;
+    width: inherit;
 }
 
 .title{

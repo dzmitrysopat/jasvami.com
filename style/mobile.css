@@ -222,8 +222,11 @@ body{
 
     .test-slider-item{
         flex: 1;
-        padding: 12px;
+        padding: 5px;
     }
+    
+
+
 
     a.link-btn{
         width: 310px;
