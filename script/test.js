@@ -128,8 +128,8 @@ function showQuestion(){
         // console.log(answerNumber, answerText);
         const questionTemplate = 
             `
-                <label for="Answer" class="label__input answer-item">
-                    <input value="%number%" type="radio" class="answer" id="Answer" name="Answer">
+                <label for="answer" class="label__input answer-item">
+                    <input value="%number%" type="radio" class="answer" id="answer" name="answer">
                     <span class="answer-description">%answer%</span>
                 </label>
             `;
