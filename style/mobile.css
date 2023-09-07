@@ -217,16 +217,13 @@ body{
     }
 
     .information{
-        text-align: left;
+        text-align: center;
     }
 
     .test-slider-item{
         flex: 1;
         padding: 5px;
     }
-    
-
-
 
     a.link-btn{
         width: 310px;
