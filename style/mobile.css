@@ -292,6 +292,7 @@ body{
 
     h2.question{
         width: auto;
+        font-size: 18px;
     }
 
     h3.summary{
@@ -299,7 +300,10 @@ body{
     }
 
     span{
-        font-size: 17px;
+        font-size: 17.5px;
     }
 
+    #interactiveQuiz{
+        width: inherit;
+    }
 }
