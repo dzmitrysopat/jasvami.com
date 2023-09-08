@@ -278,8 +278,8 @@ body{
         width: inherit;
     }
 
-    #interactiveQuiz{
-        /* height: 500px; */
+    .quiz-list{
+        gap: 0;
     }
 
     .progress{
@@ -296,6 +296,10 @@ body{
 
     h3.summary{
         text-align: center;
+    }
+
+    span{
+        font-size: 17px;
     }
 
 }

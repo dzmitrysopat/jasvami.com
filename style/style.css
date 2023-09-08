@@ -867,7 +867,7 @@ ol li:before {
     margin: 10px 0;
     border-radius: 5px;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
     flex-wrap: wrap;
     align-items: flex-start;
     align-self: flex-start;
@@ -945,7 +945,6 @@ h2.question{
 span{
     font-size: 22px;
     font-weight: 700;
-    /* text-transform: uppercase; */
 }
 
 span.label__input{
