@@ -66,10 +66,13 @@ body{
         text-align: center;
     }
 
-    .my-photo,
-    .test-photo{
+    .my-photo{
         max-width: 95%;
         align-self: center;
+    }
+
+    .test-photo{
+        width: 85%;
     }
 
     .check-list-container,
@@ -113,7 +116,6 @@ body{
     .test-slider-wrapper{
         padding: 0;
         margin: 20px 0;
-        
     }
 
     .itc-slider-item{

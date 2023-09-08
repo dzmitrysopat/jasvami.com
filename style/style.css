@@ -358,11 +358,8 @@ span,
     display: none;
 }
 
-.test-slider-item:hover > .link-btn{
+.link-btn:hover{
     scale: 1.05;
-    border: 1px solid #029F8c;
-    color: #029F8c;
-    background: #fff;
 }
 
   /* кнопки влево и вправо */
