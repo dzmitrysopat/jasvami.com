@@ -128,7 +128,7 @@ body{
     .offer-slider-item{
         flex:  20%;
         height: auto;
-        width: 300px;
+        width: 320px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -205,6 +205,10 @@ body{
 
     .card{
         width: 95%;
+    }
+
+    .client-img{
+        width: 305px;
     }
 
     ol, .list{

@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клиент Психолога</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/wrapper.css">
     <script src="../script/wrapper.js"></script>
-    
+    <script src="../script/itc-slider.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // инициализация слайдера
+          var slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+          });
+        });
+      </script>
 </head>
 <body class="body_hide">
     <div w3-include-html="../pages/wrapper/header.html"></div>
@@ -55,9 +66,9 @@
             Работа с профессиональным психологом – это возможность увидеть свою жизнь и собственные решения в ней под новым, более объективным углом зрения, переосмыслить, какие приоритеты есть лично Ваши собственные, а какие - долго живут как «вклад» ближнего значимого окружения (бабушки, родители, социум).
         </p>
 
-        <h2 class="logo-title element-animation signature" id="sign">Психолог рядом с Вами, Анна Манько</h2>
+        <h2 class="logo-title element-animation signature" class="sign">Психолог рядом с Вами, <br class="none"> Анна Манько</h2>
 
-        <section class="clients-cards consultations element-animation">
+        <section class="clients-cards consultations element-animation hide">
             <a href="../pages/clients/relationship.html">
             <div class="client-card consultation">
                 <img src="../img/clients/family-green.png" alt="" class="client-img">
@@ -83,6 +94,40 @@
             </div>
             </a>
         </section>
+    </div>
+
+    <div class="itc-slider test-slider none" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+        <div class="itc-slider-wrapper">
+            <div class="itc-slider-items offer-slider-items">
+
+                <a href="../pages/clients/relationship.html" class="itc-slider-item offer-slider-item">
+                    <div class="client-card consultation">
+                        <img src="../img/clients/family-green.png" alt="" class="client-img">
+                        <h3 class="clients-name offer-name">Он и Она</h3>
+                    </div>
+                    </a>
+                    <a href="../pages/clients/supervisor.html" class="itc-slider-item offer-slider-item">
+                    <div class="client-card consultation">
+                        <img src="../img/clients/boss-orange.png" alt="" class="client-img">
+                        <h3 class=" clients-name offer-name">Руководителю</h3>
+                    </div>
+                    </a>
+                    <a href="../pages/clients/trainer.html" class="itc-slider-item offer-slider-item">
+                    <div class="client-card consultation">
+                        <img src="../img/clients/Trainer-green.png" alt="" class="client-img">
+                        <h3 class="clients-name offer-name">Тренеру</h3>
+                    </div>
+                    </a>
+                    <a href="../pages/clients/athlete.html" class="itc-slider-item offer-slider-item">
+                    <div class="client-card consultation">
+                        <img src="../img/clients/Athlet-orange.png" alt="" class="client-img">
+                        <h3 class="clients-name offer-name">Спортсмену</h3>
+                    </div>
+                    </a>
+            </div>
+            <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
+            <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
+        </div>
     </div>
     </main>
     <div w3-include-html="../pages/wrapper/footer.html"></div>
