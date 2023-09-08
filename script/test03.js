@@ -87,7 +87,7 @@ function showQuestion(){
     const bodyTemplate = `<p class="number result">%number%</p>`;
     
     let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
-    console.log(number);
+    // console.log(number);
 
     const questionNumber = bodyTemplate.replace('%number%', number);
 
@@ -99,8 +99,8 @@ function showQuestion(){
     `<progress max="%max%" value="%step%" id="progress"></progress>`;
 
     
-    console.log(step);
-    console.log(questions.length);
+    // console.log(step);
+    // console.log(questions.length);
 
     progressContainer.value = step;
     progressContainer.max = questions.length;
@@ -146,50 +146,54 @@ function checkAnswer(){
     // узнаем номер ответа пользователя
 
     const userAnswer = parseInt(checkedRadio.value);
-    console.log(parseInt(checkedRadio.value));
+    // console.log(parseInt(checkedRadio.value));
     // Если ответ верный - увеличиваем счет
     // questions[questionIndex]['answers']
     // if (userAnswer === questions[questionIndex]['answers']){
         score = score + (userAnswer - 1);
     // }
 
-    console.log('score = ', score);
+    // console.log('score = ', score);
 
     if (questionIndex !== questions.length - 1){
-        console.log('Это не последний вопрос');
+        // console.log('Это не последний вопрос');
         questionIndex++;
         clearPage();
         showQuestion();
     } else {
-        console.log('Это последний вопрос');
+        // console.log('Это последний вопрос');
         clearPage();
         showResults();
     }
 }
 
 function showResults (){
-    console.log('showResults start');
-    console.log(score);
+    // console.log('showResults start');
+    // console.log(score);
 
     const resultsTemplate = `
                 <div class="results">
                 <div class="result-comntainer">
                 <h2 class="title">%title%</h2>
+                <p class="result">%result%</p>
                 </div>
                 <h3 class="summary">%message%</h3>
                 </div>
     `;
 
-    let title, message;
+    let title, message, result;
 
     if (score <= 10){
-        title = 'Ваш результат: <br><br>  10 баллов и менее';
+        title = 'Ваш результат:';
+        result = '10 баллов и менее'
         message = 'У Вас завышенный уроввень самооценки';
     } else if (score >= 11 && score <= 29){
-        title = 'Ваш результат: <br><br>  11-29 баллов';
+        title = 'Ваш результат:';
+        result = 'от 11 до 29 баллов'
         message = ' Средний, нормативный уровень реалистической оценки своих возможностей';
     } else if (score > 29){
-        title = 'Ваш результат: <br><br> более 29 баллов';
+        title = 'Ваш результат:';
+        result = 'более 29 баллов'
         message = 'У Вас заниженный уровень самооценки';
     }
 
@@ -199,7 +203,7 @@ function showResults (){
     const finalMessage = resultsTemplate
                         .replace('%title%', title)
                         .replace('%message%', message)
-                        // .replace('%result%', result);
+                        .replace('%result%', result);
 
     listContainer.innerHTML = finalMessage;
     bodyContainer.innerHTML = '';

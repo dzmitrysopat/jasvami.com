@@ -103,7 +103,7 @@ function showQuestion(){
     const bodyTemplate = `<p class="number result">%number%</p>`;
     
     let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
-    console.log(number);
+    // console.log(number);
 
     const questionNumber = bodyTemplate.replace('%number%', number);
 
@@ -115,8 +115,8 @@ function showQuestion(){
     `<progress max="%max%" value="%step%" id="progress"></progress>`;
 
     
-    console.log(step);
-    console.log(questions.length);
+    // console.log(step);
+    // console.log(questions.length);
 
     progressContainer.value = step;
     progressContainer.max = questions.length;
@@ -168,23 +168,23 @@ function checkAnswer(){
         score++;
     }
 
-    console.log('score = ', score);
+    // console.log('score = ', score);
 
     if (questionIndex !== questions.length - 1){
-        console.log('Это не последний вопрос');
+        // console.log('Это не последний вопрос');
         questionIndex++;
         clearPage();
         showQuestion();
     } else {
-        console.log('Это последний вопрос');
+        // console.log('Это последний вопрос');
         clearPage();
         showResults();
     }
 }
 
 function showResults (){
-    console.log('showResults start');
-    console.log(score);
+    // console.log('showResults start');
+    // console.log(score);
 
     const resultsTemplate = `
             <div class="results">

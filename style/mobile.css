@@ -103,6 +103,7 @@ body{
     #nextPage{
         align-self: start;
         margin-left: 20px;
+        width: 350px;
     }
 
     h2.container-name{
@@ -294,6 +295,8 @@ body{
     .progress{
         flex-direction: column;
     }
+
+    
 
     progress{
         width: 250px;

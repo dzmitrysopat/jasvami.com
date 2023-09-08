@@ -196,31 +196,31 @@ function checkAnswer(){
         score2 = score2 + (userAnswer - 1);
     }
 
-    console.log('score = ', score);
-    console.log('score1 = ', score1);
-    console.log('score2 = ', score2);
+    // console.log('score = ', score);
+    // console.log('score1 = ', score1);
+    // console.log('score2 = ', score2);
 
     if (questionIndex !== questions.length - 1){
-        console.log('Это не последний вопрос');
+        // console.log('Это не последний вопрос');
         questionIndex++;
         clearPage();
         showQuestion();
     } else {
-        console.log('Это последний вопрос');
+        // console.log('Это последний вопрос');
         clearPage();
         showResults();
     }
 }
 
 function showResults (){
-    console.log('showResults start');
+    // console.log('showResults start');
     // console.log(score);
 
     const resultsTemplate = `
                 <div class="results">
                 <div class="result-comntainer">
                 <h2 class="title">%title%</h2>
-                <h3 class="summary">%message%</h3>
+                <h3 class="summary result">%message%</h3>
                 </div>
                 
                 </div>

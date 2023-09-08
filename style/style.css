@@ -918,7 +918,7 @@ label:hover{
     font-size: 21px;
     align-self: center;
     text-align: center;
-    height: 50px;
+    /* height: 50px; */
     max-width: 700px;
     margin: 20px;
 }
