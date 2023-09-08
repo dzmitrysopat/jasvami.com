@@ -165,24 +165,24 @@ function checkAnswer(){
         score = score + (userAnswer - 1);
     } else if (questionIndex >=7 && questionIndex <= 13) {
         score1 = score1 + (userAnswer - 1);}
-    console.log('score = ', score);
-    console.log('score1 = ', score1);
+    // console.log('score = ', score);
+    // console.log('score1 = ', score1);
 
     if (questionIndex !== questions.length - 1){
-        console.log('Это не последний вопрос');
+        // console.log('Это не последний вопрос');
         questionIndex++;
         clearPage();
         showQuestion();
     } else {
-        console.log('Это последний вопрос');
+        // console.log('Это последний вопрос');
         clearPage();
         showResults();
     }
 }
 
 function showResults (){
-    console.log('showResults start');
-    console.log(score);
+    // console.log('showResults start');
+    // console.log(score);
 
     const resultsTemplate = `
             <div class="results">
