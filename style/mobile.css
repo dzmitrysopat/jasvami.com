@@ -283,6 +283,14 @@ body{
         gap: 0;
     }
 
+    span.answer-description{
+        width: 290px;
+    }
+
+    span.nowidth{
+        width: auto;
+    }
+
     .progress{
         flex-direction: column;
     }
