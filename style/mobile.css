@@ -60,6 +60,14 @@ body{
         align-items: center;
         gap: 20px;
     }
+
+    #info{
+        text-align: center;
+    }
+
+    .started{
+        align-self: start;
+    }
     
     h1{
         font-size: 40px;
@@ -89,6 +97,11 @@ body{
     .btn:hover{
         scale: 1.02;
         background-color: #fff;
+    }
+
+    #nextPage{
+        align-self: start;
+        margin-left: 20px;
     }
 
     h2.container-name{
@@ -239,6 +252,7 @@ body{
 
     a.link-btn{
         width: 310px;
+        font-size: 20px;
     }
 
     .close{
