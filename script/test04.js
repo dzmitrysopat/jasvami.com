@@ -152,7 +152,7 @@ function showQuestion(){
         const questionTemplate = 
             `<label class="label__input answer-item">
             <input value="%number%" type="radio" class="answer" name="answer">
-            <span class="answer-description">%answer%</span>
+            <span class="answer-description nowidth">%answer%</span>
         </label>`;
 
         // let answerHTML = questionTemplate.replace('%answer%', answerText);

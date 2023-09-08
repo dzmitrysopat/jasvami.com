@@ -155,7 +155,7 @@ h1 {
 }
 
 .green-btn, .link-btn{
-    background: linear-gradient(45deg, rgba(109,137,185,1) 0%, rgba(2,159,140,1) 25%, rgba(74,144,170,1) 85%, rgba(109,137,185,1) 100%);
+    background: linear-gradient(45deg, #4a90aa 0%, #029f8c 50%,  #4a90aa 100%);
     /* border: 1px solid #029F8c; */
 }
 
@@ -863,9 +863,8 @@ ol li:before {
 
 .quiz-list{
     display: flex;
-    width: inherit;
+    /* width: inherit; */
     margin: 10px 0;
-    border-radius: 5px;
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
@@ -907,16 +906,15 @@ progress::-webkit-progress-value {
     background: #f7ab1e;
     border-radius: 50px;
 }
-
+ 
 label{
-    padding: 15px 15px;
-    transition: all .5s;
+    padding: 5px 35px 5px 5px;
+    transition: all .3s;
     border-radius: 8px;
-}
+} 
 
 label:hover{
     background-color: #029f8d77;
-    width: inherit;
 }
 
 .title{
@@ -943,12 +941,7 @@ h2.question{
 }
 
 span{
-    font-size: 22px;
     font-weight: 700;
-}
-
-span.label__input{
-    text-align: left;
 }
 
 .result{
@@ -1017,4 +1010,39 @@ span.label__input{
 
 .map{
     border-radius: 50%;
+}
+
+[type="radio"]{
+    display: none;
+}
+
+[type="radio"]:checked + span.answer-description::after{
+    transform: scale(1);
+}
+
+span.answer-description{
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+}
+
+span.answer-description::before{
+    content: '';
+    flex: 0 0 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 2px solid #029F8c;
+    border-radius: 50%;
+    margin-right: 10px;
+    align-self: flex-start;
+}
+
+span.answer-description::after{
+    transition: all ease-out 0.2s;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    content: url('../img/icons/check-input.svg');
+    transform: scale(0);
 }
