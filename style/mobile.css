@@ -110,6 +110,12 @@ body{
         max-width: 85%;
     }
 
+    .test-slider-wrapper{
+        padding: 0;
+        margin: 20px 0;
+        
+    }
+
     .itc-slider-item{
         flex: 0 0 100%;
         /* width: 50%; */
