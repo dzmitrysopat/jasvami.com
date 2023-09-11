@@ -40,6 +40,35 @@ body{
         padding: 50px;
     }
 
+    .consultations{
+        scale: 0.85;
+        flex-wrap: nowrap;
+    }
+    
+    progress{
+        width: 490px;
+    }
+
+    #interactiveQuiz{
+        width: 700px;
+    }
+
+    h2.question{
+        width: auto;
+        font-size: 20px;
+    }
+
+    #submit{
+        width: 650px;
+    }
+
+    span.answer-description{
+        width: 290px;
+    }
+
+    span.nowidth{
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -205,9 +234,9 @@ body{
         gap: 15px;
     }
 
-    .consultation{
+    /* .consultation{
         scale: 0.9;
-    }
+    } */
 
     .contact-page{
         flex-direction: column;
@@ -392,6 +421,7 @@ body{
     .consultations{
         justify-content: center;
         gap: 10px;
+        flex-wrap: wrap;
     }
 
     .price-img{
@@ -404,7 +434,7 @@ body{
     }
 
     .consultation{
-        scale: 0.9;
+        scale: 1;
     }
 
     h2.price{
@@ -548,6 +578,10 @@ body{
     }
 
     #interactiveQuiz{
+        width: inherit;
+    }
+
+    #submit{
         width: inherit;
     }
 }
