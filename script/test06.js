@@ -189,8 +189,8 @@ function showResults (){
            
                 <div class="result-comntainer">
                 <h2 class="title">%title%</h2>
-                <h3 class="summary">%message%</h3>
-                <h3 class="summary">%message1%</h3>
+                <h3 class="summary result">%message%</h3>
+                <h3 class="summary result">%message1%</h3>
                 </div>
                 
                 </div>
