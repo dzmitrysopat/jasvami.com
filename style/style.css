@@ -581,7 +581,7 @@ figcaption{
 .modal{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-45%, -45%);
     display: flex;
     gap: 50px;
