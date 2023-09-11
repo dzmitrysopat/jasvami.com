@@ -6,7 +6,7 @@ body{
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 450px){
     /* header style */
     header{
         flex-wrap: wrap;
@@ -262,12 +262,15 @@ body{
     }
 
     .modal{
+        margin: 0;
+        padding: 0;
         align-self: center;
         left: 0.5%;
         /* right: 3%; */
         top: 10%;
         transform: translate(-0px, -0px);
         width: 100%;
+        height: 100%;
     }
 
     fieldset{
