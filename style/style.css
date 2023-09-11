@@ -76,7 +76,6 @@ a{
     display: flex;
     flex-direction: row;
     gap: 50px;
-    /* flex-wrap: nowrap; */
 }
 
 .my-photo{
@@ -111,7 +110,6 @@ h1 {
 .check-list-container{
     display: flex;
     gap: 10px;
-    /* flex-wrap: wrap; */
 }
 
 .check-list{

@@ -5,8 +5,231 @@ body{
     margin: 0;
 }
 
+@media screen and (max-width: 1050px){
+    .site-info{
+        flex-wrap: wrap;
+    }
 
-@media screen and (max-width: 450px){
+    .my-photo{
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .my-photo{
+        max-width: 95%;
+        align-self: center;
+    }
+
+    .form-img{
+        display: none;
+    }
+
+    .close{
+        top: 0px;
+        right: 60px;
+    }
+
+    .modal{
+        left: 20%;
+        top: 10%;
+        transform: translate(-0px, -0px);
+    }
+
+    fieldset{
+        padding: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    header{
+        flex-wrap: wrap;
+    }
+
+    .head-container{
+        align-items: flex-start;
+        margin: 0 20px;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+
+
+    /* footer style */
+
+    footer{
+        padding-left: 10%;
+    }
+
+    .footer-lists{
+        margin: 0;
+    }
+    
+    ul.footer-list{
+        padding-left: 0;
+    }
+
+    .burger-copyright{
+        left: 7%;
+    }
+
+    main{
+        /* padding: 0 15px; */
+        gap: 0px;
+        margin: 100px 50px 0 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container{
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .page-container{
+        width: 95%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .site-info{
+        /* flex-wrap: wrap; */
+        scale: 0.9;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    #info{
+        text-align: center;
+    }
+
+    .started{
+        align-self: start;
+    }
+
+    #test-preview{
+        flex-wrap: wrap-reverse;
+        scale: 1;  
+    }
+
+    .reverse{
+        flex-direction: column;
+        scale: 1;
+    }
+
+    .none{
+        display: flex;
+        align-self: center;
+        gap: 20px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .itc-slider{
+        max-width: 90%;
+    }
+
+    .test-slider-item{
+        flex: 0 0 30%;
+        width: 330px;
+    } 
+
+    .test-slider-wrapper{
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .itc-slider-item{
+        flex: 0 0 18%;
+    }
+
+    .itc-slider-items{
+        gap: 30px;
+    }
+
+    .itc-slider-btn-prev:hover,
+    .itc-slider-btn-next:hover{
+        opacity: 1;
+    }
+
+    .offer-slider-item:hover{
+        box-shadow: none;
+    }
+
+    .offer-slider-item{
+        flex:  100%;
+        height: auto;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .client-card:hover,
+    .offer-slider-item:hover,
+    .itc-slider-item:hover{
+        scale: 1;
+    }
+
+    .consultations{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nextPage{
+        display: none;
+    }
+
+    h1.page-title{
+        align-self: flex-start;
+        margin-left: 70px;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    .contact-card{
+        gap: 15px;
+    }
+
+    .consultation{
+        scale: 0.9;
+    }
+
+    .contact-page{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .page-header{
+        align-items: center;
+        width: 100vw;
+    }
+
+    .page-title{
+        font-size: 38px;
+    }
+
+    .breadcrumb{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 675px){
     /* header style */
     header{
         flex-wrap: wrap;
@@ -18,6 +241,10 @@ body{
 
     .burger-menu{
         display: block;
+    }
+
+    .burger-copyright{
+        left: 18%;
     }
 
     /* footer style */
@@ -55,6 +282,7 @@ body{
     }
 
     .site-info{
+        scale: 1;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -137,6 +365,10 @@ body{
         /* width: 50%; */
     }
 
+    .client-card:hover{
+        scale: 1;
+    }
+
     .itc-slider-btn-prev:hover,
     .itc-slider-btn-next:hover{
         /* background-color: #029F8c; */
@@ -187,13 +419,14 @@ body{
     .mySlides01 {
         margin: 150px 0;
     }
+
     .page-header{
         align-items: center;
+        margin: 0 auto;
         width: 100vw;
     }
 
     .page-title{
-        /* align-self: flex-start; */
         font-size: 38px;
     }
 
@@ -296,8 +529,6 @@ body{
     .progress{
         flex-direction: column;
     }
-
-    
 
     progress{
         width: 250px;
