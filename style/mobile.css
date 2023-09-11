@@ -271,7 +271,7 @@ body{
     }
 
     .burger-copyright{
-        left: 10%;
+        left: 15%;
     }
 
     /* footer style */
@@ -585,11 +585,22 @@ body{
 }
 
 @media screen and (max-width: 380px){
-    .burger-menu{
-        top: 20%;
+    #menu{
+        top: -230%;
+    }
+
+
+    #menuToggle{
+        position: absolute;
+        top: 50px;
     }
 
     .logotype{
         gap: 0;
+        margin-left: 50px;
+    }
+
+    .burger-copyright{
+        left: 5%;
     }
 }
