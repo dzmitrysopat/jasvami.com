@@ -67,7 +67,6 @@ body{
 
     .started{
         align-self: start;
-        
     }
     
     h1{
@@ -268,6 +267,7 @@ body{
         /* right: 3%; */
         top: 10%;
         transform: translate(-0px, -0px);
+        width: 100%;
     }
 
     fieldset{
