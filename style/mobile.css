@@ -15,7 +15,7 @@ body{
     }
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px){    
     .my-photo{
         max-width: 95%;
         align-self: center;
@@ -88,8 +88,6 @@ body{
     .burger-menu{
         display: block;
     }
-
-
 
     /* footer style */
 
@@ -583,5 +581,18 @@ body{
 
     #submit{
         width: inherit;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .burger-menu{
+        top: 20%;
+    }
+    #menu{
+        /* top: 0; */
+    }
+
+    .logotype{
+        gap: 0;
     }
 }

@@ -1031,6 +1031,7 @@ span.answer-description::before{
     height: 25px;
     background-color: #fff;
     border: 2px solid #029F8c;
+    opacity: 0.85;
     border-radius: 50%;
     margin-right: 10px;
     align-self: flex-start;
