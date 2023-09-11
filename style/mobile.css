@@ -264,21 +264,20 @@ body{
 
     .modal{
         align-self: center;
-        left: .5%;
+        left: 0.5%;
         /* right: 3%; */
         top: 10%;
         transform: translate(-0px, -0px);
     }
 
     fieldset{
-        margin-left: 0;
         padding: 50px 25px 20px 25px;
         width: 99vw;
         margin: 0 auto;
     }
 
     input.text{
-        width: inherit;
+        width: 85vw;
     }
 
     .quiz-list{
