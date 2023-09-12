@@ -586,7 +586,9 @@ body{
 
 @media screen and (max-width: 380px){
     #menu{
-        top: -230%;
+        top: -170%;
+        padding-top: 150px;
+        margin: 0;
     }
 
     h2.logo-title{
@@ -605,6 +607,6 @@ body{
 
     .burger-copyright{
         left: 5%;
-        top: 35px;
+        top: 15px;
     }
 }
