@@ -512,8 +512,11 @@ span,
 figcaption{
     font-size: 25px;
     text-align: center;
-    /* background-color: inherit; */
     color: #fff;
+}
+
+figure > img.centered{
+    margin-left: 100px;
 }
 
 .consultations{

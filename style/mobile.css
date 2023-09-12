@@ -21,6 +21,10 @@ body{
         align-self: center;
     }
 
+    figure > img.centered{
+        margin-left: 80px;
+    }
+
     .form-img{
         display: none;
     }
@@ -260,6 +264,10 @@ body{
     /* header style */
     header{
         flex-wrap: wrap;
+    }
+
+    figure > img.centered{
+        margin-left: 50px;
     }
 
     #nav{
@@ -587,6 +595,10 @@ body{
 @media screen and (max-width: 380px){
     main{
         overflow-x: hidden;
+    }
+
+    figure > img.centered{
+        margin-left: 20px;
     }
 
     #menu{
