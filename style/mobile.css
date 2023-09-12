@@ -589,18 +589,22 @@ body{
         top: -230%;
     }
 
+    h2.logo-title{
+        font-size: 25px;
+    }
 
     #menuToggle{
         position: absolute;
-        top: 50px;
+        top: 40px;
     }
 
     .logotype{
-        gap: 0;
-        margin-left: 50px;
+        gap: 5px;
+        margin-left: 40px;
     }
 
     .burger-copyright{
         left: 5%;
+        top: 35px;
     }
 }
