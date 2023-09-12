@@ -224,8 +224,8 @@ body{
     }
 
     h1.page-title{
-        align-self: flex-start;
-        margin-left: 70px;
+        align-self: center;
+        /* margin-left: 70px; */
     }
 
     .cards{
