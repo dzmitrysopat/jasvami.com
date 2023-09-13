@@ -165,10 +165,7 @@ body{
 
     .none{
         display: flex;
-        align-self: flex-start;
         gap: 20px;
-        margin-left: 20px;
-        width: 380px;
     }
 
     .hide{
@@ -180,7 +177,7 @@ body{
     }
 
     .test-slider-item{
-        flex: 0 0 30%;
+        flex: 100%;
         width: 330px;
     } 
 
@@ -202,12 +199,13 @@ body{
         opacity: 1;
     }
 
+
     .offer-slider-item:hover{
         box-shadow: none;
     }
 
     .offer-slider-item{
-        flex:  100%;
+        flex:  0 0 29%;
         height: auto;
         width: 320px;
         display: flex;
@@ -305,11 +303,12 @@ body{
 
     /* body style */
     main{
-        /* padding: 0 15px; */
+        padding: 0 15px;
         gap: 50px;
         margin: 100px 0 0 0;
         align-items: center;
         justify-content: center;
+        overflow-x: hidden;
     }
 
     .main-container{
@@ -386,7 +385,7 @@ body{
     }
 
     .none{
-        display: block;
+        display:flex;
     }
 
     .hide{
@@ -422,7 +421,7 @@ body{
     }
 
     .offer-slider-item{
-        flex:  20%;
+        flex:  1;
         height: auto;
         width: 320px;
         display: flex;
@@ -602,6 +601,7 @@ body{
 @media screen and (max-width: 380px){
     main{
         overflow-x: hidden;
+        padding-left: 7px;
     }
 
     figure > img.centered{
