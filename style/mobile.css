@@ -73,6 +73,12 @@ body{
     span.nowidth{
         width: auto;
     }
+
+    .none{
+        display: flex;
+        align-self: center;
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -159,8 +165,10 @@ body{
 
     .none{
         display: flex;
-        align-self: center;
+        align-self: flex-start;
         gap: 20px;
+        margin-left: 20px;
+        width: 380px;
     }
 
     .hide{
@@ -219,9 +227,9 @@ body{
         justify-content: center;
     }
 
-    #nextPage{
+    /* #nextPage{
         display: none;
-    }
+    } */
 
     h1.page-title{
         align-self: center;
@@ -362,9 +370,11 @@ body{
     }
 
     #nextPage{
-        align-self: start;
+        display: flex;
+        align-self: flex-start;
         margin-left: 20px;
         width: 350px;
+        gap: 20px;
     }
 
     h2.container-name{
@@ -376,9 +386,7 @@ body{
     }
 
     .none{
-        display: flex;
-        align-self: center;
-        gap: 20px;
+        display: block;
     }
 
     .hide{
@@ -644,4 +652,5 @@ body{
     textarea{
         width: 80vw;
     }
+
 }
