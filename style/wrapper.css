@@ -327,6 +327,12 @@ hr{
     transform: none;
 }
 
+.sub-item{
+    font-size: 28px;
+    margin-left: 20px;
+    padding-bottom: 15px;
+}
+
 .burger-copyright{
     position: absolute;
     top: 10px;
