@@ -264,6 +264,10 @@ hr{
     background: #fff;
 }
 
+/* #menuToggle input:checked > main{
+    overflow-y: hidden;
+} */
+
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
     opacity: 0;

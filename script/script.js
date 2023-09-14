@@ -85,6 +85,14 @@
 //         window.onload=initsnow
 // }
 
+function checkCheckbox() {
+    const checkbox = document.getElementById('checkBurger');
+    if (checkbox.checked) {
+	  document.body.style.overflowY = 'hidden';
+    } else {
+	  document.body.style.overflowY = 'visible';
+    }
+  }
 
 setTimeout(function(){
 	document.body.classList.add('body_visible');
