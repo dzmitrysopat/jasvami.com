@@ -114,22 +114,22 @@ const modalWrapper = document.getElementById('modalWrapper');
 
 openModalButton.addEventListener('click', () =>{
 	modalWrapper.style.display = 'block';
-	// document.body.style.overflow = 'hidden';
+	document.body.style.overflowY = 'hidden';
 });
 
 closeModalButton.addEventListener('click', () =>{
 	modalWrapper.style.display = 'none';
-	// document.body.style.overflow = 'visible';
+	document.body.style.overflowY = 'visible';
 });
 
 openPersonalButton.addEventListener('click', () =>{
 	modalWrapper.style.display = 'block';
-	// document.body.style.overflow = 'hidden';
+	document.body.style.overflowY = 'hidden';
 });
 
 openFamilyButton.addEventListener('click', () =>{
 	modalWrapper.style.display = 'block';
-	// document.body.style.overflow = 'hidden';
+	document.body.style.overflowY = 'hidden';
 });
 
 function showTest(){
