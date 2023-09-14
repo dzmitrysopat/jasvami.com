@@ -47,11 +47,13 @@ function openModal() {
 
   function openModal01() {
     document.getElementById('myModal01').style.display = "block";
+    document.body.style.overflowY = 'hidden';
   }
   
   // Close the Modal
   function closeModal01() {
     document.getElementById('myModal01').style.display = "none";
+    document.body.style.overflowY = 'visible';
   }
   
   var slideIndex = 1;

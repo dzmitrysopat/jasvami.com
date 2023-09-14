@@ -117,9 +117,6 @@ body{
         left: 7%;
     }
 
-    article .copyright{
-        justify-self: center;
-    }
 
     main{
         /* padding: 0 15px; */
@@ -597,7 +594,7 @@ body{
 @media screen and (max-width: 380px){
     main{
         overflow-x: hidden;
-        padding-left: 7px;
+        /* padding-left: 7px; */
     }
 
     figure > img.centered{
@@ -622,6 +619,10 @@ body{
     .logotype{
         gap: 5px;
         margin-left: 40px;
+    }
+
+    article .copyright{
+        margin-left: 0;
     }
 
     .burger-copyright{
