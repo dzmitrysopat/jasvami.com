@@ -15,7 +15,7 @@ $GLOBALS['admin_password'] = '12345';
 
 //! Edit fields below for personal settings
 // Default language: en & ru
-$GLOBALS['default_language'] = 'en';
+$GLOBALS['default_language'] = 'ru';
 
 // Default theme: white & black
 $GLOBALS['default_theme'] = 'white';
