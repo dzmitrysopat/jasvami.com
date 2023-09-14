@@ -1,11 +1,13 @@
 // Open the Modal
 function openModal() {
     document.getElementById('myModal').style.display = "block";
+    document.body.style.overflowY = 'hidden';
   }
   
   // Close the Modal
   function closeModal() {
     document.getElementById('myModal').style.display = "none";
+    document.body.style.overflowY = 'visible';
   }
   
   var slideIndex = 1;
