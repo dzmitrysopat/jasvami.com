@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самооценка лидерства</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/wrapper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../img/icons/favicon.ico" type="image/x-icon">
+    <script src="../../script/wrapper.js"></script>
+    <script src="../../script/itc-slider.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // инициализация слайдера
+          var slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+          });
+        });
+      </script>
+</head>
+<body class="body_hide">
+    <div w3-include-html="../wrapper/header.php"></div>
+    <main class="main" id="main">
+        
+        <article class="site-info element-animation" id="test-preview">
+            <section class="psy-info">
+                <h1 class="site-name">Самооценка лидерства</h1>
+                <p class="information">
+                    Данный экспресс-тест позволяет определить актуальный уровень проявления лидерства в совместной деятельности.
+                    <br><br>
+                    Внимательно прочтите каждое из десяти суждений и выберите наиболее подходящий для вас ответ в буквенной форме. Работая с опросником, помните, что нет ни плохих, ни хороших ответов.
+                    <br><br>
+                    Немаловажным фактором является и то, что в своих ответах надо стремиться к объективности и записывать тот ответ, который первым приходит в голову.
+                </p>
+                <a href="#" class="green-btn btn" id="testBtn" onclick="showTest()">Начать</a>
+            </section>
+                <img src="../../img/tests/leadership-preview-animate.svg" alt="Иллюстрация лидера" class="test-photo"> 
+        </article>
+
+        <article class="hidden element-animation" id="interactiveQuiz">
+            <section class="progress">
+                <div id="test-body">
+                    <p class="number result">Номер вопроса ...</p>
+                </div>
+                <progress max="%max%" value="%step%" id="progress"></progress>
+            </section>
+            <section class="quiz-header" id="quiz-header">
+                <h2 class="question">Загружаем вопрос ...</h2>
+            </section>
+
+            <section class="quiz-list" id="list">
+                <div class="answer-item">
+                    <label>
+                        <input type="radio" class="answer" name="answer">
+                       <span>Ответ ...</span> 
+                    </label>
+                </div>
+                <div class="answer-item">
+                    <label>
+                        <input type="radio" class="answer" name="answer">
+                       <span class="">Ответ ...</span> 
+                    </label>
+                </div>
+
+                <div class="results">
+                    <div class="result-comntainer">
+                        <h2 class="title">%title%</h2>
+                        <p class="result">%result%</p>
+                        <h3 class="summary">%message%</h3>
+                    </div>
+                    
+                </div>
+            </section>
+            <button id="submit" class="green-btn btn test-btn">Далее</button>
+        </article>
+
+    </main>
+    <div w3-include-html="../wrapper/footer.php"></div>
+    <script>includeHTML();</script>
+    <script src="../../script/test.js"></script>
+    <script src="../../script/script.js"></script>
+
+</body>
+</html>
