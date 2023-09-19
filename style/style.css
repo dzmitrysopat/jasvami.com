@@ -1005,12 +1005,12 @@ span.nowidth{
     width: auto;
 }
 
-::-webkit-scrollbar-track{
-	background-color: #029f8d17;
-}
-
 ::-webkit-scrollbar{
 	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	background-color: #029f8d17;
 }
 
 ::-webkit-scrollbar-thumb{
