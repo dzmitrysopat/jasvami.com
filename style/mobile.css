@@ -117,9 +117,7 @@ body{
         left: 7%;
     }
 
-
     main{
-        /* padding: 0 15px; */
         gap: 0px;
         margin: 100px 50px 0 50px;
         align-items: center;
@@ -138,7 +136,6 @@ body{
     }
 
     .site-info{
-        /* flex-wrap: wrap; */
         scale: 0.9;
         justify-content: center;
         align-items: center;
@@ -349,7 +346,6 @@ body{
     .check-list,
     .btns{
         flex-direction: column;
-        /* flex-wrap: wrap; */
     }
 
     .btn{
@@ -396,7 +392,6 @@ body{
 
     .itc-slider-item{
         flex: 0 0 100%;
-        /* width: 50%; */
     }
 
     .client-card:hover{
@@ -405,7 +400,6 @@ body{
 
     .itc-slider-btn-prev:hover,
     .itc-slider-btn-next:hover{
-        /* background-color: #029F8c; */
         opacity: 1;
     }
 
@@ -471,7 +465,6 @@ body{
 
     .contact-page,
     .contact-cards{
-        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
     }
@@ -598,7 +591,6 @@ body{
 @media screen and (max-width: 380px){
     main{
         overflow-x: hidden;
-        /* padding-left: 7px; */
     }
 
     figure > img.centered{
@@ -648,10 +640,8 @@ body{
         gap: 15px;
     }
 
-
     input.text,
     textarea{
         width: 80vw;
     }
-
 }

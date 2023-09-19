@@ -10,22 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="../../script/wrapper.js"></script>
     <script src="../../script/itc-slider.js" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          // инициализация слайдера
-          var slider = new ItcSimpleSlider('.itcss', {
-            loop: true,
-            autoplay: true,
-            swipe: true
-          });
-        });
-      </script>
 </head>
     
 <body class="body_hide">
     <div w3-include-html="../wrapper/header.html"></div>
     <main class="main" id="main">
-        
         <article class="site-info element-animation" id="test-preview">
             <section class="psy-info">
                 <h1 class="site-name">Экспресс-диагностика уровня социальной изолированности личности</h1>
@@ -54,13 +43,13 @@
                 <div class="answer-item">
                     <label class="nowidth">
                         <input type="radio" class="answer" name="answer">
-                       <span>Ответ ...</span> 
+                        <span>Ответ ...</span> 
                     </label>
                 </div>
                 <div class="answer-item">
                     <label class="nowidth">
                         <input type="radio" class="answer" name="answer">
-                       <span>Ответ ...</span> 
+                        <span>Ответ ...</span> 
                     </label>
                 </div>
                 <div class="results">
@@ -69,7 +58,6 @@
                         <p class="result">%result%</p>
                         <h3 class="summary">%message%</h3>
                     </div>
-                    
                 </div>
             </section>
             <button id="submit" class="green-btn btn test-btn">Далее</button>

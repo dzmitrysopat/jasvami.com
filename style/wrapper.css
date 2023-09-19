@@ -41,7 +41,6 @@ header{
 
 a, a:visited{
     text-decoration: none;
-    /* color: #029F8c; */
 }
 
 .logo-title{
@@ -86,7 +85,6 @@ nav{
 }
 
 .dropdown .dropbtn{
-    /* width: 190px; */
     font-size: 16px;
     padding: 15px 25px;
     background-color: inherit;
@@ -263,10 +261,6 @@ hr{
     transform: rotate(45deg) translate(-2px, -1px);
     background: #fff;
 }
-
-/* #menuToggle input:checked > main{
-    overflow-y: hidden;
-} */
 
 #menuToggle input:checked ~ span:nth-last-child(3)
 {

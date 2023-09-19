@@ -123,7 +123,6 @@ function showQuestion(){
     const progressTemplate = 
     `<progress max="%max%" value="%step%" id="progress"></progress>`;
 
-    
     // console.log(step);
     // console.log(questions.length);
 
@@ -152,8 +151,6 @@ function showQuestion(){
         listContainer.innerHTML += answerHTML;
         answerNumber++;
     }
-
-
 } 
 
 function checkAnswer(){   

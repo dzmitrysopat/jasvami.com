@@ -76,9 +76,9 @@ submitBtn.onclick = checkAnswer;
 
 const openInNewTab = (url) => {
     window.open(url, target="_self");
-  }
-  const btn = document.getElementById("submit");
-  
+}
+const btn = document.getElementById("submit");
+
 //   btn.addEventListener("click", () => {
 //     openInNewTab("../../tests.html");
 //   });
@@ -89,19 +89,15 @@ function clearPage(){
 }
 
 function showQuestion(){    
-    
-    
     // Question
     const headerTemplate = `<h2 class="question">%question%</h2>`;
-   
+
     const title = headerTemplate.replace('%question%', questions[questionIndex]['question']);
 
     headerContainer.innerHTML = title;
-    
 
     // questionnumber
     const bodyTemplate = `<p class="number result">%number%</p>`;
-    
     let number = `Вопрос ${questionIndex+1} из ${questions.length}`;
     // console.log(number);
 
@@ -113,8 +109,6 @@ function showQuestion(){
     let step = questionIndex+1;
     const progressTemplate = 
     `<progress max="%max%" value="%step%" id="progress"></progress>`;
-
-    
     // console.log(step);
     // console.log(questions.length);
 

@@ -76,12 +76,9 @@ submitBtn.onclick = checkAnswer;
 
 const openInNewTab = (url) => {
     window.open(url, target="_self");
-  }
-  const btn = document.getElementById("submit");
-  
-//   btn.addEventListener("click", () => {
-//     openInNewTab("../../tests.html");
-//   });
+}
+const btn = document.getElementById("submit");
+
 
 function clearPage(){
     headerContainer.innerHTML = '';
@@ -89,15 +86,12 @@ function clearPage(){
 }
 
 function showQuestion(){    
-    
-    
     // Question
     const headerTemplate = `<h2 class="question">%question%</h2>`;
-   
+
     const title = headerTemplate.replace('%question%', questions[questionIndex]['question']);
 
     headerContainer.innerHTML = title;
-    
 
     // questionnumber
     const bodyTemplate = `<p class="number result">%number%</p>`;
@@ -186,14 +180,12 @@ function showResults (){
 
     const resultsTemplate = `
             <div class="results">
-           
                 <div class="result-comntainer">
                 <h2 class="title">%title%</h2>
                 <h3 class="summary result">%message%</h3>
                 <h3 class="summary result">%message1%</h3>
                 </div>
-                
-                </div>
+            </div>
     `;
 
     let title, message, message1;
@@ -223,7 +215,7 @@ function showResults (){
     // Result
     // let result = `${score} из ${questions.length}`;
 
-    const finalMessage = resultsTemplate
+const finalMessage = resultsTemplate
                         .replace('%title%', title)
                         .replace('%message%', message)
                         .replace('%message1%', message1)
