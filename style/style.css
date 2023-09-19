@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
 /* #029F8c */
-/* #029F8c */
 
 *{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 2px solid lightgreen;
+    /* outline: 2px solid lightgreen; */
 }
 
 html {
@@ -104,11 +103,6 @@ h1 {
     font-size: 20px;
     text-align: justify;
 }
-
-/* .check-list-container{
-    display: flex;
-    gap: 10px;
-} */
 
 .check-list{
     flex-direction: column;
