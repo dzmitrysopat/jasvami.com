@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html
+AddCharset UTF-8 .php
+
+ErrorDocument 404 https://dzmitrysopat.github.io/error.php
+
