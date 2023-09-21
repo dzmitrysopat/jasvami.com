@@ -114,6 +114,7 @@ function onEntry(entry) {
 
 
 const openModalButton = document.getElementById('consultation');
+
 const openPersonalButton = document.getElementById('personalConsultation');
 const openFamilyButton = document.getElementById('familyConsultation');
 const openContactButton = document.getElementById('contact');
