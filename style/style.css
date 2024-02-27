@@ -7,7 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* outline: 2px solid lightgreen; */
+    outline: 2px solid lightgreen;
 }
 
 html {
@@ -209,7 +209,7 @@ a.top:hover>.fa-angle-up{
 }
 
 .main-container{
-    width: 100vw;
+    width: 100vw;   
     padding: 50px 0;
     text-align: center;
     background-color: #f4fcfa;

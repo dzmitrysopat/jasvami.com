@@ -44,10 +44,11 @@ body{
         padding: 50px;
     }
 
-    .consultations{
-        scale: 0.85;
+    div.consultation{
+        scale: 0.9;
         flex-wrap: nowrap;
     }
+
     
     progress{
         width: 490px;
@@ -253,7 +254,6 @@ body{
         display: none;
     }
 }
-
 
 @media screen and (max-width: 675px){
     /* header style */
@@ -591,6 +591,20 @@ body{
 @media screen and (max-width: 380px){
     main{
         overflow-x: hidden;
+    }
+
+    .main-container:nth-child(odd){
+        width: auto;
+        gap: 0;
+    }
+
+    .consultations{
+        display: block;
+        gap: 0px;
+    }
+
+    span.sale{
+        padding: 0 15px;
     }
 
     figure > img.centered{
