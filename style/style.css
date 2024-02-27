@@ -603,6 +603,7 @@ input.text, textarea.text{
 textarea.text{
     height: 140px;
     resize: none;
+    width: 100%;
 }
 
 .input__contact{

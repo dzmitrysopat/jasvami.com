@@ -656,6 +656,6 @@ body{
 
     input.text,
     textarea{
-        width: 80vw;
+        width: 100%;
     }
 }
