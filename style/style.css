@@ -95,6 +95,12 @@ h1 {
     color: #029F8c;
 }
 
+span.sale{
+    color: #4a90aa;
+    font-weight: 100;
+    text-transform: none;
+    /* text-align: left; */
+}
 
 .information{
     border-top: 3px solid #029F8c;
