@@ -586,6 +586,11 @@ body{
     #submit{
         width: inherit;
     }
+
+    span.sale{
+        padding: 0 15px;
+        text-transform: uppercase;
+    }
 }
 
 @media screen and (max-width: 380px){
@@ -605,6 +610,7 @@ body{
 
     span.sale{
         padding: 0 15px;
+        text-transform: uppercase;
     }
 
     figure > img.centered{
