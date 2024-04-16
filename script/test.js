@@ -109,7 +109,7 @@ function showQuestion(){
     let step = questionIndex+1;
     const progressTemplate = 
     `<progress max="%max%" value="%step%" id="progress"></progress>`;
-    // console.log(step);
+    console.log(step);
     // console.log(questions.length);
 
     progressContainer.value = step;
