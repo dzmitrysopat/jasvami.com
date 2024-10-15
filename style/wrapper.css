@@ -189,6 +189,11 @@ hr{
     font-size: 25px;
 }
 
+.payment-icons{
+    width: 30%;
+    opacity: 0.5;
+}
+
 /* burger-menu */
 #menuToggle
 {
@@ -272,8 +277,7 @@ hr{
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{   
+#menu{   
     position: absolute;
     width: 100vw;
     height: 101vh;
@@ -316,3 +320,4 @@ hr{
     opacity: 1;
     font-size: 30px;
 }
+

@@ -138,7 +138,6 @@ function showQuestion(){
         
         listContainer.innerHTML += answerHTML;
         answerNumber++;
-
     }
 } 
 
