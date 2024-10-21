@@ -1023,3 +1023,11 @@ span.nowidth{
 ::-webkit-scrollbar-thumb{
 	background: #029f8d5d;
 }
+
+.page-container > .payment-icons{
+    align-self: flex-start !important;
+    max-width: 600px;
+    opacity: 0.8;
+    /* margin-left: 100px; */
+        /* display: none; */
+}

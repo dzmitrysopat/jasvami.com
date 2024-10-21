@@ -22,12 +22,12 @@ body{
         margin-left: 0;
     }
 
-    .payment-icons{
-        align-self: flex-start !important;
-        max-width: 350px;
-        opacity: 0.7;
+
+
+    footer > .payment-icons,
+    .page-container > .payment-icons{
+        max-width: 325px;
         margin-left: 0;
-            /* display: none; */
     }
 }
 
