@@ -178,12 +178,11 @@ ul a:hover{
 
 hr{
     width: 100vw;
-    margin: 0px;
     background: #fff;
     border: 1px solid #fff;
-    opacity: 0.3;
-    margin-left: 100px;
+    opacity: 0.7;
 }
+
 
 .footer-title, .footer-favicon{
     color: #fff;
@@ -269,11 +268,13 @@ hr{
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2){
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu{   
+#menu
+{   
     position: absolute;
     width: 100vw;
     height: 101vh;
@@ -288,7 +289,8 @@ hr{
     transition: transform .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li{
+#menu li
+{
     padding: 15px 0;
     font-size: 28px;
 }
