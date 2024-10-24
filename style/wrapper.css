@@ -183,6 +183,7 @@ hr{
     opacity: 0.7;
 }
 
+
 .footer-title, .footer-favicon{
     color: #fff;
     opacity: 0.7;
@@ -321,3 +322,14 @@ hr{
     font-size: 30px;
 }
 
+<<<<<<< HEAD
+=======
+footer > .payment-icons{
+    align-self: flex-start !important;
+    max-width: 400px;
+    opacity: 0.8;
+    filter: grayscale(1);
+    margin-left: 100px;
+        /* display: none; */
+}
+>>>>>>> f9e2c5acfc9fcb47db261cb009594578da057a1f

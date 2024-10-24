@@ -13,6 +13,20 @@ body{
     .my-photo{
         max-width: 60%;
     }
+
+    .mobile-hide{
+        display: none;
+    }
+
+    hr{
+        margin-left: 0;
+    }
+
+    footer > .payment-icons,
+    .page-container > .payment-icons{
+        max-width: 325px;
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 950px){    

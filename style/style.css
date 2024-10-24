@@ -95,12 +95,6 @@ h1 {
     color: #029F8c;
 }
 
-span.sale{
-    color: #4a90aa;
-    font-weight: 100;
-    text-transform: none;
-    /* text-align: left; */
-}
 
 .information{
     border-top: 3px solid #029F8c;
@@ -209,7 +203,7 @@ a.top:hover>.fa-angle-up{
 }
 
 .main-container{
-    width: 100vw;   
+    width: 100vw;
     padding: 50px 0;
     text-align: center;
     background-color: #f4fcfa;
@@ -535,6 +529,11 @@ figure > img.centered{
     text-align: left;
 }
 
+span.sale{
+	color: #4a90aa;
+	font-weight: 700;
+}
+
 #personalConsultation,
 #familyConsultation,
 #testBtn,
@@ -602,8 +601,8 @@ input.text, textarea.text{
 
 textarea.text{
     height: 140px;
-    resize: none;
     width: 100%;
+    resize: none;
 }
 
 .input__contact{
@@ -1023,3 +1022,14 @@ span.nowidth{
 ::-webkit-scrollbar-thumb{
 	background: #029f8d5d;
 }
+<<<<<<< HEAD
+=======
+
+.page-container > .payment-icons{
+    align-self: flex-start !important;
+    max-width: 600px;
+    opacity: 0.8;
+    /* margin-left: 100px; */
+        /* display: none; */
+}
+>>>>>>> f9e2c5acfc9fcb47db261cb009594578da057a1f
