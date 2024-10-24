@@ -22,7 +22,7 @@
                         +375 (29) 652-50-73
                     </a>
                     <a href="mailto:hannamanko@jasvami.com" class="footer-link">
-                        <img src="../../img/icons/mail-white.svg" alt="">hannamanko@jasvami.com          </a>
+                        <img src="../../img/icons/mail-white.svg" alt="">hannamanko@jasvami.com</a>
                         <a class="footer-link">
                         <img src="../../img/icons/clock-white.svg" alt="">
                         По предварительной записи
