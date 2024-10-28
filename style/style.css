@@ -566,15 +566,17 @@ span.sale{
     top: 45%;
     transform: translate(-45%, -45%);
     display: flex;
+    flex-direction: column;
     gap: 50px;
     box-shadow: 4px 4px 8px 10px #00000080;
 }
 
-fieldset{
+#fieldset{
     padding: 25px;
     border: 2px solid #029F8c;
     border-radius: 5px;
     display: flex;
+    flex-direction: column !important;
     box-shadow:  4px 4px 8px 10px rgba(34, 60, 80, 0.2);
     flex-direction: row;
     gap: 20px;
@@ -1022,8 +1024,6 @@ span.nowidth{
 ::-webkit-scrollbar-thumb{
 	background: #029f8d5d;
 }
-<<<<<<< HEAD
-=======
 
 .page-container > .payment-icons{
     align-self: flex-start !important;
@@ -1032,4 +1032,77 @@ span.nowidth{
     /* margin-left: 100px; */
         /* display: none; */
 }
->>>>>>> f9e2c5acfc9fcb47db261cb009594578da057a1f
+
+/* checkbox for form */
+input[type=checkbox]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+div.checkbox-container{
+    display: block;
+    position: relative;
+    transition: all .4s;
+    padding-left: 50px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 50px;
+}
+
+div.checkbox-container > label{
+    cursor: pointer;
+    position: absolute;
+    padding-left: 50px;
+    left: 0;
+    max-width: 400px;
+}
+
+div.checkbox-container > .checkmark {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    height: 32px;
+    width: 32px;
+    border: 2px solid #383838;
+    border-radius: 8px;
+    transition: all .4s;
+    background-color: #383838;
+}
+
+div.checkbox-container:hover input ~ .checkmark{
+    /* background-color: #555555; */
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #383838;
+    border: 2px solid #ddd;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 8px;
+    height: 16px;
+    border: solid #ddd;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

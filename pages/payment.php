@@ -46,7 +46,7 @@
         </p>
 
         <p class="information no-border element-animation" style="text-align:justify;">
-            В случае, если Вы не получили заказ (не оказана услуга), Вам необходимо обратиться (в службу технической поддержки) по телефону <a href="tel:+375296525073" class="orange contact-link">+375 (29) 652-50-73</a> или e-mail <a href="mailto:hannamanko@jasvami.com" class="orange contact-link">hannamanko@jasvami.com</a>
+            В случае, если Вы не получили заказ (не оказана услуга), Вам необходимо обратиться (в службу технической поддержки) по телефону <a href="tel:+375296525073" class="orange contact-link">+375 (29) 652-50-73</a> или e-mail <a href="mailto:hannamanko@jasvami.by" class="orange contact-link">hannamanko@jasvami.by</a>
                 . Менеджеры Вас проконсультируют.
         </p>
 

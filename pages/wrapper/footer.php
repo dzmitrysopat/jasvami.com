@@ -21,13 +21,13 @@
                         <img src="../../img/icons/phone-white.svg" alt="">
                         +375 (29) 652-50-73
                     </a>
-                    <a href="mailto:hannamanko@jasvami.com" class="footer-link">
-                        <img src="../../img/icons/mail-white.svg" alt="">hannamanko@jasvami.com</a>
-                        <a class="footer-link">
+                    <a href="mailto:hannamanko@jasvami.by" class="footer-link">
+                        <img src="../../img/icons/mail-white.svg" alt="">hannamanko@jasvami.by</a>
+                    <a class="footer-link">
                         <img src="../../img/icons/clock-white.svg" alt="">
                         По предварительной записи
-                    	</a>          
-                        <a href="https://yandex.by/maps/-/C2aDnvT" target="_blank" class="footer-link">
+                    </a>          
+                    <a href="https://yandex.by/maps/-/C2aDnvT" target="_blank" class="footer-link">
                         <img src="../../img/icons/location-white.svg" alt="">
                         246020, Беларусь, г. Гомель, ул. Сосновая,18 каб. 6.2
                     </a>
@@ -36,19 +36,23 @@
 
 	    <section>
                 <h3 class="list-title">Реквизиты:</h3>
-                <ul class="footer-list">
-			<a class="footer-link">
-                        <img src="../../img/icons/doc-white-footer.svg" alt="">
-                        УНП 791290674
-                    	</a>                   
-			<a href="../../docs/price.pdf" download class="footer-link">
-                        <img src="../../img/icons/doc-white-footer.svg" alt="">
-                        Прейскурант
-                    	</a>
-                    	<a href="../../docs/public_agreegment_15.10.24.pdf" download class="footer-link">
-                        <img src="../../img/icons/doc-white-footer.svg" alt="">
-                        Публичный договор
-                    	</a>
+                <ul class="footer-list">                   
+			    <a href="../../docs/price.pdf" download class="footer-link">
+                    <img src="../../img/icons/doc-white-footer.svg" alt="">
+                    Прейскурант
+                </a>
+                <a class="footer-link">
+                    <img src="../../img/icons/doc-white-footer.svg" alt="">
+                    УНП 791290674
+                </a>
+                <a href="../../docs/public_agreegment_15.10.24.pdf" download class="footer-link">
+                    <img src="../../img/icons/doc-white-footer.svg" alt="">
+                    Публичный договор
+                    </a>
+                <a href="../../docs/personal_information.pdf" download class="footer-link">
+                    <img src="../../img/icons/doc-white-footer.svg" alt="">
+                Обработка перс.данных
+                    </a>
 		        </ul>
             </section>       
 
