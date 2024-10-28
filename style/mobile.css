@@ -24,7 +24,7 @@ body{
 
     footer > .payment-icons,
     .page-container > .payment-icons{
-        max-width: 325px;
+        max-width: 400px;
         margin-left: 0px;
     }
 }
