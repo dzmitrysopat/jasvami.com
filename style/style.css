@@ -583,7 +583,7 @@ span.sale{
 
 .input-section{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 25px;
     text-align: left;
     font-size: 20px;
