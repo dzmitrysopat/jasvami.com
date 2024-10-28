@@ -578,7 +578,7 @@ span.sale{
     display: flex;
     box-shadow:  4px 4px 8px 10px rgba(34, 60, 80, 0.2);
     gap: 20px;
-    background-image: url('../img/background.png');
+    background-image: url('https://dzmitrysopat.github.io/jasvami.com/img/background.png');
 }
 
 .input-section{
