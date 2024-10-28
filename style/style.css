@@ -962,10 +962,10 @@ span{
     transition: all .5s;
 }
 
-.contact-form-link{
+a.contact-form-link{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .contact-link:hover,
