@@ -10,6 +10,8 @@ body{
         flex-wrap: wrap;
     }
 
+
+
     .messengers-block{
         flex-direction: column;
     }
