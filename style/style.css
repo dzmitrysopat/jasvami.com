@@ -956,7 +956,8 @@ span{
     justify-content: space-between;
 }
 
-.contact-link{
+.contact-link,
+.contact-form-link{
     font-size: 18px;
     transition: all .5s;
 }
@@ -966,7 +967,8 @@ span{
     align-items: center;
 }
 
-.contact-link:hover{
+.contact-link:hover,
+.contact-form-link:hover{
     color: #e96b42;
 }
 
