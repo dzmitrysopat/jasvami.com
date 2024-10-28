@@ -437,6 +437,7 @@ span,
     color: #029F8c;
     background-color: inherit;
     right: 25px;
+    z-index: 2;
 }
 
 #close-btn:hover{
@@ -576,17 +577,26 @@ span.sale{
     border: 2px solid #029F8c;
     border-radius: 5px;
     display: flex;
+    align-items: center;
     box-shadow:  4px 4px 8px 10px rgba(34, 60, 80, 0.2);
-    gap: 20px;
+    gap: 0px;
     background-image: url('https://dzmitrysopat.github.io/jasvami.com/img/background.png');
 }
 
 .input-section{
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
     text-align: left;
     font-size: 20px;
+    max-width: 350px;
+}
+
+.messengers-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 input.text, textarea.text{
@@ -611,7 +621,8 @@ textarea.text{
 }
 
 .form-img{
-    width: 430px;
+    width: 400px;
+    /* display: none; */
 }
 
 .form-btn{
@@ -965,7 +976,7 @@ span{
 a.contact-form-link{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .contact-link:hover,

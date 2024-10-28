@@ -10,6 +10,10 @@ body{
         flex-wrap: wrap;
     }
 
+    .messengers-block{
+        flex-direction: column;
+    }
+
     .my-photo{
         max-width: 60%;
     }
