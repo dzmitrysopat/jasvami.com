@@ -965,6 +965,7 @@ span{
 .contact-form-link{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .contact-link:hover,
