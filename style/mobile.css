@@ -10,8 +10,6 @@ body{
         flex-wrap: wrap;
     }
 
-
-
     .messengers-block{
         flex-direction: column;
     }
@@ -60,7 +58,7 @@ body{
         transform: translate(-0px, -0px);
     }
 
-    fieldset{
+    #fieldset{
         padding: 50px;
     }
 
@@ -68,7 +66,6 @@ body{
         scale: 0.9;
         flex-wrap: nowrap;
     }
-
     
     progress{
         width: 490px;
