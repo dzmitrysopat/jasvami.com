@@ -60,36 +60,40 @@
         <div class="modal-wrapper" id="modalWrapper">
             <div class="modal">
                 <button id="close-btn" class="close orange">&times;</button>
-                <form action="https://formsubmit.co/2d36a986a16af6177f24e3b43a5f6a7d" method="POST">
-                    <fieldset class="fieldset" id="fieldset">
+                <form action="" method="POST">
+                    <div class="fieldset" id="fieldset">
+                        <br>
                         <div class="input-section">
-                        <section class="input__contact">
-                            <label for="" style="padding: 0; background-color: inherit;">Ваше Имя:</label>
-                            <input type="text" id="formName" name="Имя" class="text lil-input" placeholder="Как к вам обращаться" required>
-                        </section>
-                        <section class="input__contact">
-                            <label for="" style="padding: 0; background-color: inherit;">Телефон для связи*:</label>
-                            <input type="tel" id="formTel" name="Телефон" class="text lil-input" placeholder="Контактный номер" required>
-                        </section>
-
-                    <section class="input__contact">
-                        <label for="" style="padding: 0; background-color: inherit;">Психологический запрос :</label>
-                        <input type="text" id="formAbout" name="Психологический запрос" class="text" placeholder="Ваш вопрос (тема/проблема)" required>
-                    </section>
-    
-                    <section class="input__contact">
-                        <label for="" style="padding: 0; background-color: inherit;">Желаемое время и формат:</label>
-                        <textarea class="text" id="formOptions" name="Желаемое время и формат:" placeholder="Индивидуальная/ семейная/ в паре/ групповая/ онлайн" cols="30" rows="10"></textarea>
-                    </section>
-    
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="http://jasvami.com/sent.php">
-    
-                    <button type="submit" id="consultation" class="green-btn btn form-btn">Отправить запрос</button>
-                    </div>           
+                            <p class="information no-border element-animation">
+                                Вы можете связаться со мной через:
+                            </p>
+                            <a href="https://wa.me/375296525073" class="orange contact-form-link">
+                                <img src="../img/icons/whatsapp.svg" alt="">
+                                Whatsapp
+                            </a>
+                            <a href="https://t.me/Hannet_M" class="orange contact-form-link">
+                                <img src="../img/icons/telegram.svg" alt="">
+                                Telegram
+                            </a>
+                            <a href="https://viber.click/375296525073" class="orange contact-form-link">
+                                <img src="../img/icons/viber.svg" alt="">
+                                Viber
+                            </a>
+                            <p class="information no-border element-animation">
+                                Позвонить мне:
+                            </p>
+                            <a href="tel:+375296525073" class="orange contact-form-link">
+                                <img src="../img/icons/phone.svg" alt="">
+                                +375 (29) 652-50-73
+                            </a>
+                            Или написать на эл.почту:
+                            <a href="mailto:hannamanko@jasvami.by" class="orange contact-form-link">
+                                <img src="../img/icons/mail.svg" alt="">
+                                hannamanko@jasvami.by
+                            </a>
+                    </div>
                     <img src="../img/form/messaging-1-animate-green.svg" alt="" class="form-img error-img">
-                </fieldset>
+                    </div>           
                 </form>
             </div>
         </div>             
