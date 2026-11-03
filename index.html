@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="психолог Гомель, психологическая помощь, помощь Гомель, психолог онлайн, психолог анонимно, помощь анонимно, Гомель анонимно, психолог записаться">
-    <meta name="description" content="Профессиональный психолог в Гомеле. Анонимная помощь. Очные встречи и консультации онлайн. Записать на приём">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="психолог Гомель, психологическая помощь, помощь Гомель, психолог онлайн, психолог анонимно, помощь анонимно, Гомель анонимно, психолог записаться">
+	<meta name="description" content="Профессиональный психолог Анна Манько в Гомеле рядом с Вами. Анонимная помощь. Очные встречи и консультации онлайн. Записать на приём">
     <title>Психолог рядом с Вами</title>
     <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
     <script src="./script/wrapper.js"></script>
@@ -11,6 +12,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/mobile.css">
     <link rel="stylesheet" href="./style/wrapper.css">
+    <link rel="stylesheet" href="./style/responsive.css" data-late>
+    <link rel="stylesheet" href="./style/gallery.css" data-late>
     <script src="./script/itc-slider.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -21,13 +24,13 @@
             swipe: true
           });
         });
-    </script>
+      </script>
 </head>
-<body class="body_hide">
+<body class="body_hide page-index">
     <div w3-include-html="./pages/wrapper/header.html"></div>
     <main>
         <article class="site-info">
-            <img src="./img/photo/Hanna04.png" alt="Моё фото" class="my-photo" id="me">
+            <img src="./img/photo/Hanna05.png" alt="Моё фото" class="my-photo" id="me">
 
             <section class="psy-info">
                 <!-- <h1 class="site-name">Психолог рядом с Вами</h1> -->
@@ -145,145 +148,18 @@
             </div>
         </div>
 
-        <div class="main-container element-animation inherit-fill">
+        <div class="main-container element-animation inherit-fill" id="diplomas">
             <h2 class="container-name green">Обучающие курсы и курсы повышения квалификации</h2>
-            <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
-                <div class="itc-slider-wrapper">
-                    <div class="itc-slider-items">
-                        <img src="./img/diplomas/art_therapy.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(1)"> 
-                        <img src="./img/diplomas/art_therapy_02.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(2)">
-                        <img src="./img/diplomas/centr_metafora.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(3)">
-                        <img src="./img/diplomas/Cognitive_therapy.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(4)">
-                        <img src="./img/diplomas/fairytale_therapy.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(5)">
-                        <img src="img/diplomas/Positive_psychology.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(6)">
-                        <img src="./img/diplomas/Lomonosow_MGU.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(7)">
-                        <img src="img/diplomas/Psyhological_first_aid.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(8)">
-                        <img src="./img/diplomas/sport_support.webp" alt="" class="itc-slider-item" onclick="openModal();currentSlide(9)">
-                        <img src="./img/diplomas/psychotherapy_institute.jpg" alt="" class="itc-slider-item" onclick="openModal();currentSlide(10)">
-                        <img src="./img/diplomas/sexology_qualification.jpg" alt="" class="itc-slider-item" onclick="openModal();currentSlide(11)">                    
-                    </div>
-                    <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
-                    <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
-                </div>
+            <div class="gallery" data-gallery="diplomas" data-src="./data/diplomas.json" data-base="./img/diplomas/">
+                <noscript><p class="gallery-note">Чтобы увидеть список, включите JavaScript.</p></noscript>
             </div>
         </div>
 
-        <div id="myModal" class="modal0">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-
-            <figure class="mySlides">
-                <img src="./img/diplomas/art_therapy.webp" style="width:100%">
-                <figcaption>"Healing with the Arts"</figcaption>
-            </figure>
-        
-            <figure class="mySlides">
-                <img src="./img/diplomas/art_therapy_02.webp" style="width:100%">
-                <figcaption>"Art Therapy Course"</figcaption>
-            </figure>
-
-            <figure class="mySlides">
-                <img src="./img/diplomas/centr_metafora.webp" style="width:100%">
-                <figcaption>"Практические методы в работе с психологической травмой"</figcaption>
-            </figure>
-
-            <figure class="mySlides">
-                <img src="./img/diplomas/Cognitive_therapy.webp" style="width:100%">
-                <figcaption>"Когнитивно-поведенческая терапия"</figcaption>
-            </figure>
-
-            <figure class="mySlides">
-                <img src="./img/diplomas/fairytale_therapy.webp" style="width:100%">
-                <figcaption>"Прикладная сказкотерапия..."</figcaption>
-            </figure>
-        
-            <figure class="mySlides">
-                <img src="./img/diplomas/Positive_psychology.webp" style="width:100%">
-                <figcaption>"Positive Psychology"</figcaption>
-            </figure>
-        
-            <figure class="mySlides">
-                <img src="./img/diplomas/Lomonosow_MGU.webp" style="width:100%">
-                <figcaption>"Нейрофизиология поведения"</figcaption>
-            </figure>
-        
-            <figure class="mySlides">
-                <img src="./img/diplomas/Psyhological_first_aid.webp" style="width:100%">
-                <figcaption>"Psychological First Aid"</figcaption>
-            </figure>
-        
-            <figure class="mySlides">
-                <img src="./img/diplomas/sport_support.webp" style="width:100%">
-                <figcaption>"Психологическое сопровождение юных спортсменов"</figcaption>
-            </figure>
-
-            <figure class="mySlides">
-                <img src="./img/diplomas/psychotherapy_institute.jpg" class="centered" style="width:80%">
-                <figcaption>"Основы метода ДПДГ"</figcaption>
-            </figure>
-
-            <figure class="mySlides">
-                <img src="./img/diplomas/sexology_qualification.jpg" class="centered" style="width:80%">
-                <figcaption>"Сексология в психологическом консультировании"</figcaption>
-            </figure>
-        
-            </div>
-            <a class="left" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="right" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <div class="main-container element-animation">
+        <div class="main-container element-animation" id="conferences">
             <h2 class="container-name orange">Участие в профессиональных конференциях</h2>
-            <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
-                <div class="itc-slider-wrapper">
-                <div class="itc-slider-items">           
-                    <img src="./img/conferentions/FUN-sertificate.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide01(1)">
-                    <img src="./img/conferentions/metafora-conferention.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide01(2)">
-                    <img src="./img/conferentions/mgafk.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide01(3)">
-                    <img src="./img/conferentions/pre-cbt-forum.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide01(4)">
-                    <img src="./img/conferentions/sport-psychology-seminar.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide01(5)">
-                    <img src="./img/conferentions/suicide-conferention.webp" alt="" class="itc-slider-item" onclick="openModal01();currentSlide01(6)">
-                </div>
-                <i class="itc-slider-btn itc-slider-btn-prev fa-solid fa-angle-left"></i>
-                <i class="itc-slider-btn itc-slider-btn-next fa-solid fa-angle-right"></i>
-                </div>
+            <div class="gallery" data-gallery="conferences" data-src="./data/conferences.json" data-base="./img/conferentions/">
+                <noscript><p class="gallery-note">Чтобы увидеть список, включите JavaScript.</p></noscript>
             </div>
-        </div>
-
-        <div id="myModal01" class="modal01">
-            <span class="close cursor" onclick="closeModal01()">&times;</span>
-            <div class="modal-content01">
-            <figure class="mySlides01">
-                <img src="./img/conferentions/FUN-sertificate.webp" style="width:100%">
-                <figcaption>"Семинар по спортивной психологии"</figcaption>
-            </figure>
-
-            <figure class="mySlides01">
-                <img src="./img/conferentions/metafora-conferention.webp" style="width:70%" class="centered">
-                <figcaption>"Практические методы в работе с психологической травмой"</figcaption>
-            </figure>
-
-            <figure class="mySlides01">
-                <img src="./img/conferentions/mgafk.webp" style="width:100%">
-                <figcaption>"Психолого-педагогическое обеспечение спортсменов"</figcaption>
-            </figure>
-
-            <figure class="mySlides01">
-                <img src="./img/conferentions/pre-cbt-forum.webp" style="width:100%">
-                <figcaption>"Онлайн-форум для специалистов в области КПТ"</figcaption>
-            </figure>
-
-            <figure class="mySlides01">
-                <img src="./img/conferentions/sport-psychology-seminar.webp" style="width:100%">
-                <figcaption>"Семинар по спортивной психологии"</figcaption>
-            </figure>
-            <figure class="mySlides01">
-                <img src="./img/conferentions/suicide-conferention.webp" style="width:100%">
-                <figcaption>"Суицидология - актуальные проблемы, вызовы и современные решения"</figcaption>
-            </figure>
-            </div>
-            <a class="left" onclick="plusSlides01(-1)">&#10094;</a>
-            <a class="right" onclick="plusSlides01(1)">&#10095;</a>
         </div>
 
         <div class="main-container inherit-fill">
@@ -292,23 +168,23 @@
                 <div class="consultation element-animation">
                     <h2 class="consultation-name offer-name green">Индивидуальная</h2>
                     <img src="./img/personal-therapy-orange-02.png" class="price-img" alt="">
-                    <h2 class="price green">70 руб.</h2>
+                    <h2 class="price green">80 руб.</h2>
                     <button id="personalConsultation" class="green-btn btn">Получить консультацию</button>
                 </div>
                 <div class="consultation element-animation">
                     <h2 class="consultation-name offer-name green">Семейная</h2>
                     <img src="./img/family-therapy-orange-02.png" class="price-img" alt="">
-                    <h2 class="price green">80 руб.</h2>
+                    <h2 class="price green">100 руб.</h2>
                     <button id="familyConsultation" class="green-btn btn">Получить консультацию</button>
                 </div>
             </article>
-            <span class="sale">*Действует скидка на очные консультации в кабинете психолога по адресу: г. Гомель, ул. Сосновая 18, каб. 6.2</span>
+            <!--<span class="sale">*Действует скидка на очные консультации в кабинете психолога по адресу: г. Гомель, ул. Сосновая 18, каб. 6.2</span>-->
         </div>
 
         <div class="container">
             <div class="modal-wrapper" id="modalWrapper">
                 <div class="modal">
-                    <button id="close-btn" class="close orange">&times;</button>
+                    <button id="close-btn" class="close orange">×</button>
                     <form action="" method="POST">
                         <div class="fieldset" id="fieldset">
                             <br>
@@ -354,7 +230,7 @@
         <a href="#" class="top element-animation"><i class="fa-solid fa-angle-up"></i></a>
     </main>
     <div w3-include-html="./pages/wrapper/footer.html"></div>
-    <script src="./script/photos.js"></script>
+    <script src="./script/gallery.js"></script>
     <script src="./script/script.js"></script>
     <script>includeHTML();</script>
 </body>

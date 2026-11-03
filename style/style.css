@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
 /* #029F8c */
 
@@ -383,37 +383,7 @@ span,
     transform: scale(0.7);
 }
 
-/* photo viewer */
-/* The Modal (background) */
-.modal0,
-.modal01 {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    overflow-y: hidden;
-    background-color: #000000c7;
-    z-index: 5;
-}
-
-  /* Modal Content */
-.modal-content,
-.modal-content01 {
-    position: relative;
-    margin: auto;
-    padding: 0;
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-  /* The Close Button */
+/* кнопка закрытия окна «связаться со мной» (просмотрщик изображений: gallery.css) */
 .close{
     color: #fff;
     position: absolute;
@@ -445,64 +415,6 @@ span,
 }
 
   /* Hide the slides by default */
-.mySlides,
-.mySlides01 {
-    margin: 0;
-    padding: 0;
-    display: none;
-    background-color: inherit;
-}
-
-  /* Next & previous buttons */
-.left,
-.right {
-    cursor: pointer;
-    position: absolute;
-    top: 0%;
-    width: 50px;
-    height: 100vh;
-    padding: 16px;
-    opacity: 0.3;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-  /* Position the "next button" to the right */
-.right {
-    right: 0px;
-    border-radius: 3px 0 0 3px;
-}
-
-.left {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-  /* On hover, add a black background color with a little bit see-through */
-.left:hover,
-.right:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0.8;
-}
-
-figcaption{
-    font-size: 25px;
-    text-align: center;
-    color: #fff;
-}
-
-figure > img.centered{
-    margin-left: 100px;
-}
-
 .consultations{
     display: flex;
     flex-wrap: wrap;

@@ -6,6 +6,7 @@
     <title>Старница не найдена</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/wrapper.css">
+    <link rel="stylesheet" href="./style/responsive.css" data-late>
     <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
     <script src="./script/wrapper.js"></script>
 </head>
@@ -40,7 +41,6 @@
         let i = Math.floor(Math.random() * imgs.length);
         let not__found = document.getElementById("mailPhoto");
         imgsrc('img/error/'); // Первоначальное заполнение картинки
-        not__found.window.onload = imgsrc;
         function imgsrc() {
             not__found.src = imgs[i]; // Увеличить индекс лучше потом
             if (++i === imgs.length) i = 0;

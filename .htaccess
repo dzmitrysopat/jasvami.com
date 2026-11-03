@@ -2,5 +2,12 @@ AddDefaultCharset UTF-8
 AddCharset UTF-8 .html
 AddCharset UTF-8 .php
 
-ErrorDocument 404 https://dzmitrysopat.github.io/error.html
+ErrorDocument 403 https://jasvami.by/error.html
+ErrorDocument 404 https://jasvami.by/error.html
 
+# Старые адреса *.php ведут на новые *.html (постоянный редирект, чтобы не потерять индексацию)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)\.php$ /$1.html [R=301,L]
+</IfModule>

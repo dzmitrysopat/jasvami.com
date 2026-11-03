@@ -1,0 +1,161 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 10px 16px;
+}
+
+.gallery-item {
+    display: block;
+    aspect-ratio: 4 / 3;
+    background: #eef4f3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 8px 1px rgba(34, 60, 80, 0.2);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.gallery-item[hidden] { display: none; }
+
+/* миниатюра показывается целиком, без обрезки, при любом соотношении сторон */
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery-item:hover,
+.gallery-item:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 6px 8px 14px 2px rgba(34, 60, 80, 0.28);
+    outline: none;
+}
+
+@media screen and (max-width: 560px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px 12px;
+    }
+}
+
+/* Просмотрщик (lightbox) */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.92);
+    color: #fff;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    height: 100vh;
+    height: 100dvh;
+    overscroll-behavior: contain;
+}
+
+.lightbox[hidden] { display: none; }
+
+.lightbox-bar {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px 0 18px;
+    min-height: 52px;
+}
+
+.lightbox-count {
+    font-size: 16px;
+    opacity: .8;
+    text-transform: none;
+    cursor: default;
+}
+
+.lightbox-btn {
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color .3s, background-color .3s, opacity .3s;
+}
+
+.lightbox-close {
+    font-size: 44px;
+    line-height: 1;
+    width: 48px;
+    height: 48px;
+}
+
+.lightbox-btn:hover,
+.lightbox-btn:focus-visible { color: #f7ab1e; outline: none; }
+
+.lightbox-stage {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    overflow: hidden;
+    touch-action: pan-y pinch-zoom;
+}
+
+/* картинка вписывается в доступную область целиком — любые размеры и ориентация */
+.lightbox-img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: zoom-in;
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: opacity .25s;
+}
+
+.lightbox.is-loading .lightbox-img { opacity: 0; }
+
+/* режим увеличения: натуральный размер, прокрутка внутри окна */
+.lightbox.is-zoomed .lightbox-stage { overflow: auto; }
+.lightbox.is-zoomed .lightbox-img {
+    max-width: none;
+    max-height: none;
+    cursor: zoom-out;
+}
+
+.lightbox-caption {
+    flex: 0 0 auto;
+    min-height: 20px;
+    padding: 10px 70px 16px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 80px;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: .75;
+}
+
+.lightbox-nav:hover { opacity: 1; background: rgba(0, 0, 0, 0.7); }
+.lightbox-nav[hidden] { display: none; }
+.lightbox-prev { left: 0;  border-radius: 0 8px 8px 0; }
+.lightbox-next { right: 0; border-radius: 8px 0 0 8px; }
+
+@media screen and (max-width: 675px) {
+    .lightbox-caption { padding: 8px 14px 14px; font-size: 16px; }
+    .lightbox-nav { width: 40px; height: 64px; font-size: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-item, .lightbox-img, .lightbox-btn { transition: none; }
+}
+
+.gallery-note { grid-column: 1 / -1; opacity: .7; }

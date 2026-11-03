@@ -1,0 +1,84 @@
+/*
+ * Адаптив. Подключается на всех страницах после style.css и wrapper.css.
+ * Правила для главной начинаются с .page-index (класс на <body> в index.html).
+ */
+
+/* все страницы */
+img, video, iframe { max-width: 100%; }
+
+.page-header,
+.btn, .link-btn, .test-btn, .test-img, .test-photo,
+progress, h2.question, span.answer-description,
+input.text, textarea.text { max-width: 100%; }
+
+.information, .page-container, .page-title { overflow-wrap: break-word; }
+
+/* окно «связаться со мной» (главная и «Контакты») */
+.modal-wrapper { height: 100vh; height: 100dvh; }
+
+@media screen and (max-width: 950px) {
+    .modal-wrapper .modal {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: min(94vw, 560px);
+        max-height: 92vh;
+        max-height: 92dvh;
+        margin: 0;
+        overflow-y: auto;
+    }
+
+    .modal-wrapper #fieldset {
+        width: 100%;
+        margin: 0;
+        padding: 48px 20px 24px;
+        box-sizing: border-box;
+    }
+
+    .modal-wrapper #close-btn { top: 4px; right: 12px; }
+}
+
+/* главная */
+body.page-index {
+    width: 100%;            /* 100vw в mobile.css даёт горизонтальную прокрутку из-за полосы прокрутки */
+    max-width: 100%;
+}
+
+.page-index .my-photo { height: auto; }
+.page-index .offer { max-width: 100%; }   /* ширина 250px задана в style.css; проценты в width ломали центровку ряда */
+
+@media screen and (max-width: 1200px) {
+    /* вместо scale: .9, который уменьшал блок и оставлял пустое место по краям */
+    .page-index .site-info { scale: 1; width: 100%; }
+}
+
+@media screen and (max-width: 675px) {
+    .page-index .site-info { gap: 24px; padding: 10px 0; }
+    .page-index .my-photo { width: 100%; max-width: 420px; }
+    .page-index .check-item { font-size: 18px; align-items: flex-start; }
+    .page-index .information { font-size: 18px; }
+    .page-index .btns { width: 100%; gap: 15px; }
+    .page-index .btns .btn,
+    .page-index .btns a.link-btn { width: 100%; max-width: 100%; }
+}
+
+/* стоимость: карточки не вылезают за экран на узких телефонах */
+.page-index .consultations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.page-index .consultation {
+    scale: 1;               /* вместо scale: .9, из-за которого карточки плыли */
+    width: 100%;
+    max-width: 360px;
+}
+
+.page-index .price-img { width: 100%; max-width: 100%; height: auto; }
+.page-index .consultation .btn { width: 100%; }
