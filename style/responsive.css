@@ -3,7 +3,7 @@
  * Правила для главной начинаются с .page-index (класс на <body> в index.html).
  */
 
-/* все страницы */
+/* ===== все страницы ===== */
 img, video, iframe { max-width: 100%; }
 
 .page-header,
@@ -13,7 +13,7 @@ input.text, textarea.text { max-width: 100%; }
 
 .information, .page-container, .page-title { overflow-wrap: break-word; }
 
-/* окно «связаться со мной» (главная и «Контакты») */
+/* ===== окно «связаться со мной» (главная и «Контакты») ===== */
 .modal-wrapper { height: 100vh; height: 100dvh; }
 
 @media screen and (max-width: 950px) {
@@ -39,7 +39,7 @@ input.text, textarea.text { max-width: 100%; }
     .modal-wrapper #close-btn { top: 4px; right: 12px; }
 }
 
-/* главная */
+/* ===== главная ===== */
 body.page-index {
     width: 100%;            /* 100vw в mobile.css даёт горизонтальную прокрутку из-за полосы прокрутки */
     max-width: 100%;

@@ -1,3 +1,4 @@
+/* ===== Галереи (дипломы, сертификаты) ===== */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -42,7 +43,7 @@
     }
 }
 
-/* Просмотрщик (lightbox) */
+/* ===== Просмотрщик (lightbox) ===== */
 .lightbox {
     position: fixed;
     inset: 0;
