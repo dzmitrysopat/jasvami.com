@@ -52,15 +52,16 @@
   }
 
   function insert(target, doc) {
-    // Стили из <head> блока (wrapper.css, mobile.css) подключаются каждый раз и по порядку:
-    // от этого зависит, какие правила перекрывают друг друга (mobile.css должен идти после wrapper.css).
-    // Файлы с атрибутом data-late (responsive.css, gallery.css) остаются последними.
-    var late = document.querySelector('link[rel="stylesheet"][data-late]');
+    // блоки шапки и подвала самодостаточны, но если в <head> блока указаны стили, подключаем недостающие
+    var have = {};
+    Array.prototype.forEach.call(document.querySelectorAll('link[rel="stylesheet"]'), function (l) { have[l.href] = true; });
     Array.prototype.forEach.call(doc.querySelectorAll('head link[rel="stylesheet"]'), function (l) {
       var link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = l.getAttribute('href');
-      document.head.insertBefore(link, late);
+      if (have[link.href]) return;
+      have[link.href] = true;
+      document.head.appendChild(link);
     });
     target.innerHTML = doc.body.innerHTML;
   }

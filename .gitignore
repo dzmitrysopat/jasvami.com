@@ -1,3 +1,4 @@
 .vscode/
 *.php
 *.txt
+!robots.txt
